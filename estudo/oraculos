@@ -1,0 +1,26 @@
+Oraculo Geral:
+    'Não',
+    'Não, mas… (determine um fator atenuante à negativa)',
+    'Não, e… (determine um agravante à negativa)',
+    'Não e um evento',
+    'Não e inesperadamente',
+    'Não, e surge uma adversidade',
+    'Não, mas surge algo favorável',
+    'Não, e algo Aumenta ou Reforça a Resposta',
+    'Não, mas algo Diminui ou Vai de Oposto à Resposta',
+    'Não, e Algo Inesperado Acontece',
+    'Sim',
+    'Sim, mas… (determine um contraponto desfavorável)',
+    'Sim, e… (determine um elemento ainda mais favorável)',
+    'Sim e um evento',
+    'Sim e inesperadamente',
+    'Sim, mas não exatamente o esperado',
+    'Sim, e surge uma vantagem',
+    'Sim, e um Evento Inesperado Acontece',
+    'Sim, mas algo Diminui ou Vai de Oposto à Resposta',
+    'Sim, e algo Aumenta ou Reforça a Resposta',
+
+
+Oraculo Dificuldade: 
+    'Difícil', 'Moderado', 'Impossível', 'Muito Difícil', 'Fácil'
+
