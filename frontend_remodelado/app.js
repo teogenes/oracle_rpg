@@ -46,7 +46,7 @@ params = {
         },
         enredoClick: function(){
             for(vE in this.enredoList){
-                this.enredoList[vE].msg = "";
+                this.enredoList[vE].valor = '';
             }
         },
         jogadasClick: function(){
@@ -127,7 +127,7 @@ params = {
             if(arr[0].includes(ora)){
                 this.combinacao_opcao(ora, this.enredoList, 3,ind)
             }else{
-                this.enredoList[ind].msg = oracle[ora].random()
+                this.enredoList[ind].valor = oracle[ora].random()
             }
         },
         execEvento: function(ora, ind){
@@ -217,7 +217,7 @@ params = {
                 let vv = oracle[ora][i]
                 arr.push( vv[this.randomInt(0,vv.length)] + "<br />" )
             }
-            lista[ind].msg = arr.join(' ');
+            lista[ind].valor = arr.join(' ');
         },
         randomInt: function (min, max) {
             return min + Math.floor((max - min) * Math.random());
