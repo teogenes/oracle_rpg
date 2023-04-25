@@ -122,7 +122,8 @@ params = {
         },
         execEnredo: function(ora, ind){
             let arr = [
-                ['enredo_origem', 'enredo_conexao', 'enredo_consequencia', 'enredo_desafio']
+                ['enredo_origem', 'enredo_conexao', 'enredo_consequencia', 'enredo_desafio', 
+                'enredo_local', 'enredo_objetivo', 'enredo_conflito', 'enredo_recompensa', 'enredo_resolucao']
             ];
             if(arr[0].includes(ora)){
                 this.combinacao_opcao(ora, this.enredoList, 3,ind)
