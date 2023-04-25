@@ -121,7 +121,10 @@ params = {
             }
         },
         execEnredo: function(ora, ind){
-            if(ora == 'enredo_origem'){
+            let arr = [
+                ['enredo_origem', 'enredo_conexao']
+            ];
+            if(arr[0].includes(ora)){
                 this.combinacao_opcao(ora, this.enredoList, 3,ind)
             }else{
                 this.enredoList[ind].msg = oracle[ora].random()

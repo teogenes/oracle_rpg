@@ -80,16 +80,38 @@
             Aprendendo habilidades ou conhecimentos relevantes para o evento.
             Enfrentando seu próprio passado ou demônios pessoais.
     3. Consequência (O que acontece como resultado do evento inicial):
-        O evento revela uma ameaça maior ou um mistério a ser resolvido.
-        O evento cria um conflito ou rivalidade entre grupos ou indivíduos.
-        O evento desencadeia uma série de eventos inesperados ou complicados.
-        O evento desafia as crenças ou valores do personagem.
-        O evento leva o personagem a uma jornada para um local desconhecido ou perigoso.
-        O evento resulta na descoberta de uma habilidade ou poder oculto do personagem.
+        * Impacto Imediato (O que acontece logo após o evento inicial):
+            Uma vida é salva ou perdida.
+            Um segredo é revelado ou encoberto.
+            Um relacionamento é formado ou desfeito.
+            Um recurso valioso é ganho ou perdido.
+            Um inimigo ou adversário é derrotado ou fortalecido.
+            Um mistério ou enigma é resolvido ou aprofundado.
+            Um poder ou habilidade é adquirido ou despertado.
+            Uma oportunidade é aproveitada ou perdida.
+            Um plano é posto em ação ou frustrado.
+            Uma transformação ou mudança ocorre.
+        * Repercussões (As consequências de longo prazo do evento):
+            Uma nova ameaça ou desafio surge.
+            Um conflito ou disputa se intensifica ou se resolve.
+            Uma aliança ou parceria é formada ou desfeita.
+            Uma profecia ou previsão se cumpre ou é desmentida.
+            Um personagem ou grupo ganha ou perde poder ou influência.
+            Um local ou objeto adquire importância ou significado.
+            Uma descoberta ou inovação altera o mundo de alguma forma.
+            Uma tradição ou crença é questionada ou reforçada.
+            Uma jornada ou busca começa ou termina.
+            Um equilíbrio de poder ou ordem é estabelecido ou perturbado.
+        * Evolução do Evento (Como o evento pode se desenvolver ou mudar ao longo do tempo):
+            Revelações adicionais ou surpresas mudam a compreensão do evento.
+            Novos personagens ou grupos entram em cena.
+            O evento se conecta a outros eventos ou histórias de maneiras inesperadas.
+            O escopo ou escala do evento aumenta ou diminui.
+            As motivações ou objetivos de personagens envolvidos mudam ou evoluem.
+            O evento adquire implicações políticas, sociais ou místicas.
+            O evento leva a um dilema moral, ético ou filosófico.
+            O evento provoca uma mudança na dinâmica entre personagens ou grupos.
+            A natureza ou causa do evento é questionada ou reinterpretada.
+            O evento culmina em uma confrontação ou escolha dramática.
+
     4. Desafio (Obstáculos ou dificuldades enfrentadas pelo personagem):
-        Um inimigo poderoso ou um grupo de adversários que se opõem ao personagem.
-        Um enigma ou quebra-cabeça que precisa ser resolvido para progredir.
-        Um ambiente hostil ou perigoso que apresenta riscos ao personagem.
-        Limitações de tempo, como um prazo ou evento iminente que exige ação rápida.
-        Um dilema moral ou ético que coloca o personagem em uma situação difícil.
-        Uma escassez de recursos ou apoio, forçando o personagem a ser criativo e independente.

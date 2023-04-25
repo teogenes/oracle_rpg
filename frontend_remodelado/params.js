@@ -1010,13 +1010,40 @@ let oracle = {
     ],
     enredo_conexao: [
         [ //  (Como o personagem se relaciona com o evento)
-
+            "Relação com o Personagem: <b>O personagem é diretamente afetado pelo evento.</b>",
+            "Relação com o Personagem: <b>Um amigo ou familiar do personagem está envolvido no evento.</b>",
+            "Relação com o Personagem: <b>O personagem é facilmente aceito por alguém que precisa de ajuda em relação ao evento.</b>",
+            "Relação com o Personagem: <b>O personagem testemunha o evento ou encontra documentos relacionados a ele.</b>",
+            "Relação com o Personagem: <b>O personagem é convocado por uma autoridade ou figura importante para lidar com o evento.</b>",
+            "Relação com o Personagem: <b>O personagem descobre uma conexão pessoal com o evento, como um segredo de família ou um laço com o passado.</b>",
+            "Relação com o Personagem: <b>O evento desperta a curiosidade ou o interesse do personagem.</b>",
+            "Relação com o Personagem: <b>O personagem se envolve no evento por acaso ou coincidência.</b>",
+            "Relação com o Personagem: <b>O personagem é obrigado a se envolver no evento por circunstâncias fora de seu controle.</b>",
+            "Relação com o Personagem: <b>O personagem tem um sonho, visão ou premonição relacionada ao evento.</b>",
         ],
         [ // (Razão pela qual o personagem se envolve no evento)
-
+            "Motivação: <b>Senso de dever ou responsabilidade.</b>",
+            "Motivação: <b>Busca por justiça ou vingança.</b>",
+            "Motivação: <b>Desejo de proteger alguém ou algo.</b>",
+            "Motivação: <b>Busca por conhecimento ou verdade.</b>",
+            "Motivação: <b>Ganho material ou financeiro.</b>",
+            "Motivação: <b>Redenção pessoal ou crescimento espiritual.</b>",
+            "Motivação: <b>Lealdade a uma pessoa, grupo ou ideia.</b>",
+            "Motivação: <b>Aventura ou emoção.</b>",
+            "Motivação: <b>Amor ou afeição por alguém envolvido no evento.</b>",
+            "Motivação: <b>Sobrevivência ou autopreservação.</b>",
         ],
         [ // (Como o personagem se envolve inicialmente no evento)
-
+            "Ponto de Envolvimento: <b>Investigando pistas ou informações.</b>",
+            "Ponto de Envolvimento: <b>Resgatando ou protegendo alguém.</b>",
+            "Ponto de Envolvimento: <b>Enfrentando um adversário ou inimigo.</b>",
+            "Ponto de Envolvimento: <b>Navegando por um ambiente perigoso ou desconhecido.</b>",
+            "Ponto de Envolvimento: <b>Estabelecendo alianças ou parcerias.</b>",
+            "Ponto de Envolvimento: <b>Desvendando um mistério ou enigma.</b>",
+            "Ponto de Envolvimento: <b>Superando obstáculos ou desafios.</b>",
+            "Ponto de Envolvimento: <b>Tomando uma decisão difícil ou enfrentando um dilema moral.</b>",
+            "Ponto de Envolvimento: <b>Aprendendo habilidades ou conhecimentos relevantes para o evento.</b>",
+            "Ponto de Envolvimento: <b>Enfrentando seu próprio passado ou demônios pessoais.</b>",
         ],
     ],
     enredo_consequencia: [
