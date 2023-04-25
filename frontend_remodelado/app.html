@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="pt-br">
+    <title>RPG SOLO</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+</head>
+
+<body class="light-green lighten-4">
+    <div id="app" class="container">
+        <nav class="teal darken-4">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo center">RPG Solo</a>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="col s8">
+                <hr>
+                <div class="row">
+                    <div class="col s12">
+                        <a @click="aba_clear('oracleValid')" class="waves-effect waves-light btn-small blue-grey darken-4">ORACULO</a>
+                        <a @click="aba_clear('missaoValid')" class="waves-effect waves-light btn-small green darken-4">Missão</a>
+                        <a @click="aba_clear('cenarioValid')" class="waves-effect waves-light btn-small green darken-4">Aventura</a>
+                        <a @click="aba_clear('ressoValid')" class="waves-effect waves-light btn-small green darken-4">Cena</a>                        
+                        <a @click="aba_clear('localValid')" class="waves-effect waves-light btn-small green light-green darken-3">Localidade</a>
+                        <a @click="aba_clear('aventuraValid')" class="waves-effect waves-light btn-small green light-green darken-3">Eventos</a>
+                    </div>
+                    <div class="col s12">
+                        <hr>
+                        <a @click="aba_clear('vampPersValid')" class="waves-effect waves-light btn-small blue darken-2">NPCs</a>
+                        <a @click="aba_clear('shinigameValid')" class="waves-effect waves-light btn-small deep-purple accent-3">Problemas</a>                 
+                        <a @click="aba_clear('jogadasValid')" class="waves-effect waves-light btn-small deep-purple accent-3">Ações de Jogadas</a>                 
+                        <a @click="aba_clear('yokaiValid')" class="waves-effect waves-light btn-small red darken-3">Mostros</a>                 
+                    </div>
+                    <div class="col s12">
+                        <hr>
+                    </div>
+                    
+                    <div class="col s12">   
+                        
+                        <table class="highlight" v-show="oracleValid" >
+                            <thead>
+                                <tr>
+                                    <th colspan="2" style="text-align: center;" >ORACULO</th>
+                                </tr>
+                                <tr>
+                                    <th>AÇÕES</th>
+                                    <th class="center" > <a @click="oracleClick" class="waves-effect waves-light btn-small  yellow darken-3" >Limpar</a></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr v-for="(olista, ind) in oracleList">
+                                    <td style="width:168px;" ><a :title="olista.label" @click="execOracle(olista.ora, ind)" class="waves-effect waves-light btn-small  brown darken-3" >{{olista.label}}</a></td>
+                                    <td v-html="olista.msg" ></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="highlight" v-show="yokaiValid" >
+                            <thead>
+                                <tr>
+                                    <th colspan="2" style="text-align: center;" >MOSTROS</th>
+                                </tr>
+                                <tr>
+                                    <th>AÇÕES</th>
+                                    <th class="center" ><a @click="yokaiClick" class="waves-effect waves-light btn-small  yellow darken-3" >Limpar</a></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr v-for="(olista, ind) in yokaiList">
+                                    <td style="width:168px;" ><a :title="olista.label" @click="execYokai(olista.ora, ind)" class="waves-effect waves-light btn-small  brown darken-3" >{{olista.label}}</a></td>
+                                    <td v-html="olista.msg" ></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="highlight" v-show="jogadasValid" >
+                            <thead>
+                                <tr>
+                                    <th colspan="2" style="text-align: center;" >AÇÕES DE JOGADAS</th>
+                                </tr>
+                                <tr>
+                                    <th>AÇÕES </th>
+                                    <th class="center" ><a @click="jogadasClick" class="waves-effect waves-light btn-small  yellow darken-3" >Limpar</a></th>
+                                </;>
+                            </thead>
+                            <tbody>
+                                <tr v-for="(olista, ind) in jogadasList">
+                                    <td style="width:168px;" ><a :title="olista.label" @click="execJogadas(olista.ora, ind)" class="waves-effect waves-light btn-small  brown darken-3" >{{olista.label}}</a></td>
+                                    <td v-html="olista.msg" ></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <table class="highlight" v-show="shinigameValid" >
+                            <thead>
+                                <tr>
+                                    <th colspan="2" style="text-align: center;" >PROBLEMAS</th>
+                                </tr>
+                                <tr>
+                                    <th>AÇÕES</th>
+                                    <th class="center" > <a @click="shiniClick" class="waves-effect waves-light btn-small  yellow darken-3" >Limpar</a></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr v-for="(olista, ind) in shiniList">
+                                    <td style="width:168px;" ><a :title="olista.label" @click="execShini(olista.ora, ind)" class="waves-effect waves-light btn-small  brown darken-3" >{{olista.label}}</a></td>
+                                    <td v-html="olista.msg" ></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="highlight" v-show="localValid" >
+                            <thead>
+                                <tr>
+                                    <th colspan="2" style="text-align: center;" >LOCALIZAÇÃO</th>
+                                </tr>
+                                <tr>
+                                    <th>AÇÕES</th>
+                                    <th class="center" > <a @click="localClick" class="waves-effect waves-light btn-small  yellow darken-3" >Limpar</a></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr v-for="(olista, ind) in localList">
+                                    <td style="width:168px;" ><a :title="olista.label" @click="execLocal(olista.ora, ind)" class="waves-effect waves-light btn-small  brown darken-3" >{{olista.label}}</a></td>
+                                    <td v-html="olista.msg" ></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="highlight" v-show="ressoValid" >
+                            <thead>
+                                <tr>
+                                    <th colspan="2" style="text-align: center;" >CENA</th>
+                                </tr>
+                                <tr>
+                                    <th>AÇÕES</th>
+                                    <th class="center"><a @click="ressoClick" class="waves-effect waves-light btn-small  yellow darken-3" >Limpar</a></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr v-for="(olista, ind) in ressoList">
+                                    <td style="width:168px;" ><a :title="olista.label" @click="execResso(olista.ora, ind)" class="waves-effect waves-light btn-small  brown darken-3" >{{olista.label}}</a></td>
+                                    <td v-html="olista.msg" ></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="highlight" v-show="missaoValid" >
+                            <thead>
+                                <tr>
+                                    <th colspan="2" style="text-align: center;" >MISSÃO</th>
+                                </tr>
+                                <tr>
+                                    <th>AÇÕES</th>
+                                    <th class="center" > <a @click="missaoClick" class="waves-effect waves-light btn-small  yellow darken-3" >Limpar</a></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr v-for="(olista, ind) in missaoList">
+                                    <td style="width:168px;" ><a :title="olista.label" @click="execMissao(olista.ora, ind)" class="waves-effect waves-light btn-small  brown darken-3" >{{olista.label}}</a></td>
+                                    <td v-html="olista.msg" ></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <table class="highlight" v-show="aventuraValid" >
+                            <thead>
+                                <tr>
+                                    <th colspan="2" style="text-align: center;" >EVENTOS</th>
+                                </tr>
+                                <tr>
+                                    <th>AÇÕES</th>
+                                    <th class="center"> <a @click="eventClick" class="waves-effect waves-light btn-small  yellow darken-3" >Limpar</a></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr v-for="(olista, ind) in eventoList">
+                                    <td style="width:168px;" ><a :title="olista.label" @click="execEvento(olista.ora, ind)" class="waves-effect waves-light btn-small  brown darken-3" >{{olista.label}}</a></td>
+                                    <td v-html="olista.msg"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <table class="highlight" v-show="cenarioValid" >
+                            <thead>
+                                <tr>
+                                    <th colspan="2" style="text-align: center;" >AVENTURA</th>
+                                </tr>
+                                <tr>
+                                    <th>AÇÕES</th>
+                                    <th class="center"> <a @click="aventuraClick" class="waves-effect waves-light btn-small  yellow darken-3" >Limpar</a></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr v-for="(olista, ind) in cenarioList">
+                                    <td style="width:168px;" ><a :title="olista.label" @click="execCenario(olista.ora, ind)" class="waves-effect waves-light btn-small  brown darken-3" >{{olista.label}}</a></td>
+                                    <td v-html="olista.msg"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="highlight" v-show="vampPersValid" >
+                            <thead>
+                                <tr>
+                                    <th colspan="2" style="text-align: center;" >NPCs</th>
+                                </tr>
+                                <tr>
+                                    <th class="center">AÇÕES</th>
+                                    <th class="center" ><a @click="vampPersonClick" class="waves-effect waves-light btn-small  yellow darken-3" >Limpar</a></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr v-for="(olista, ind) in vPersonsList">
+                                    <td style="width:168px;" ><a :title="olista.label" @click="execVPersons(olista.ora, ind)" class="waves-effect waves-light btn-small  brown darken-3" >{{olista.label}}</a></td>
+                                    <td v-html="olista.msg" > </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col s4">
+                <hr>
+                <div class="row">
+                    <div class="col s12">
+                        <div class="card  blue lighten-2">
+                            <div class="card-content">
+                                <span class="card-title" style="color: white;">Testes</span>
+                                
+                                <div class="input-field col s6">
+                                    <select v-model="dados" >
+                                        <option value="7">2d6</option>
+                                        <option value="21">1d20</option>
+                                    </select>
+                                    <label style="color: white;">dados</label>
+                                </div>
+
+                                <div style="height:300px;">
+                                    <div ref="difHis" v-for="hist in historicos" class="col s10" style="color: white;">
+                                        {{hist}}
+                                        <hr>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-action">
+                                <a @click="rolarDados()" class="waves-effect btn lime darken-3">Rolar</a>
+                                <a @click="limparDados()" class="waves-effect btn lime darken-3">Limpar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="./params.js" ></script>
+<script src="./app.js" ></script>
+
+</html>
