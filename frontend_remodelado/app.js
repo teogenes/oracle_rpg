@@ -3,7 +3,8 @@ params = {
     data: {
         dados:21,
         historicos: [],
-        oracleValid: true,
+        oracleValid: false,
+        enredoValid: true,
         aventuraValid: false,
         cenarioValid: false,
         missaoValid: false,
@@ -14,6 +15,7 @@ params = {
         shinigameValid: false,
         localValid: false,
         jogadasValid: false,
+        enredoList: enredoResult,
         oracleList: oracleResult,
         missaoList: missaoResult,
         eventoList: eventoResult,
@@ -27,7 +29,7 @@ params = {
     },
     methods:{
         aba_clear: function(troca){
-            let arr = ['oracleValid', 'aventuraValid', 'cenarioValid', 
+            let arr = ['enredoValid','oracleValid', 'aventuraValid', 'cenarioValid', 
             'missaoValid', 'vampOrecleValid', 'vampPersValid', 'ressoValid', 
             'yokaiValid', 'shinigameValid', 'localValid', 'jogadasValid']
             eval(`this.${troca}= !this.${troca}`)
@@ -40,6 +42,11 @@ params = {
         oracleClick: function(){
             for(vE in this.oracleList){
                 this.oracleList[vE].msg = "";
+            }
+        },
+        enredoClick: function(){
+            for(vE in this.enredoList){
+                this.enredoList[vE].msg = "";
             }
         },
         jogadasClick: function(){
@@ -111,6 +118,13 @@ params = {
                 this.combinacao_opcao(ora, this.oracleList, 3,ind)
             }else{
                 this.oracleList[ind].msg = oracle[ora].random()
+            }
+        },
+        execEnredo: function(ora, ind){
+            if(ora == 'enredo_origem'){
+                this.combinacao_opcao(ora, this.enredoList, 3,ind)
+            }else{
+                this.enredoList[ind].msg = oracle[ora].random()
             }
         },
         execEvento: function(ora, ind){

@@ -965,7 +965,65 @@ let oracle = {
     pergunta_oracle: [
         ["Afirmação: <b>Sim</b>", "Afirmação: <b>Não</b>"],
         ["Propabilidade: <b>Incerto</b>", "Propabilidade: <b>Provavelmente</b>", "Propabilidade: <b>Definitivamente</b>"],
-        ["Fato: <b>Mas algo Agravante/Desfavorável(Aumenta)</b>", "Fato: <b>E algo Atenuante/Favorável(Diminui)</b>"],
+        [
+            "Fator: <b>Mas algo Agravante/Desfavorável(Aumenta)</b>", "Fator: <b>E algo Atenuante/Favorável(Diminuí)</b>", 
+            "Fator: <b>------</b>", "Fator: <b>------</b>", "Fator: <b>------</b>", "Fator: <b>------</b>",
+        ],
+    ],
+    enredo_origem: [ // (O que desencadeou o evento inicial)
+        [
+            "Tipo de Evento: <b>Descoberta ou revelação.</b>",
+            "Tipo de Evento: <b>Crime ou ato de violência.</b>",
+            "Tipo de Evento: <b>Decisão ou ação de uma figura importante.</b>",
+            "Tipo de Evento: <b>Desastre natural ou evento sobrenatural.</b>",
+            "Tipo de Evento: <b>Rumor ou lenda.</b>",
+            "Tipo de Evento: <b>Encontro inesperado.</b>",
+            "Tipo de Evento: <b>Trama ou conspiração.</b>",
+            "Tipo de Evento: <b>Competição ou desafio.</b>",
+            "Tipo de Evento: <b>Viagem ou expedição.</b>",
+            "Tipo de Evento: <b>Transformação ou mudança.</b>",
+        ],
+        [ // (Onde ou como o evento ocorre):
+            "Contexto: <b>Em um local sagrado ou histórico.</b>",
+            "Contexto: <b>Durante uma celebração ou evento público.</b>",
+            "Contexto: <b>Dentro de uma instituição ou organização.</b>",
+            "Contexto: <b>Em um ambiente selvagem ou desconhecido.</b>",
+            "Contexto: <b>Através de uma comunicação ou mensagem.</b>",
+            "Contexto: <b>Em um local secreto ou escondido.</b>",
+            "Contexto: <b>Em um reino ou dimensão alternativa.</b>",
+            "Contexto: <b>No submundo ou mundo do crime.</b>",
+            "Contexto: <b>Durante um conflito ou guerra.</b>",
+            "Contexto: <b>Em uma cidade ou vila.</b>",
+        ],
+        [ // (Uma informação adicional sobre o evento)
+            "Detalhe Adicional: <b>Um artefato misterioso está envolvido.</b>",
+            "Detalhe Adicional: <b>Há uma conexão com uma antiga profecia.</b>",
+            "Detalhe Adicional: <b>Um personagem enigmático desempenha um papel importante.</b>",
+            "Detalhe Adicional: <b>O evento tem implicações políticas ou sociais.</b>",
+            "Detalhe Adicional: <b>Ocorre um fenômeno estranho ou inexplicável.</b>",
+            "Detalhe Adicional: <b>Há uma disputa ou rivalidade subjacente ao evento.</b>",
+            "Detalhe Adicional: <b>Uma criatura ou entidade sobrenatural está envolvida.</b>",
+            "Detalhe Adicional: <b>O evento revela segredos obscuros ou verdades escondidas.</b>",
+            "Detalhe Adicional: <b>Uma aliança ou amizade inesperada se forma durante o evento.</b>",
+            "Detalhe Adicional: <b>O evento desencadeia o despertar de um poder adormecido.</b>",
+        ],
+    ],
+    enredo_conexao: [
+        [ //  (Como o personagem se relaciona com o evento)
+
+        ],
+        [ // (Razão pela qual o personagem se envolve no evento)
+
+        ],
+        [ // (Como o personagem se envolve inicialmente no evento)
+
+        ],
+    ],
+    enredo_consequencia: [
+
+    ],
+    enredo_desafio: [
+
     ],
     inesperado_oracle: [
         "<b>Previsão</b> - Estabeleça uma trama para ser a trama principal para a próxima cena. A cena atual deve então se encaminhar ao seu final e seguir em direção à próxima cena.",
@@ -4649,6 +4707,13 @@ let oracleResult = [
     { label: "Oraculo Geral", ora: "pergunta_oracle", msg: "" },
     { label: "Dificuldade", ora: "dificuldade_oracle", msg: "" },
 ];
+
+let enredoResult = [
+    { label: "Origem", ora: "enredo_origem", msg: "O que desencadeou o evento inicial" }, // (O que desencadeou o evento inicial)
+    { label: "Conexão", ora: "enredo_conexao", msg: "Como o evento inicial se conecta ao personagem" }, // (Como o evento inicial se conecta ao personagem)
+    { label: "Consequência", ora: "enredo_consequencia", msg: "O que acontece como resultado do evento inicial" }, // (O que acontece como resultado do evento inicial)
+    { label: "Desafio", ora: "enredo_desafio", msg: "Obstáculos ou dificuldades enfrentadas pelo personagem" }, // (Obstáculos ou dificuldades enfrentadas pelo personagem)
+]
 
 let missaoResult = [
     { label: "Tema", ora: "tema_solo", msg: "" },

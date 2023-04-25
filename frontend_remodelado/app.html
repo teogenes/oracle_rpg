@@ -26,15 +26,16 @@
                 <hr>
                 <div class="row">
                     <div class="col s12">
-                        <a @click="aba_clear('oracleValid')" class="waves-effect waves-light btn-small blue-grey darken-4">ORACULO</a>
-                        <a @click="aba_clear('missaoValid')" class="waves-effect waves-light btn-small green darken-4">Missão</a>
+                        <a @click="aba_clear('enredoValid')" class="waves-effect waves-light btn-small green darken-4">Enredo</a>
                         <a @click="aba_clear('cenarioValid')" class="waves-effect waves-light btn-small green darken-4">Aventura</a>
-                        <a @click="aba_clear('ressoValid')" class="waves-effect waves-light btn-small green darken-4">Cena</a>                        
-                        <a @click="aba_clear('localValid')" class="waves-effect waves-light btn-small green light-green darken-3">Localidade</a>
+                        <a @click="aba_clear('missaoValid')" class="waves-effect waves-light btn-small green darken-4">Missão</a>
+                        <a @click="aba_clear('localValid')" class="waves-effect waves-light btn-small green darken-4">Localidade</a>
+                        <a @click="aba_clear('ressoValid')" class="waves-effect waves-light btn-small light-green darken-3">Cena</a>                        
                         <a @click="aba_clear('aventuraValid')" class="waves-effect waves-light btn-small green light-green darken-3">Eventos</a>
                     </div>
                     <div class="col s12">
                         <hr>
+                        <a @click="aba_clear('oracleValid')" class="waves-effect waves-light btn-small blue-grey darken-4">ORACULO</a>
                         <a @click="aba_clear('vampPersValid')" class="waves-effect waves-light btn-small blue darken-2">NPCs</a>
                         <a @click="aba_clear('shinigameValid')" class="waves-effect waves-light btn-small deep-purple accent-3">Problemas</a>                 
                         <a @click="aba_clear('jogadasValid')" class="waves-effect waves-light btn-small deep-purple accent-3">Ações de Jogadas</a>                 
@@ -46,6 +47,24 @@
                     
                     <div class="col s12">   
                         
+                        <table class="highlight" v-show="enredoValid" >
+                            <thead>
+                                <tr>
+                                    <th colspan="2" style="text-align: center;" >ENREDO</th>
+                                </tr>
+                                <tr>
+                                    <th>AÇÕES</th>
+                                    <th class="center" > <a @click="enredoClick" class="waves-effect waves-light btn-small  yellow darken-3" >Limpar</a></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr v-for="(olista, ind) in enredoList">
+                                    <td style="width:168px;" ><a :title="olista.label" @click="execEnredo(olista.ora, ind)" class="waves-effect waves-light btn-small  brown darken-3" >{{olista.label}}</a></td>
+                                    <td v-html="olista.msg" ></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
                         <table class="highlight" v-show="oracleValid" >
                             <thead>
                                 <tr>
