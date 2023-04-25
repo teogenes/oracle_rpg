@@ -1047,7 +1047,42 @@ let oracle = {
         ],
     ],
     enredo_consequencia: [
-
+        [ // (O que acontece logo após o evento inicial)
+            "Impacto Imediato: <b>Uma vida é salva ou perdida.</b>",
+            "Impacto Imediato: <b>Um segredo é revelado ou encoberto.</b>",
+            "Impacto Imediato: <b>Um relacionamento é formado ou desfeito.</b>",
+            "Impacto Imediato: <b>Um recurso valioso é ganho ou perdido.</b>",
+            "Impacto Imediato: <b>Um inimigo ou adversário é derrotado ou fortalecido.</b>",
+            "Impacto Imediato: <b>Um mistério ou enigma é resolvido ou aprofundado.</b>",
+            "Impacto Imediato: <b>Um poder ou habilidade é adquirido ou despertado.</b>",
+            "Impacto Imediato: <b>Uma oportunidade é aproveitada ou perdida.</b>",
+            "Impacto Imediato: <b>Um plano é posto em ação ou frustrado.</b>",
+            "Impacto Imediato: <b>Uma transformação ou mudança ocorre.</b>",
+        ],
+        [ // (As consequências de longo prazo do evento)
+            "Repercussões: <b>Uma nova ameaça ou desafio surge.</b>",
+            "Repercussões: <b>Um conflito ou disputa se intensifica ou se resolve.</b>",
+            "Repercussões: <b>Uma aliança ou parceria é formada ou desfeita.</b>",
+            "Repercussões: <b>Uma profecia ou previsão se cumpre ou é desmentida.</b>",
+            "Repercussões: <b>Um personagem ou grupo ganha ou perde poder ou influência.</b>",
+            "Repercussões: <b>Um local ou objeto adquire importância ou significado.</b>",
+            "Repercussões: <b>Uma descoberta ou inovação altera o mundo de alguma forma.</b>",
+            "Repercussões: <b>Uma tradição ou crença é questionada ou reforçada.</b>",
+            "Repercussões: <b>Uma jornada ou busca começa ou termina.</b>",
+            "Repercussões: <b>Um equilíbrio de poder ou ordem é estabelecido ou perturbado.</b>",
+        ],
+        [ // (Como o evento pode se desenvolver ou mudar ao longo do tempo)
+            "Evolução do Evento: <b>Revelações adicionais ou surpresas mudam a compreensão do evento.</b>",
+            "Evolução do Evento: <b>Novos personagens ou grupos entram em cena.</b>",
+            "Evolução do Evento: <b>O evento se conecta a outros eventos ou histórias de maneiras inesperadas.</b>",
+            "Evolução do Evento: <b>O escopo ou escala do evento aumenta ou diminui.</b>",
+            "Evolução do Evento: <b>As motivações ou objetivos de personagens envolvidos mudam ou evoluem.</b>",
+            "Evolução do Evento: <b>O evento adquire implicações políticas, sociais ou místicas.</b>",
+            "Evolução do Evento: <b>O evento leva a um dilema moral, ético ou filosófico.</b>",
+            "Evolução do Evento: <b>O evento provoca uma mudança na dinâmica entre personagens ou grupos.</b>",
+            "Evolução do Evento: <b>A natureza ou causa do evento é questionada ou reinterpretada.</b>",
+            "Evolução do Evento: <b>O evento culmina em uma confrontação ou escolha dramática.</b>",
+        ],
     ],
     enredo_desafio: [
 
