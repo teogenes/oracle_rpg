@@ -1,16 +1,6 @@
+# ENREDO
 
-# ORACULO #
-**Oraculo Geral:**
-    * Afirmação: 'Sim/Positivo', 'Não/Negativo'
-    * Propabilidade: 'Definitivamente', 'Provavelmente', 'Incerto'
-    * Fator: 'Mas algo Agravante/Desfavorável(Aumenta)', 'E algo Atenuante/Favorável(Diminui)'
-----------------------------------------------------------
-**Oraculo Dificuldade:** 
-    'Difícil', 'Moderado', 'Impossível', 'Muito Difícil', 'Fácil'
-----------------------------------------------------------
-
-# ENREDO #
-**Evento Inicial**
+**Evento Inicial  (o que desencadeia a aventura)**
     1. Origem (O que desencadeou o evento inicial):
         * Tipo de Evento (O que desencadeou o evento inicial):
             Descoberta ou revelação.
@@ -115,3 +105,45 @@
             O evento culmina em uma confrontação ou escolha dramática.
 
     4. Desafio (Obstáculos ou dificuldades enfrentadas pelo personagem):
+        * Tipo de Desafio (O principal obstáculo que o personagem enfrenta):
+            Combate físico ou confronto direto.
+            Intriga política ou manipulação social.
+            Resolução de um mistério ou enigma.
+            Superar um ambiente perigoso ou hostil.
+            Estabelecer alianças ou resolver conflitos interpessoais.
+            Enfrentar um medo pessoal ou superar uma fraqueza.
+            Proteger alguém ou algo vulnerável.
+            Encontrar um objeto ou local escondido ou inacessível.
+            Tomar uma decisão difícil ou enfrentar um dilema moral.
+            Desafiar ou confrontar um poder superior ou autoridade.
+        * Complexidade (O nível de dificuldade ou complicação do desafio):
+            O desafio é simples e direto.
+            O desafio requer habilidade ou conhecimento especializado.
+            O desafio envolve múltiplas etapas ou objetivos.
+            O desafio é afetado por fatores externos ou circunstâncias imprevistas.
+            O desafio exige cooperação ou coordenação com outros.
+            O desafio testa os limites físicos, mentais ou emocionais do personagem.
+            O desafio é complicado por engano, traição ou manipulação.
+            O desafio tem implicações morais, éticas ou filosóficas.
+            O desafio exige sacrifício pessoal ou compromisso.
+            O desafio é quase impossível de superar.
+        * Conflito Interno (O aspecto pessoal ou emocional do desafio):
+            Dúvida ou incerteza sobre as próprias habilidades.
+            Conflito entre lealdades ou alianças.
+            Medo de fracassar ou decepcionar alguém.
+            Luta contra tentações ou impulsos negativos.
+            Enfrentar memórias ou traumas passados.
+            Equilibrar necessidades pessoais com responsabilidades maiores.
+            Escolher entre dois caminhos ou opções igualmente atraentes ou perigosas.
+            Lidar com a perda, luto ou arrependimento.
+            Enfrentar preconceitos, suposições ou expectativas culturais ou sociais.
+            Crescimento pessoal, autoaceitação ou autoconhecimento.
+
+**Local (onde a aventura acontece)**
+**Objetivo (o que o personagem precisa alcançar)**
+**Personagem Secundário (aliados, inimigos ou personagens neutros encontrados)**
+**Conflito (desafios, enigmas ou batalhas enfrentadas)**
+**Reviravoltas (eventos inesperados que mudam o rumo da história)**
+**Subtrama (uma história secundária que se desenvolve ao longo da aventura)**
+**Recompensa (o que o personagem ganha ao completar a aventura)**
+**Resolução (como a aventura termina)**

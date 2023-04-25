@@ -1085,7 +1085,42 @@ let oracle = {
         ],
     ],
     enredo_desafio: [
-
+        [ // (O principal obstáculo que o personagem enfrenta)
+            "Tipo de Desafio: <b>Combate físico ou confronto direto.</b>",
+            "Tipo de Desafio: <b>Intriga política ou manipulação social.</b>",
+            "Tipo de Desafio: <b>Resolução de um mistério ou enigma.</b>",
+            "Tipo de Desafio: <b>Superar um ambiente perigoso ou hostil.</b>",
+            "Tipo de Desafio: <b>Estabelecer alianças ou resolver conflitos interpessoais.</b>",
+            "Tipo de Desafio: <b>Enfrentar um medo pessoal ou superar uma fraqueza.</b>",
+            "Tipo de Desafio: <b>Proteger alguém ou algo vulnerável.</b>",
+            "Tipo de Desafio: <b>Encontrar um objeto ou local escondido ou inacessível.</b>",
+            "Tipo de Desafio: <b>Tomar uma decisão difícil ou enfrentar um dilema moral.</b>",
+            "Tipo de Desafio: <b>Desafiar ou confrontar um poder superior ou autoridade.</b>",
+        ],
+        [ // (O nível de dificuldade ou complicação do desafio)
+            "Complexidade: <b>O desafio é simples e direto.</b>",
+            "Complexidade: <b>O desafio requer habilidade ou conhecimento especializado.</b>",
+            "Complexidade: <b>O desafio envolve múltiplas etapas ou objetivos.</b>",
+            "Complexidade: <b>O desafio é afetado por fatores externos ou circunstâncias imprevistas.</b>",
+            "Complexidade: <b>O desafio exige cooperação ou coordenação com outros.</b>",
+            "Complexidade: <b>O desafio testa os limites físicos, mentais ou emocionais do personagem.</b>",
+            "Complexidade: <b>O desafio é complicado por engano, traição ou manipulação.</b>",
+            "Complexidade: <b>O desafio tem implicações morais, éticas ou filosóficas.</b>",
+            "Complexidade: <b>O desafio exige sacrifício pessoal ou compromisso.</b>",
+            "Complexidade: <b>O desafio é quase impossível de superar.</b>",
+        ],
+        [ // (O aspecto pessoal ou emocional do desafio)
+            "Conflito Interno: <b>Dúvida ou incerteza sobre as próprias habilidades.</b>",
+            "Conflito Interno: <b>Conflito entre lealdades ou alianças.</b>",
+            "Conflito Interno: <b>Medo de fracassar ou decepcionar alguém.</b>",
+            "Conflito Interno: <b>Luta contra tentações ou impulsos negativos.</b>",
+            "Conflito Interno: <b>Enfrentar memórias ou traumas passados.</b>",
+            "Conflito Interno: <b>Equilibrar necessidades pessoais com responsabilidades maiores.</b>",
+            "Conflito Interno: <b>Escolher entre dois caminhos ou opções igualmente atraentes ou perigosas.</b>",
+            "Conflito Interno: <b>Lidar com a perda, luto ou arrependimento.</b>",
+            "Conflito Interno: <b>Enfrentar preconceitos, suposições ou expectativas culturais ou sociais.</b>",
+            "Conflito Interno: <b>Crescimento pessoal, autoaceitação ou autoconhecimento.</b>",
+        ],
     ],
     inesperado_oracle: [
         "<b>Previsão</b> - Estabeleça uma trama para ser a trama principal para a próxima cena. A cena atual deve então se encaminhar ao seu final e seguir em direção à próxima cena.",
@@ -4771,10 +4806,10 @@ let oracleResult = [
 ];
 
 let enredoResult = [
-    { label: "Origem", ora: "enredo_origem", msg: "O que desencadeou o evento inicial" }, // (O que desencadeou o evento inicial)
-    { label: "Conexão", ora: "enredo_conexao", msg: "Como o evento inicial se conecta ao personagem" }, // (Como o evento inicial se conecta ao personagem)
-    { label: "Consequência", ora: "enredo_consequencia", msg: "O que acontece como resultado do evento inicial" }, // (O que acontece como resultado do evento inicial)
-    { label: "Desafio", ora: "enredo_desafio", msg: "Obstáculos ou dificuldades enfrentadas pelo personagem" }, // (Obstáculos ou dificuldades enfrentadas pelo personagem)
+    { label: "Origem", ora: "enredo_origem", valor:'', msg: "O que desencadeou o <b>EVENTO INICIAL</b>." }, // (O que desencadeou o evento inicial)
+    { label: "Conexão", ora: "enredo_conexao", valor:'', msg: "Como o <b>EVENTO INICIAL</b> se conecta ao personagem." }, // (Como o evento inicial se conecta ao personagem)
+    { label: "Consequência", ora: "enredo_consequencia", valor:'', msg: "O que acontece como resultado do <b>EVENTO INICIAL</b>." }, // (O que acontece como resultado do evento inicial)
+    { label: "Desafio", ora: "enredo_desafio", valor:'', msg: "Obstáculos ou dificuldades enfrentadas pelo personagem no <b>EVENTO INICIAL</b>." }, // (Obstáculos ou dificuldades enfrentadas pelo personagem)
 ]
 
 let missaoResult = [
