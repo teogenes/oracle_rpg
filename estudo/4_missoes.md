@@ -211,7 +211,7 @@
         Efeitos colaterais, consequências ou repercussões.
         Reviravoltas, surpresas ou revelações inesperadas.
 **Exploração**
-    Local a ser Explorado (rolar 1d10):
+    1. Local a ser Explorado (rolar 1d10):
         Ruínas antigas ou cidade perdida.
         Caverna, mina ou complexo subterrâneo.
         Floresta densa, selva ou pântano.
@@ -222,7 +222,7 @@
         Fortaleza abandonada ou castelo assombrado.
         Plano astral, dimensão ou realidade alternativa.
         Laboratório, instalação ou base secreta.
-    Objetivo da Exploração (rolar 1d10):
+    2. Objetivo da Exploração (rolar 1d10):
         Descobrir um artefato ou objeto valioso.
         Mapear ou documentar a área.
         Estabelecer uma rota comercial ou viagem.
@@ -233,7 +233,7 @@
         Encontrar uma cura, remédio ou solução para um problema.
         Entrar em contato com uma civilização desconhecida ou seres místicos.
         Conquistar ou reivindicar a área para uma causa ou grupo.
-    Desafio Adicional ou Complicação (rolar 1d10):
+    3. Desafio Adicional ou Complicação (rolar 1d10):
         Perigos ambientais ou condições extremas.
         Fauna ou flora hostil.
         Inimigos, rivais ou competidores.
@@ -245,7 +245,7 @@
         Consequências inesperadas ou efeitos colaterais.
         Reviravoltas, surpresas ou revelações.
 **Transporte**
-    Tipo de Transporte (rolar 1d10):
+    1. Tipo de Transporte (rolar 1d10):
         Carroça ou carruagem.
         Navio ou barco.
         Montarias terrestres (cavalos, camelos, etc.).
@@ -256,7 +256,7 @@
         Portais mágicos ou teletransporte.
         Veículos futuristas (hovercrafts, naves espaciais, etc.).
         Meios de transporte incomuns (trens-fantasmas, barcos voadores, etc.).
-    Objetivo do Transporte (rolar 1d10):
+    2. Objetivo do Transporte (rolar 1d10):
         Entregar uma carga valiosa ou sensível.
         Transportar passageiros importantes ou VIPs.
         Escoltar uma caravana ou comboio.
@@ -267,7 +267,7 @@
         Realizar uma missão de resgate ou busca.
         Enfrentar um desafio específico do transporte (navegação difícil, terreno hostil, etc.).
         Realizar uma operação secreta ou disfarçada.
-    Desafio Adicional ou Complicação (rolar 1d10):
+    3. Desafio Adicional ou Complicação (rolar 1d10):
         Condições climáticas adversas ou fenômenos naturais.
         Falhas mecânicas, acidentes ou avarias.
         Inimigos, bandidos ou piratas.
@@ -279,3 +279,36 @@
         Consequências inesperadas ou efeitos colaterais.
         Reviravoltas, surpresas ou revelações
 **Desafio de habilidades**
+    1. Tipo de Habilidade:
+        Força
+        Destreza
+        Constituição
+        Inteligência
+        Sabedoria
+        Carisma
+        Perícia específica (furtividade, persuasão, etc.)
+        Magia ou poderes sobrenaturais
+        Conhecimento ou habilidades técnicas
+        Coordenação ou trabalho em equipe
+    2. Contexto do Desafio:
+        Competição ou duelo
+        Resgate ou salvamento
+        Persuasão ou negociação
+        Investigação ou busca por informações
+        Desarmar ou neutralizar uma ameaça
+        Construção ou reparo
+        Sobrevivência ou orientação
+        Entretenimento ou performance
+        Manipulação ou engano
+        Enigma ou quebra-cabeça
+    3. Consequências ou Complicações:
+        Perda de tempo ou atraso
+        Danos materiais ou perda de recursos
+        Perda de reputação ou respeito
+        Lesões, doenças ou condições adversas
+        Atenção indesejada ou inimigos
+        Conflitos internos ou desentendimentos
+        Efeitos colaterais ou consequências não intencionais
+        Enfraquecimento de alianças ou amizades
+        Perda de oportunidades ou fechamento de opções
+        Desafios adicionais ou problemas em cascata

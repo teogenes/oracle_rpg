@@ -1,21 +1,21 @@
 params = {
     el: '#app',
     data: {
-        dados:21,
-        historicos: [],
-        oracleValid: false,
         enredoValid: false,
         aventuraValid: false,
         eventoValid:false,
-        missaoValid: true,
+        missaoValid: false,
         missaoMaisValid: false,
+        localValid: true,
         vampOrecleValid: false,
+        oracleValid: false,
         vampPersValid: false,
         ressoValid: false,
         yokaiValid: false,
         shinigameValid: false,
-        localValid: false,
         jogadasValid: false,
+        historicos: [],
+        dados:21,
         enredoList: enredoResult,
         oracleList: oracleResult,
         missaoList: missaoResult,
@@ -64,7 +64,7 @@ params = {
         },
         localClick: function(){
             for(vE in this.localList){
-                this.localList[vE].msg = "";
+                this.localList[vE].valor = "";
             }
         },
         ressoClick: function(){
@@ -157,6 +157,7 @@ params = {
             let arr = [
                 'missao_combate', 'missao_busca', 'missao_infiltracao', 'missao_diplomacia',
                 'missao_protecao','missao_investigacao','missao_exploracao', 'missao_transporte',
+                'missao_habilidades',
             ]
             if( arr.includes(ora)){
                 this.combinacao_opcao(ora, this.missaoList, 3,ind)
@@ -166,6 +167,13 @@ params = {
         },
         execMaisMissao: function(ora, ind){
             this.missaoMaisList[ind].valor = oracle[ora].random()
+        },
+        execLocal: function(ora, ind){
+            if(ora == 'local_gerar'){
+                this.combinacao_opcao(ora, this.localList, 4, ind)
+            } else {
+                this.localList[ind].msg = oracle[ora].random();
+            }
         },
         execEvento: function(ora, ind){
             if(ora == 'option_aventura'){
@@ -214,19 +222,6 @@ params = {
                 this.vPersonsList[ind].msg = oracle[ora].random();
             }
             
-        },
-        execLocal: function(ora, ind){
-            let list_acao = { 
-                'masmorra_caminho':7,'masmorra_local':2, 'localidade_hotodama':6, 'complemento_local_solo':13 ,
-                'encontro_hitodama':4, 'enigma_hitodama':2, 'cena_interna':8,
-                'cidade_criar':15,
-            }
-
-            if(ora in list_acao){
-                this.combinacao_opcao(ora, this.localList, list_acao[ora], ind)
-            } else {
-                this.localList[ind].msg = oracle[ora].random();
-            }
         },
         execShini: function(ora, ind){
             if(ora == 'probl_pessoal' || ora == 'probl_relacional' || ora == 'probl_local' || ora == 'probl_regional' || ora == 'probl_federal' || ora == 'probl_planetario'){
