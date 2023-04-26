@@ -4,9 +4,9 @@ params = {
         dados:21,
         historicos: [],
         oracleValid: false,
-        enredoValid: true,
+        enredoValid: false,
+        cenarioValid: true,
         aventuraValid: false,
-        cenarioValid: false,
         missaoValid: false,
         vampOrecleValid: false,
         vampPersValid: false,
@@ -81,7 +81,7 @@ params = {
         },
         aventuraClick: function(){
             for(vE in this.cenarioList){
-                this.cenarioList[vE].msg = "";
+                this.cenarioList[vE].valor = "";
             }
         },
         eventClick: function(){
@@ -131,15 +131,21 @@ params = {
                 this.enredoList[ind].valor = oracle[ora].random()
             }
         },
+        execCenario: function(ora, ind){
+            if(ora == 'aventura_ideias'){
+                this.combinacao_opcao(ora, this.cenarioList, 5,ind)
+            }else if(ora == 'aventura_ideias_dois'){
+                this.combinacao_opcao(ora, this.cenarioList, 6,ind)
+            }else{
+                this.cenarioList[ind].valor = oracle[ora].random() 
+            }
+        },
         execEvento: function(ora, ind){
             if(ora == 'option_aventura'){
                 this.combinacao_opcao(ora, this.eventoList, 4,ind)
             }else{
                 this.eventoList[ind].msg = oracle[ora].random() 
             }
-        },
-        execCenario: function(ora, ind){
-            this.cenarioList[ind].msg = oracle[ora].random() 
         },
         execMissao: function(ora, ind){
             this.missaoList[ind].msg = oracle[ora].random()

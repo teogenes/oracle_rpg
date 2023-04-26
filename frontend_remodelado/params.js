@@ -1312,6 +1312,120 @@ let oracle = {
             "Resolução Potencial: <b>Magia, tecnologia ou habilidades especiais.</b>",
         ],
     ],
+
+    aventura_ideias:[
+        [ // (Como a aventura começa ou o que chama a atenção dos personagens)
+            "Ganchos de Aventura: <b>Uma carta, mensagem ou pedido de ajuda.</b>",
+            "Ganchos de Aventura: <b>Um rumor, boato ou notícia intrigante.</b>",
+            "Ganchos de Aventura: <b>Um encontro casual com um personagem misterioso.</b>",
+            "Ganchos de Aventura: <b>Uma descoberta inesperada ou evento sobrenatural.</b>",
+            "Ganchos de Aventura: <b>Uma recompensa, promessa ou contrato lucrativo.</b>",
+            "Ganchos de Aventura: <b>Um desastre natural, ataque ou ameaça iminente.</b>",
+            "Ganchos de Aventura: <b>Um desafio, competição ou torneio.</b>",
+            "Ganchos de Aventura: <b>Um sonho, visão ou profecia enigmática.</b>",
+            "Ganchos de Aventura: <b>Um crime, mistério ou desaparecimento inexplicável.</b>",
+            "Ganchos de Aventura: <b>Um dilema moral, ético ou pessoal.</b>",
+        ],
+        [ // (O que os personagens precisam alcançar ou realizar)
+            "Objetivos: <b>Resgatar, proteger ou escoltar alguém.</b>",
+            "Objetivos: <b>Recuperar ou encontrar um objeto, artefato ou tesouro.</b>",
+            "Objetivos: <b>Derrotar ou neutralizar um inimigo, monstro ou ameaça.</b>",
+            "Objetivos: <b>Investigar, solucionar ou expor um mistério ou conspiração.</b>",
+            "Objetivos: <b>Explorar, mapear ou colonizar um território desconhecido.</b>",
+            "Objetivos: <b>Construir, consertar ou defender uma estrutura ou local.</b>",
+            "Objetivos: <b>Estabelecer alianças, resolver disputas ou negociar acordos.</b>",
+            "Objetivos: <b>Aprender, adquirir ou dominar um conhecimento ou habilidade.</b>",
+            "Objetivos: <b>Cumprir uma missão, promessa ou destino pessoal.</b>",
+            "Objetivos: <b>Salvar, libertar ou redimir um personagem ou grupo.</b>",
+        ],
+        [ // (Os obstáculos, adversidades ou dificuldades enfrentadas pelos personagens)
+            "Desafios: <b>Combate contra inimigos, monstros ou oponentes.</b>",
+            "Desafios: <b>Enigmas, quebra-cabeças ou desafios intelectuais.</b>",
+            "Desafios: <b>Armadilhas, emboscadas ou perigos ambientais.</b>",
+            "Desafios: <b>Negociação, persuasão ou diplomacia.</b>",
+            "Desafios: <b>Furtividade, espionagem ou infiltração.</b>",
+            "Desafios: <b>Navegação, rastreamento ou sobrevivência na natureza.</b>",
+            "Desafios: <b>Magia, feitiços ou fenômenos sobrenaturais.</b>",
+            "Desafios: <b>Testes de habilidade, talento ou perícia.</b>",
+            "Desafios: <b>Conflitos morais, éticos ou pessoais.</b>",
+            "Desafios: <b>Competições, corridas ou duelos.</b>",
+        ],
+        [ // (Personagens que ajudam ou atrapalham os personagens)
+            "Aliados e Antagonistas: <b>Um velho amigo, mentor ou aliado.</b>",
+            "Aliados e Antagonistas: <b>Um rival, inimigo ou traidor.</b>",
+            "Aliados e Antagonistas: <b>Um personagem enigmático, ambíguo ou imprevisível.</b>",
+            "Aliados e Antagonistas: <b>Um monstro, criatura ou besta selvagem.</b>",
+            "Aliados e Antagonistas: <b>Um grupo, facção ou organização.</b>",
+            "Aliados e Antagonistas: <b>Um líder, governante ou autoridade.</b>",
+            "Aliados e Antagonistas: <b>Um NPC (personagem não jogador) em perigo ou necessidade.</b>",
+            "Aliados e Antagonistas: <b>Um personagem com segredos, conhecimento ou poder.</b>",
+            "Aliados e Antagonistas: <b>Um personagem com laços pessoais, familiares ou românticos.</b>",
+            "Aliados e Antagonistas: <b>Um personagem sobrenatural, divino ou extraterrestre.</b>",
+        ],
+        [ // (Como a aventura termina e as consequências para os personagens)
+            "Resoluções: <b>Vitória ou sucesso claro, com consequências positivas.</b>",
+            "Resoluções: <b>Derrota ou fracasso, levando a consequências negativas.</b>",
+            "Resoluções: <b>Compromisso, acordo ou solução intermediária.</b>",
+            "Resoluções: <b>Conclusão ambígua, incerta ou aberta a interpretação.</b>",
+            "Resoluções: <b>Transformação, mudança ou evolução dos personagens.</b>",
+            "Resoluções: <b>Revelação, descoberta ou aprendizado de informações importantes.</b>",
+            "Resoluções: <b>Fuga, retirada ou abandono da missão.</b>",
+            "Resoluções: <b>Sacrifício, perda ou preço alto pago pelo sucesso.</b>",
+            "Resoluções: <b>Renovação, renascimento ou redenção dos personagens.</b>",
+            "Resoluções: <b>Um gancho para uma nova aventura ou continuação da história.</b>",
+        ],
+    ],
+    aventura_ideias_dois:[
+        [ //
+            "Ganchos de Aventura: <b>Pedido de ajuda ou uma mensagem urgente.</b>",
+            "Ganchos de Aventura: <b>Rumor ou boato intrigante.</b>",
+            "Ganchos de Aventura: <b>Encontro casual com um personagem misterioso.</b>",
+            "Ganchos de Aventura: <b>Descoberta inesperada ou evento sobrenatural.</b>",
+            "Ganchos de Aventura: <b>Recompensa lucrativa ou contrato.</b>",
+            "Ganchos de Aventura: <b>Desastre natural, ataque ou ameaça iminente.</b>",
+        ],
+        [ //
+            "Objetivos: <b>Resgatar, proteger ou escoltar alguém.</b>",
+            "Objetivos: <b>Recuperar ou encontrar um objeto, artefato ou tesouro.</b>",
+            "Objetivos: <b>Derrotar ou neutralizar um inimigo, monstro ou ameaça.</b>",
+            "Objetivos: <b>Investigar, solucionar ou expor um mistério ou conspiração.</b>",
+            "Objetivos: <b>Explorar, mapear ou colonizar um território desconhecido.</b>",
+            "Objetivos: <b>Estabelecer alianças, resolver disputas ou negociar acordos.</b>",
+        ],
+        [ //
+            "Desafios: <b>Combate contra inimigos, monstros ou oponentes.</b>",
+            "Desafios: <b>Enigmas, quebra-cabeças ou desafios intelectuais.</b>",
+            "Desafios: <b>Armadilhas, emboscadas ou perigos ambientais.</b>",
+            "Desafios: <b>Negociação, persuasão ou diplomacia.</b>",
+            "Desafios: <b>Furtividade, espionagem ou infiltração.</b>",
+            "Desafios: <b>Magia, feitiços ou fenômenos sobrenaturais.</b>",
+        ],
+        [ //
+            "Aliados e Antagonistas: <b>Um velho amigo, mentor ou aliado.</b>",
+            "Aliados e Antagonistas: <b>Um rival, inimigo ou traidor.</b>",
+            "Aliados e Antagonistas: <b>Um personagem enigmático, ambíguo ou imprevisível.</b>",
+            "Aliados e Antagonistas: <b>Um monstro, criatura ou besta selvagem.</b>",
+            "Aliados e Antagonistas: <b>Um grupo, facção ou organização.</b>",
+            "Aliados e Antagonistas: <b>Um líder, governante ou autoridade.</b>",
+        ],
+        [ //
+            "Resoluções: <b>Vitória ou sucesso claro, com consequências positivas.</b>",
+            "Resoluções: <b>Derrota ou fracasso, levando a consequências negativas.</b>",
+            "Resoluções: <b>Compromisso, acordo ou solução intermediária.</b>",
+            "Resoluções: <b>Conclusão ambígua, incerta ou aberta a interpretação.</b>",
+            "Resoluções: <b>Transformação, mudança ou evolução dos personagens.</b>",
+            "Resoluções: <b>Revelação, descoberta ou aprendizado de informações importantes.</b>",
+        ],
+        [ //
+            "Continuidade: <b>Fuga, retirada ou abandono da missão.</b>",
+            "Continuidade: <b>Sacrifício, perda ou preço alto pago pelo sucesso.</b>",
+            "Continuidade: <b>Renovação, renascimento ou redenção dos personagens.</b>",
+            "Continuidade: <b>Um gancho para uma nova aventura ou continuação da história.</b>",
+            "Continuidade: <b>Consequências a longo prazo ou repercussões no mundo.</b>",
+            "Continuidade: <b>Novos aliados, inimigos ou desafios emergentes.</b>",
+        ],
+    ],
+
     inesperado_oracle: [
         "<b>Previsão</b> - Estabeleça uma trama para ser a trama principal para a próxima cena. A cena atual deve então se encaminhar ao seu final e seguir em direção à próxima cena.",
         "<b>Encerrando</b> - A trama principal termina ou avança substancialmente nesta cena por decreto narrativo. Isto não significa que a trama principal não possa criar tramas complementares.",
@@ -1532,7 +1646,7 @@ let oracle = {
         "O vilão manipulou todos desde o início",
     ],
 
-    um_a: [
+    aventora_um: [
         "Cidade",
         "Vilão",
         "Princesa",
@@ -1567,7 +1681,7 @@ let oracle = {
         "Mendigo",
         "Famíliar",
     ],
-    que_foi: [
+    aventura_foi: [
         "Esquecido",
         "Construído",
         "Formado",
@@ -1590,7 +1704,7 @@ let oracle = {
         "Expulso",
         "Ferido",
     ],
-    e_esta: [
+    aventura_esta: [
         "Abaixo Do Mar",
         "Escondido Numa Masmorra",
         "Em Reino Secreto",
@@ -1630,7 +1744,7 @@ let oracle = {
         "Na Prisão",
         "Em Um Campo Aberto",
     ],
-    complemento_dois: [
+    aventura_complemento: [
         "Levar algo ao lugar",
         "Fazer um acordo",
         "Viajar para lugar",
@@ -2019,7 +2133,7 @@ let oracle = {
         "Tem uma maldição inconveniente que precisa ser tirada.",
     ],
 
-    missao_hitodama: [
+    aventora_heroi: [
         "Se Opondo",
         "Movendo-Se",
         "Prejudicando Ou Enganando",
@@ -2635,7 +2749,7 @@ let oracle = {
         "Um NPC nativo.",
         "Um encontro acontece (Aba Localidadde)",
     ],
-    alal_hitodama: [
+    aventura_algo: [
         "(Algo ou alguém) de interesse do NPC.",
         "(Algo ou alguém) que altera o status atual deste local.",
         "(Algo ou alguém) que é de seu interesse.",
@@ -5007,10 +5121,20 @@ let enredoResult = [
     { label: "Resolução", ora: "enredo_resolucao", valor:'', msg: "<b>RESOLUÇÃO</b> da aventura"}, // (como a aventura termina)
 ]
 
+let cenarioResult = [
+    { label: "Ideia Um", ora: "aventura_ideias", valor:"", msg: "" },
+    { label: "Ideia Dois", ora: "aventura_ideias_dois", valor:"", msg: "" },
+    { label: "Herois", ora: "aventora_heroi", valor:"", msg: "" },
+    { label: "Um(a)", ora: "aventora_um", valor:"", msg: "" },
+    { label: "Que foi", ora: "aventura_foi", valor:"", msg: "" },
+    { label: "Algo/Alguem", ora: "aventura_algo", valor:"", msg: "" },
+    { label: "E está", ora: "aventura_esta", valor:"", msg: "" },
+    { label: "Que tá", ora: "aventura_complemento", valor:"", msg: "" },
+];
 
 let missaoResult = [
     { label: "Tema", ora: "tema_solo", msg: "" },
-    { label: "Quer", ora: "missao_hitodama", msg: "" },
+    { label: "Quer", ora: "aventora_heroi", msg: "" },
     { label: "o/a/um/para", ora: "missao_objetivo", msg: "" },
     { label: "No(a)", ora: "missao_local", msg: "" },
     { label: "Lida com", ora: "missao_obstaculo", msg: "" },
@@ -5045,14 +5169,7 @@ let eventoResult = [
     { label: "Inesperado", ora: "inesperado_oracle", msg: "" },
 ];
 
-let cenarioResult = [
-    { label: "Herois", ora: "missao_hitodama", msg: "" },
-    { label: "Um(a)", ora: "um_a", msg: "" },
-    { label: "Que foi", ora: "que_foi", msg: "" },
-    { label: "Algo/Alguem", ora: "alal_hitodama", msg: "" },
-    { label: "E está", ora: "e_esta", msg: "" },
-    { label: "Que tá", ora: "complemento_dois", msg: "" },
-];
+
 
 let ressoResult = [
     { label: "ubarna", ora: "cena_ubarna", msg: "Cena Ubarna" },

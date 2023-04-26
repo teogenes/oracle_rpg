@@ -204,7 +204,7 @@
                             <tbody>
                                 <tr v-for="(olista, ind) in eventoList">
                                     <td style="width:168px;" ><a :title="olista.label" @click="execEvento(olista.ora, ind)" class="waves-effect waves-light btn-small  brown darken-3" >{{olista.label}}</a></td>
-                                    <td v-html="olista.msg"></td>
+                                    <td v-html="olista.msg "></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -222,7 +222,7 @@
                             <tbody>
                                 <tr v-for="(olista, ind) in cenarioList">
                                     <td style="width:168px;" ><a :title="olista.label" @click="execCenario(olista.ora, ind)" class="waves-effect waves-light btn-small  brown darken-3" >{{olista.label}}</a></td>
-                                    <td v-html="olista.msg"></td>
+                                    <td v-html="olista.valor || olista.msg"></td>
                                 </tr>
                             </tbody>
                         </table>

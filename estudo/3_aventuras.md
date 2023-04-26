@@ -1,7 +1,7 @@
 # AVENTURAS
 
 **Ideias**
-    Ganchos de Aventura (Como a aventura começa ou o que chama a atenção dos personagens):
+    1. Ganchos de Aventura (Como a aventura começa ou o que chama a atenção dos personagens):
         Uma carta, mensagem ou pedido de ajuda.
         Um rumor, boato ou notícia intrigante.
         Um encontro casual com um personagem misterioso.
@@ -12,7 +12,7 @@
         Um sonho, visão ou profecia enigmática.
         Um crime, mistério ou desaparecimento inexplicável.
         Um dilema moral, ético ou pessoal.
-        Objetivos (O que os personagens precisam alcançar ou realizar):
+    2. Objetivos (O que os personagens precisam alcançar ou realizar):
         Resgatar, proteger ou escoltar alguém.
         Recuperar ou encontrar um objeto, artefato ou tesouro.
         Derrotar ou neutralizar um inimigo, monstro ou ameaça.
@@ -23,7 +23,7 @@
         Aprender, adquirir ou dominar um conhecimento ou habilidade.
         Cumprir uma missão, promessa ou destino pessoal.
         Salvar, libertar ou redimir um personagem ou grupo.
-    Desafios (Os obstáculos, adversidades ou dificuldades enfrentadas pelos personagens):
+    3. Desafios (Os obstáculos, adversidades ou dificuldades enfrentadas pelos personagens):
         Combate contra inimigos, monstros ou oponentes.
         Enigmas, quebra-cabeças ou desafios intelectuais.
         Armadilhas, emboscadas ou perigos ambientais.
@@ -34,7 +34,7 @@
         Testes de habilidade, talento ou perícia.
         Conflitos morais, éticos ou pessoais.
         Competições, corridas ou duelos.
-    Aliados e Antagonistas (Personagens que ajudam ou atrapalham os personagens):
+    4. Aliados e Antagonistas (Personagens que ajudam ou atrapalham os personagens):
         Um velho amigo, mentor ou aliado.
         Um rival, inimigo ou traidor.
         Um personagem enigmático, ambíguo ou imprevisível.
@@ -45,7 +45,7 @@
         Um personagem com segredos, conhecimento ou poder.
         Um personagem com laços pessoais, familiares ou românticos.
         Um personagem sobrenatural, divino ou extraterrestre.
-    Resoluções (Como a aventura termina e as consequências para os personagens):
+    5. Resoluções (Como a aventura termina e as consequências para os personagens):
         Vitória ou sucesso claro, com consequências positivas.
         Derrota ou fracasso, levando a consequências negativas.
         Compromisso, acordo ou solução intermediária.
