@@ -5,9 +5,10 @@ params = {
         historicos: [],
         oracleValid: false,
         enredoValid: false,
-        cenarioValid: false,
         aventuraValid: false,
+        eventoValid:false,
         missaoValid: true,
+        missaoMaisValid: false,
         vampOrecleValid: false,
         vampPersValid: false,
         ressoValid: false,
@@ -18,8 +19,9 @@ params = {
         enredoList: enredoResult,
         oracleList: oracleResult,
         missaoList: missaoResult,
+        missaoMaisList: missaoMaisResult,
+        aventuraList: aventuraResult,
         eventoList: eventoResult,
-        cenarioList: cenarioResult,
         yokaiList: yokaiResult,
         ressoList: ressoResult,
         vPersonsList: vampPersonResult,
@@ -29,15 +31,21 @@ params = {
     },
     methods:{
         aba_clear: function(troca){
-            let arr = ['enredoValid','oracleValid', 'aventuraValid', 'cenarioValid', 
-            'missaoValid', 'vampOrecleValid', 'vampPersValid', 'ressoValid', 
-            'yokaiValid', 'shinigameValid', 'localValid', 'jogadasValid']
-            eval(`this.${troca}= !this.${troca}`)
-            for(d in arr){
-                if(arr[d] != troca){
-                    eval(`this.${arr[d]}= false`)
+            let arrClear = [
+                'enredoValid','aventuraValid','missaoValid',
+                'missaoMaisValid','localValid','ressoValid',
+                'eventoValid','oracleValid','vampPersValid',
+                'shinigameValid','jogadasValid','yokaiValid'
+            ]
+            
+            eval(`this.${troca} = !this.${troca}`)
+            
+            for(let i = 0;i < arrClear.length;i++){
+                if(arrClear[i] != troca){
+                    eval(`this.${arrClear[i]} = false`)
                 }
             }
+
         },
         oracleClick: function(){
             for(vE in this.oracleList){
@@ -76,12 +84,17 @@ params = {
         },
         missaoClick: function(){
             for(vE in this.missaoList){
-                this.missaoList[vE].msg = "";
+                this.missaoList[vE].valor = "";
+            }
+        },
+        missaoMaisClick: function(){
+            for(vE in this.missaoMaisList){
+                this.missaoMaisList[vE].valor = "";
             }
         },
         aventuraClick: function(){
-            for(vE in this.cenarioList){
-                this.cenarioList[vE].valor = "";
+            for(vE in this.aventuraList){
+                this.aventuraList[vE].valor = "";
             }
         },
         eventClick: function(){
@@ -131,14 +144,28 @@ params = {
                 this.enredoList[ind].valor = oracle[ora].random()
             }
         },
-        execCenario: function(ora, ind){
+        execAventura: function(ora, ind){
             if(ora == 'aventura_ideias'){
-                this.combinacao_opcao(ora, this.cenarioList, 5,ind)
+                this.combinacao_opcao(ora, this.aventuraList, 5,ind)
             }else if(ora == 'aventura_ideias_dois'){
-                this.combinacao_opcao(ora, this.cenarioList, 6,ind)
+                this.combinacao_opcao(ora, this.aventuraList, 6,ind)
             }else{
-                this.cenarioList[ind].valor = oracle[ora].random() 
+                this.aventuraList[ind].valor = oracle[ora].random() 
             }
+        },
+        execMissao: function(ora, ind){
+            let arr = [
+                'missao_combate', 'missao_busca', 'missao_infiltracao', 'missao_diplomacia',
+                'missao_protecao','missao_investigacao','missao_exploracao', 'missao_transporte',
+            ]
+            if( arr.includes(ora)){
+                this.combinacao_opcao(ora, this.missaoList, 3,ind)
+            }else{
+                this.missaoList[ind].valor = oracle[ora].random() 
+            }
+        },
+        execMaisMissao: function(ora, ind){
+            this.missaoMaisList[ind].valor = oracle[ora].random()
         },
         execEvento: function(ora, ind){
             if(ora == 'option_aventura'){
@@ -146,9 +173,6 @@ params = {
             }else{
                 this.eventoList[ind].msg = oracle[ora].random() 
             }
-        },
-        execMissao: function(ora, ind){
-            this.missaoList[ind].msg = oracle[ora].random()
         },
         execResso: function(ora, ind){
             
