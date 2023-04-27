@@ -171,6 +171,10 @@ params = {
         execLocal: function(ora, ind){
             if(ora == 'local_gerar'){
                 this.combinacao_opcao(ora, this.localList, 4, ind)
+            }else if(ora == 'local_historia_cidade'){
+                this.combinacao_opcao(ora, this.localList, 5, ind)
+            }else if(ora =='local_cidade'){
+                this.combinacao_opcao(ora, this.localList, 15, ind)
             } else {
                 this.localList[ind].msg = oracle[ora].random();
             }

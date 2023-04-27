@@ -212,3 +212,60 @@
         Guerra de recursos
         Conquista
         Resistência
+
+**Historia Cidade**
+    1. Fundação:
+        Descoberta de recursos naturais valiosos
+        Estabelecida por um líder visionário
+        Fundada como uma colônia
+        Criada como um refúgio para um grupo étnico ou religioso
+        Estabelecida como um posto comercial
+        Construída como uma fortaleza estratégica
+        Estabelecida após um desastre natural
+        Surgiu como resultado de um evento mágico
+        Fundada como uma utopia
+        Criada por um acordo entre facções rivais
+    2. Desenvolvimento:
+        Crescimento populacional rápido
+        Expansão territorial
+        Desenvolvimento tecnológico ou mágico
+        Auge cultural
+        Estagnação
+        Colapso econômico
+        Período de paz e prosperidade
+        Invasão ou ocupação
+        Grande migração
+        Reformas políticas ou sociais
+    3. Evento Histórico Significativo:
+        Guerra devastadora
+        Desastre natural
+        Epidemia ou praga
+        Revolução ou golpe de Estado
+        Descoberta ou invenção importante
+        Visita de uma figura lendária ou divina
+        Profecia ou presságio
+        Fusão ou aliança entre facções
+        Conquista ou expansão
+        Grande festival ou celebração
+    4. Desafio Atual:
+        Ameaça externa
+        Conflito interno ou divisão
+        Crise política ou de liderança
+        Problema econômico ou de recursos
+        Crescimento desenfreado ou urbanização
+        Dissidência religiosa ou cultural
+        Ameaça mágica ou sobrenatural
+        Desastre natural iminente
+        Conspiração ou traição
+        Revolta popular ou rebelião
+    5. Perspectiva Futura:
+        Esperança e renovação
+        Desespero e declínio
+        Mudança e adaptação
+        Crescimento e expansão
+        Luta pelo poder ou controle
+        Reconciliação ou unificação
+        Descoberta ou inovação
+        Desafios e provações
+        Legado e tradição
+        Mistério e incerteza
