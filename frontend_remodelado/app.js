@@ -174,6 +174,8 @@ params = {
                 this.combinacao_opcao(ora, this.localList, 4, ind)
             }else if(ora == 'local_historia_cidade'){
                 this.combinacao_opcao(ora, this.localList, 5, ind)
+            }else if(ora ==  'local_cena_interna'){
+                this.combinacao_opcao(ora, this.localList, 8, ind)
             }else if(ora =='local_cidade'){
                 this.combinacao_opcao(ora, this.localList, 15, ind)
             } else {
