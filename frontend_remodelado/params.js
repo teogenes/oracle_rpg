@@ -5133,8 +5133,8 @@ let oracle = {
 /*********************************** ABAS ************************************************ */
 
 let oracleResult = [
-    { label: "Oraculo Geral", ora: "pergunta_oracle", msg: "" },
-    { label: "Dificuldade", ora: "dificuldade_oracle", msg: "" },
+    { label: "Oraculo Geral", ora: "pergunta_oracle", valor:'', msg: "O oraculo das perguntas" },
+    { label: "Dificuldade", ora: "dificuldade_oracle", valor:'', msg: "Dificuldade da ação da pergunta." },
 ];
 
 let enredoResult = [

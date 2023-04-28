@@ -79,7 +79,7 @@
                             <tbody>
                                 <tr v-for="(olista, ind) in oracleList">
                                     <td style="width:168px;" ><a :title="olista.label" @click="execOracle(olista.ora, ind)" class="waves-effect waves-light btn-small  brown darken-3" >{{olista.label}}</a></td>
-                                    <td v-html="olista.msg" ></td>
+                                    <td v-html="olista.valor || olista.msg" ></td>
                                 </tr>
                             </tbody>
                         </table>

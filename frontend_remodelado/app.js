@@ -8,9 +8,9 @@ params = {
         missaoMaisValid: false,
         localValid: false,
         cenaValid: false,
-        eventoValid:true,
+        eventoValid:false,
         vampOrecleValid: false,
-        oracleValid: false,
+        oracleValid: true,
         vampPersValid: false,
         relacaoValid: false,
         yokaiValid: false,
@@ -131,7 +131,7 @@ params = {
             }else if(ora == 'pergunta_oracle'){
                 this.combinacao_opcao(ora, this.oracleList, 3,ind)
             }else{
-                this.oracleList[ind].msg = oracle[ora].random()
+                this.oracleList[ind].valor = oracle[ora].random()
             }
         },
         execEnredo: function(ora, ind){
