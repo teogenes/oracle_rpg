@@ -7,11 +7,11 @@ params = {
         eventoValid:false,
         missaoValid: false,
         missaoMaisValid: false,
-        localValid: true,
+        localValid: false,
+        cenaValid: true,
         vampOrecleValid: false,
         oracleValid: false,
         vampPersValid: false,
-        ressoValid: false,
         yokaiValid: false,
         shinigameValid: false,
         jogadasValid: false,
@@ -24,7 +24,7 @@ params = {
         aventuraList: aventuraResult,
         eventoList: eventoResult,
         yokaiList: yokaiResult,
-        ressoList: ressoResult,
+        cenaList: cenaResult,
         vPersonsList: vampPersonResult,
         shiniList: shiniResult,
         localList: localResult,
@@ -34,7 +34,7 @@ params = {
         aba_clear: function(troca){
             let arrClear = [
                 'enredoValid','aventuraValid','missaoValid',
-                'missaoMaisValid','localValid','ressoValid',
+                'missaoMaisValid','localValid','cenaValid',
                 'eventoValid','oracleValid','vampPersValid',
                 'shinigameValid','jogadasValid','yokaiValid'
             ]
@@ -68,9 +68,9 @@ params = {
                 this.localList[vE].valor = "";
             }
         },
-        ressoClick: function(){
-            for(vE in this.ressoList){
-                this.ressoList[vE].msg = "";
+        cenaClick: function(){
+            for(vE in this.cenaList){
+                this.cenaList[vE].valor = "";
             }
         },
         yokaiClick: function(){
@@ -186,22 +186,23 @@ params = {
                 this.localList[ind].valor = oracle[ora].random();
             }
         },
+        execCena: function(ora, ind){
+            
+            if(ora == 'cena_evento' || ora == 'cena_tipo_complicacao' || 
+                ora == 'cena_local' || ora == 'cena_eve_amb' || ora == 'cena_rumores'){
+                this.combinacao_opcao(ora, this.cenaList, 3,ind)
+            }else if(ora == 'cena_compl_amigavel' || ora == 'cena_compl_neutro' || 
+                ora == 'cena_compl_hostil' || ora == 'cena_ambiente'){
+                this.combinacao_opcao(ora, this.cenaList, 6,ind)
+            }else{
+                this.cenaList[ind].valor = oracle[ora].random()
+            }
+        },
         execEvento: function(ora, ind){
             if(ora == 'option_aventura'){
                 this.combinacao_opcao(ora, this.eventoList, 4,ind)
             }else{
                 this.eventoList[ind].msg = oracle[ora].random() 
-            }
-        },
-        execResso: function(ora, ind){
-            
-            if(ora == 'cena_medieval' || ora == 'cena_ubarna' || ora == 'cena_espacial'|| 
-                ora == 'cena_tipo_complicacao' || ora == 'cena_local' || ora == 'cena_eve_amb' || ora == 'cena_rumores'){
-                this.combinacao_opcao(ora, this.ressoList, 3,ind)
-            }else if(ora == 'cena_compl_amigavel' || ora == 'cena_compl_neutro' || ora == 'cena_compl_hostil'){
-                this.combinacao_opcao(ora, this.ressoList, 6,ind)
-            }else{
-                this.ressoList[ind].msg = oracle[ora].random()
             }
         },
         execYokai: function(ora, ind){

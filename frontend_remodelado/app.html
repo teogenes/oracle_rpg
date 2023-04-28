@@ -31,7 +31,7 @@
                         <a @click="aba_clear('missaoValid')" class="waves-effect waves-light btn-small green darken-4">Missão</a>
                         <a @click="aba_clear('missaoMaisValid')" class="waves-effect waves-light btn-small green darken-4">Missão ++</a>
                         <a @click="aba_clear('localValid')" class="waves-effect waves-light btn-small green darken-4">Localidade</a>
-                        <a @click="aba_clear('ressoValid')" class="waves-effect waves-light btn-small light-green darken-3">Cena</a>                        
+                        <a @click="aba_clear('cenaValid')" class="waves-effect waves-light btn-small light-green darken-3">Cena</a>                        
                         <a @click="aba_clear('eventoValid')" class="waves-effect waves-light btn-small green light-green darken-3">Eventos</a>
                     </div>
                     <div class="col s12">
@@ -156,20 +156,20 @@
                             </tbody>
                         </table>
 
-                        <table class="highlight" v-show="ressoValid" >
+                        <table class="highlight" v-show="cenaValid" >
                             <thead>
                                 <tr>
                                     <th colspan="2" style="text-align: center;" >CENA</th>
                                 </tr>
                                 <tr>
                                     <th>AÇÕES</th>
-                                    <th class="center"><a @click="ressoClick" class="waves-effect waves-light btn-small  yellow darken-3" >Limpar</a></th>
+                                    <th class="center"><a @click="cenaClick" class="waves-effect waves-light btn-small  yellow darken-3" >Limpar</a></th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr v-for="(olista, ind) in ressoList">
-                                    <td style="width:168px;" ><a :title="olista.label" @click="execResso(olista.ora, ind)" class="waves-effect waves-light btn-small  brown darken-3" >{{olista.label}}</a></td>
-                                    <td v-html="olista.msg" ></td>
+                                <tr v-for="(olista, ind) in cenaList">
+                                    <td style="width:168px;" ><a :title="olista.label" @click="execCena(olista.ora, ind)" class="waves-effect waves-light btn-small  brown darken-3" >{{olista.label}}</a></td>
+                                    <td v-html="olista.valor || olista.msg" ></td>
                                 </tr>
                             </tbody>
                         </table>
