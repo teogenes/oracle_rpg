@@ -4,16 +4,16 @@ params = {
     data: {
         enredoValid: false,
         aventuraValid: false,
-        eventoValid:false,
         missaoValid: false,
         missaoMaisValid: false,
         localValid: false,
-        cenaValid: true,
+        cenaValid: false,
+        eventoValid:true,
         vampOrecleValid: false,
         oracleValid: false,
         vampPersValid: false,
+        relacaoValid: false,
         yokaiValid: false,
-        shinigameValid: false,
         jogadasValid: false,
         historicos: [],
         dados:21,
@@ -26,7 +26,7 @@ params = {
         yokaiList: yokaiResult,
         cenaList: cenaResult,
         vPersonsList: vampPersonResult,
-        shiniList: shiniResult,
+        relacaoList: relacaoResult,
         localList: localResult,
         jogadasList: jogadasResult,
     },
@@ -36,7 +36,7 @@ params = {
                 'enredoValid','aventuraValid','missaoValid',
                 'missaoMaisValid','localValid','cenaValid',
                 'eventoValid','oracleValid','vampPersValid',
-                'shinigameValid','jogadasValid','yokaiValid'
+                'relacaoValid','jogadasValid','yokaiValid'
             ]
             
             eval(`this.${troca} = !this.${troca}`)
@@ -50,7 +50,7 @@ params = {
         },
         oracleClick: function(){
             for(vE in this.oracleList){
-                this.oracleList[vE].msg = "";
+                this.oracleList[vE].valor = "";
             }
         },
         enredoClick: function(){
@@ -60,7 +60,7 @@ params = {
         },
         jogadasClick: function(){
             for(vE in this.jogadasList){
-                this.jogadasList[vE].msg = "";
+                this.jogadasList[vE].valor = "";
             }
         },
         localClick: function(){
@@ -75,12 +75,12 @@ params = {
         },
         yokaiClick: function(){
             for(vE in this.yokaiList){
-                this.yokaiList[vE].msg = "";
+                this.yokaiList[vE].valor = "";
             }
         },
-        shiniClick: function(){
-            for(vE in this.shiniList){
-                this.shiniList[vE].msg = "";
+        relacaoClick: function(){
+            for(vE in this.relacaoList){
+                this.relacaoList[vE].valor = "";
             }
         },
         missaoClick: function(){
@@ -100,12 +100,12 @@ params = {
         },
         eventClick: function(){
             for(vE in this.eventoList){
-                this.eventoList[vE].msg = "";
+                this.eventoList[vE].valor = "";
             }
         },
         vampPersonClick: function(){
             for(vE in this.vPersonsList){
-                this.vPersonsList[vE].msg = "";
+                this.vPersonsList[vE].valor = "";
             }
         },
         limparDados: function(){
@@ -194,6 +194,8 @@ params = {
             }else if(ora == 'cena_compl_amigavel' || ora == 'cena_compl_neutro' || 
                 ora == 'cena_compl_hostil' || ora == 'cena_ambiente'){
                 this.combinacao_opcao(ora, this.cenaList, 6,ind)
+            }else if(ora == 'cena_rumor_detalhe'){
+                this.combinacao_opcao(ora, this.cenaList, 5,ind)
             }else{
                 this.cenaList[ind].valor = oracle[ora].random()
             }
@@ -201,8 +203,10 @@ params = {
         execEvento: function(ora, ind){
             if(ora == 'option_aventura'){
                 this.combinacao_opcao(ora, this.eventoList, 4,ind)
+            }else if(ora == 'evento_eGenerico'){
+                this.combinacao_opcao(ora, this.eventoList, 2,ind)
             }else{
-                this.eventoList[ind].msg = oracle[ora].random() 
+                this.eventoList[ind].valor = oracle[ora].random() 
             }
         },
         execYokai: function(ora, ind){
@@ -235,11 +239,11 @@ params = {
             }
             
         },
-        execShini: function(ora, ind){
+        execRelacao: function(ora, ind){
             if(ora == 'probl_pessoal' || ora == 'probl_relacional' || ora == 'probl_local' || ora == 'probl_regional' || ora == 'probl_federal' || ora == 'probl_planetario'){
-                this.combinacao_opcao(ora, this.shiniList, 3,ind)
+                this.combinacao_opcao(ora, this.relacaoList, 3,ind)
             }else{
-                this.shiniList[ind].msg = oracle[ora].random();
+                this.relacaoList[ind].msg = oracle[ora].random();
             }
         },
         execJogadas: function(ora, ind){
