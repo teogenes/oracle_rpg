@@ -170,14 +170,12 @@ params = {
             this.missaoMaisList[ind].valor = oracle[ora].random()
         },
         execLocal: function(ora, ind){
-            if(ora == 'local_gerar'){
+            if(ora == 'local_gerar' || ora == 'masmorra_encontro'){
                 this.combinacao_opcao(ora, this.localList, 4, ind)
-            }else if(ora == 'local_historia_cidade'){
+            }else if(ora == 'local_historia_cidade' || ora == 'masmorra_caminho'){
                 this.combinacao_opcao(ora, this.localList, 5, ind)
-            }else if(ora == 'local_masmorra'){
+            }else if(ora == 'local_masmorra' || ora == 'masmorra_enigma'){
                 this.combinacao_opcao(ora, this.localList, 2, ind)
-            }else if(ora ==  'masmorra_caminho'){
-                this.combinacao_opcao(ora, this.localList, 6, ind)
             }else if(ora ==  'local_cena_interna'){
                 this.combinacao_opcao(ora, this.localList, 8, ind)
             }else if(ora =='local_cidade'){

@@ -2498,7 +2498,6 @@ let oracle = {
         ],
         [
             "Conteúdo: <b>Mobília (S)</b>",
-            "Conteúdo: <b>Mobília (AM)</b>",
             "Conteúdo: <b>Mobília</b>",
             "Conteúdo: <b>Monstro</b>",
             "Conteúdo: <b>Monstro e Tesouro</b>",
@@ -2506,30 +2505,89 @@ let oracle = {
             "Conteúdo: <b>Não Tem</b>",
         ],
         [
-            "3.1.Salas Secretas(S): <b>Não há sala secreta</b>",
-            "3.1.Salas Secretas(S): <b>Sala secreta vazia</b>",
-            "3.1.Salas Secretas(S): <b>Sala secreta com armadilha</b>",
-            "3.1.Salas Secretas(S): <b>Sala secreta com armadilha e tesouro</b>",
-            "3.1.Salas Secretas(S): <b>Sala secreta com monstros e tesouro</b>",
-            "3.1.Salas Secretas(S): <b>Sala secreta com tesouro</b>",
+            "Salas Secretas(S): <b>Não há sala secreta</b>",
+            "Salas Secretas(S): <b>Sala secreta vazia</b>",
+            "Salas Secretas(S): <b>Sala secreta com armadilha</b>",
+            "Salas Secretas(S): <b>Sala secreta com armadilha e tesouro</b>",
+            "Salas Secretas(S): <b>Sala secreta com monstros e tesouro</b>",
+            "Salas Secretas(S): <b>Sala secreta com tesouro</b>",
         ],
         [
-            "3.2.Armadilhas(AM): <b>Nada acontece</b>",
-            "3.2.Armadilhas(AM): <b>Dardo venenoso (Dano 2, envenenado)</b>",
-            "3.2.Armadilhas(AM): <b>Espinhos (Dano 4)</b>",
-            "3.2.Armadilhas(AM): <b>Pedras caindo (Área, Dano 4)</b>",
-            "3.2.Armadilhas(AM): <b>Fosso de Ácido (Dano 8)</b>",
-            "3.2.Armadilhas(AM): <b>Lança chamas (Área, Dano 8)</b>",
-        ],
-        [
-            "4.Encontro: <b>Sim</b>",
-            "4.Encontro: <b>Não</b>",
+            "Tipo Encontro: <b>Enigma</b>",
+            "Tipo Encontro: <b>Encontro</b>",
         ],
     ],
     masmorra_encontro:[
-
+        [
+            "Tipo: <b>Vazio</b>",
+            "Tipo: <b>Inimigo</b>",
+            "Tipo: <b>Enigma ou Pista</b>",
+            "Tipo: <b>Armadilha</b>",
+            "Tipo: <b>Objetivo Da Missão</b>",
+            "Tipo: <b>Pessoa</b>",
+            "Tipo: <b>Tesouro</b>",
+        ],
+        [
+            "Inimigo:  <b>Inicial Sozinho</b>",
+            "Inimigo:  <b>Inicial Grupo</b>",
+            "Inimigo:  <b>Fraco</b>",
+            "Inimigo:  <b>Fraco Grupo</b>",
+            "Inimigo:  <b>Mediano</b>",
+            "Inimigo:  <b>Mediano Grupo</b>",
+            "Inimigo:  <b>Forte E Sozinho</b>",
+            "Inimigo:  <b>Forte Em Grupo</b>",
+            "Inimigo:  <b>Muito Forte E Sozinho</b>",
+            "Inimigo:  <b>Chefão</b>",
+        ],
+        [
+            "Armadilha:  <b>Cortante</b>",
+            "Armadilha:  <b>Queda</b>",
+            "Armadilha:  <b>Venenosa</b>",
+            "Armadilha:  <b>Explosiva</b>",
+            "Armadilha:  <b>Emboscada</b>",
+            "Armadilha:  <b>Veneno</b>",
+            "Armadilha:  <b>Paralizante</b>",
+            "Armadilha:  <b>Mecanismo</b>",
+            "Armadilha:  <b>Improvisada</b>",
+            "Armadilha:  <b>Perfurante</b>",
+        ],
+        [
+            "Tesouros:  <b>Cura</b>",
+            "Tesouros:  <b>Iten Comum</b>",
+            "Tesouros:  <b>Dinheiro</b>",
+            "Tesouros:  <b>Obj. Util Para Missão</b>",
+            "Tesouros:  <b>Arma</b>",
+            "Tesouros:  <b>Proteção</b>",
+            "Tesouros:  <b>Materia Prima</b>",
+            "Tesouros:  <b>Raro</b>",
+        ],
     ],
-
+    masmorra_enigma:[
+        [
+            "Enigma: <b>1. Um Botão</b>",
+            "Enigma: <b>2. Um Mecanismo</b>",
+            "Enigma: <b>3. Um Simbolo</b>",
+            "Enigma: <b>4. Peças</b>",
+            "Enigma: <b>5. Pedras</b>",
+            "Enigma: <b>6. Um Objeto</b>",
+            "Enigma: <b>7. Pergaminhos</b>",
+            "Enigma: <b>8. Sensor</b>",
+            "Enigma: <b>9. Cristais</b>",
+            "Enigma: <b>10. Alavanca</b>",
+        ],
+        [
+            "Ação: <b>1. Apertar</b>",
+            "Ação: <b>2. Puxar</b>",
+            "Ação: <b>3. Segurar</b>",
+            "Ação: <b>4. Agarrar E Soltar</b>",
+            "Ação: <b>5. Empurrar</b>",
+            "Ação: <b>6. Comparar Com Outro Objeto</b>",
+            "Ação: <b>7. Ler Em Volz Alta</b>",
+            "Ação: <b>8. Acertar</b>",
+            "Ação: <b>9. Conscentrar Poder</b>",
+            "Ação: <b>10. Pisar</b>",
+        ],
+    ],
     inesperado_oracle: [
         "<b>Previsão</b> - Estabeleça uma trama para ser a trama principal para a próxima cena. A cena atual deve então se encaminhar ao seu final e seguir em direção à próxima cena.",
         "<b>Encerrando</b> - A trama principal termina ou avança substancialmente nesta cena por decreto narrativo. Isto não significa que a trama principal não possa criar tramas complementares.",
@@ -5201,9 +5259,38 @@ let localResult = [
     { label: "Masmorra", ora: 'local_masmorra', valor:"", msg: "<i>1.</i> Cria o tamanho e tipo da masmorra." },
     { label: "Compartimento", ora: 'masmorra_compartimento', valor:"", msg: "<i>2.</i> O tipo de compartimento a encontrar na masmorra." },
     { label: "Caminho", ora: 'masmorra_caminho', valor:"", msg: "<i>3.</i> Cria as caracteristicas de cada parte da masmorra." },
-    { label: "Encontro", ora: 'masmorra_encontro', valor:"", msg: "<i>3.1.</i> Cria o tipo e o desafio do encontro do item caminho(3.)" },
-
+    { label: "Encontro", ora: 'masmorra_encontro', valor:"", msg: "<i>3.1.</i> Cria o tipo e o desafio de tipo do encontro do item caminho(3.)" },
+    { label: "Enigma", ora: 'masmorra_enigma', valor:"", msg: "<i>3.2.</i> Cria o enigma do tipo de encontro do item caminho(3.)<br /> Joge <b>2d10</b> e compare com o valor de cada item." },
 ];
+
+let ressoResult = [
+    { label: "ubarna", ora: "cena_ubarna", msg: "Cena Ubarna" },
+    { label: "medieval", ora: "cena_medieval", msg: "Cena Medieval" },
+    { label: "espacial", ora: "cena_espacial", msg: "Cena Espacial" },
+    { label: "Ambiente", ora: "cena_ambiente", msg: "" },
+    { label: "Local", ora: "cena_local", msg: "" },
+    { label: "Clima", ora: "cena_clima", msg: "" },
+    { label: "Rumores", ora: "cena_rumores", msg: "Cena Ubarna" },
+    { label: "Event. Ambie", ora: "cena_eve_amb", msg: "" },
+    { label: "NPCs", ora: "cena_npc", msg: "NPC presente" },
+    {
+        label: "TComplicações",
+        ora: "cena_tipo_complicacao",
+        msg: "Tipo complicações",
+    },
+    {
+        label: "C. Amigável",
+        ora: "cena_compl_amigavel",
+        msg: "Complicação Amigável",
+    },
+    { label: "C. Neutro", ora: "cena_compl_neutro", msg: "Complicação Neutro" },
+    { label: "C. Hostil", ora: "cena_compl_hostil", msg: "Complicação Hostil" },
+    { label: "Finalização", ora: "acontece_evento", msg: "" },
+];
+
+
+//--------------------------- Antigo ------------------------------------------------------------
+
 
 let vampPersonResult = [
     { label: "Raça", ora: "npc_raca", msg: "" },
@@ -5231,33 +5318,6 @@ let eventoResult = [
     { label: "Reviravolta", ora: "reviravolta", msg: "" },
     { label: "Revés", ora: "reves", msg: "" },
     { label: "Inesperado", ora: "inesperado_oracle", msg: "" },
-];
-
-
-
-let ressoResult = [
-    { label: "ubarna", ora: "cena_ubarna", msg: "Cena Ubarna" },
-    { label: "medieval", ora: "cena_medieval", msg: "Cena Medieval" },
-    { label: "espacial", ora: "cena_espacial", msg: "Cena Espacial" },
-    { label: "Ambiente", ora: "cena_ambiente", msg: "" },
-    { label: "Local", ora: "cena_local", msg: "" },
-    { label: "Clima", ora: "cena_clima", msg: "" },
-    { label: "Rumores", ora: "cena_rumores", msg: "Cena Ubarna" },
-    { label: "Event. Ambie", ora: "cena_eve_amb", msg: "" },
-    { label: "NPCs", ora: "cena_npc", msg: "NPC presente" },
-    {
-        label: "TComplicações",
-        ora: "cena_tipo_complicacao",
-        msg: "Tipo complicações",
-    },
-    {
-        label: "C. Amigável",
-        ora: "cena_compl_amigavel",
-        msg: "Complicação Amigável",
-    },
-    { label: "C. Neutro", ora: "cena_compl_neutro", msg: "Complicação Neutro" },
-    { label: "C. Hostil", ora: "cena_compl_hostil", msg: "Complicação Hostil" },
-    { label: "Finalização", ora: "acontece_evento", msg: "" },
 ];
 
 let shiniResult = [
