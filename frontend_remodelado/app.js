@@ -10,8 +10,8 @@ params = {
         cenaValid: false,
         eventoValid:false,
         vampOrecleValid: false,
-        oracleValid: true,
-        vampPersValid: false,
+        oracleValid: false,
+        vampPersValid: true,
         relacaoValid: false,
         yokaiValid: false,
         jogadasValid: false,
@@ -213,29 +213,29 @@ params = {
             if(ora == 'aparencia_mostro'){
                 this.combinacao_opcao(ora, this.yokaiList, 10,ind)
             }else{
-                this.yokaiList[ind].msg = oracle[ora].random()
+                this.yokaiList[ind].valor = oracle[ora].random()
             }
         },
         execVPersons: function(ora, ind){
             if(ora == 'npc_nome_gerado'){
-                this.vPersonsList[ind].msg = this.gera_nome(part_nome) + ' ' + this.gera_nome(part_nome);
+                this.vPersonsList[ind].valor = this.gera_nome(part_nome) + ' ' + this.gera_nome(part_nome);
             }else if(ora == 'vamp_nome_m' || ora == 'vamp_nome_f'){
                 let cond = ora == 'vamp_nome_m' ? 0 : 1;
                 let nomeu = nomesPerson[cond];
                 let nome = nomeu[this.randomInt(0,nomeu.length)]
                 let sobrenomeu = nomesPerson[2];
                 let sobrenome = sobrenomeu[this.randomInt(0,sobrenomeu.length)];
-                this.vPersonsList[ind].msg = nome + " " + sobrenome
+                this.vPersonsList[ind].valor = nome + " " + sobrenome
             }else if(ora == 'personalidade_npc'){
-                this.combinacao_opcao(ora, this.vPersonsList, 2,ind)
+                this.combinacao_opcao(ora, this.vPersonsList, 2,ind, '')
             }else if(ora == 'historia_npc' || ora == 'npc_raca'){
                 this.combinacao_opcao(ora, this.vPersonsList, 3,ind)
-            }else if(ora == 'historia_atual' || ora == 'vilao_npc'){
+            }else if(ora == 'historia_atual' || ora == 'vilao_npc' || ora == 'persona_npc'){
                 this.combinacao_opcao(ora, this.vPersonsList, 5,ind)
-            }else if(ora == 'persona_npc' || ora == 'npc_caracter'){
+            }else if(ora == 'npc_caracter'){
                 this.combinacao_opcao(ora, this.vPersonsList, 6,ind)
             }else{
-                this.vPersonsList[ind].msg = oracle[ora].random();
+                this.vPersonsList[ind].valor = oracle[ora].random();
             }
             
         },
@@ -243,21 +243,21 @@ params = {
             if(ora == 'probl_pessoal' || ora == 'probl_relacional' || ora == 'probl_local' || ora == 'probl_regional' || ora == 'probl_federal' || ora == 'probl_planetario'){
                 this.combinacao_opcao(ora, this.relacaoList, 3,ind)
             }else{
-                this.relacaoList[ind].msg = oracle[ora].random();
+                this.relacaoList[ind].valor = oracle[ora].random();
             }
         },
         execJogadas: function(ora, ind){
             if(ora == 'acao_dano_um' || ora == 'acao_dano_dois'){
                 this.combinacao_opcao(ora, this.jogadasList, 5,ind)
             }else{
-                this.jogadasList[ind].msg = oracle[ora].random();
+                this.jogadasList[ind].valor = oracle[ora].random();
             }
         },
-        combinacao_opcao: function(ora, lista, quant, ind){
+        combinacao_opcao: function(ora, lista, quant, ind, quebra = "<br />"){
             let arr = [];
             for (let i = 0; i < quant; i++) {
                 let vv = oracle[ora][i]
-                arr.push( vv[this.randomInt(0,vv.length)] + "<br />" )
+                arr.push( vv[this.randomInt(0,vv.length)] + quebra )
             }
             lista[ind].valor = arr.join(' ');
         },
