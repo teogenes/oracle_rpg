@@ -511,6 +511,16 @@ let oracle = {
             "O Alvo da Busca: <b>Um local lendário ou desconhecido.</b>",
             "O Alvo da Busca: <b>Uma informação secreta, mapa ou documento.</b>",
             "O Alvo da Busca: <b>Um ingrediente raro, componente ou recurso.</b>",
+            "O Alvo da Busca: <b>Uma relíquia histórica ou item de importância cultural.</b>",
+            "O Alvo da Busca: <b>Uma criatura lendária ou rara para estudo ou proteção.</b>",
+            "O Alvo da Busca: <b>Uma cura ou antídoto para uma doença ou veneno.</b>",
+            "O Alvo da Busca: <b>Uma pessoa sábia ou especialista em algum campo.</b>",
+            "O Alvo da Busca: <b>Um tomo de conhecimento antigo ou proibido.</b>",
+            "O Alvo da Busca: <b>Um aliado ou contato valioso para obter informações.</b>",
+            "O Alvo da Busca: <b>Uma arma especial ou única para derrotar um inimigo.</b>",
+            "O Alvo da Busca: <b>Um objeto que pode restaurar o equilíbrio entre forças opostas.</b>",
+            "O Alvo da Busca: <b>Um meio de transporte especial ou inovador.</b>",
+            "O Alvo da Busca: <b>Uma fonte de poder ou energia para alimentar uma criação ou invenção.</b>",
         ],
         [
             "O Desafio da Busca: <b>Localização remota, perigosa ou de difícil acesso.</b>",
@@ -532,7 +542,7 @@ let oracle = {
     missao_combate:[
         [
             "Oponentes: <b>Bandidos, saqueadores ou piratas.</b>",
-            "Oponentes: <b>Goblins, orcs ou outras criaturas monstruosas.</b>",
+            "Oponentes: <b>Criaturas monstruosas.</b>",
             "Oponentes: <b>Mortos-vivos, fantasmas ou aparições.</b>",
             "Oponentes: <b>Feras, animais selvagens ou criaturas mágicas.</b>",
             "Oponentes: <b>Guerreiros, soldados ou mercenários.</b>",
@@ -693,6 +703,16 @@ let oracle = {
             "Natureza do Mistério: <b>Epidemia, praga ou doença misteriosa.</b>",
             "Natureza do Mistério: <b>Desastre natural ou evento inexplicável.</b>",
             "Natureza do Mistério: <b>Artefato, objeto ou local desconhecido.</b>",
+            "Natureza do Mistério: <b>Sequestro, resgate ou cativeiro.</b>",
+            "Natureza do Mistério: <b>Extorsão, chantagem ou coação.</b>",
+            "Natureza do Mistério: <b>Manipulação, controle mental ou lavagem cerebral.</b>",
+            "Natureza do Mistério: <b>Ataque de criaturas, monstros ou bestas.</b>",
+            "Natureza do Mistério: <b>Descoberta científica, invenção ou experimento perigoso.</b>",
+            "Natureza do Mistério: <b>Culto, seita ou sociedade secreta.</b>",
+            "Natureza do Mistério: <b>Impostor, falsificação ou usurpação de identidade.</b>",
+            "Natureza do Mistério: <b>Profecia, visão ou presságio.</b>",
+            "Natureza do Mistério: <b>Viagem no tempo, realidades alternativas ou dimensões paralelas.</b>",
+            "Natureza do Mistério: <b>Perseguição, obsessão ou assédio.</b>",
         ],
         [
             "Local da Investigação: <b>Cidade, vila ou assentamento.</b>",
@@ -4123,8 +4143,9 @@ let enredoResult = [
 ]
 
 let aventuraResult = [
-    { label: "Aventuras", ora: "aventura_ideias", valor:"", msg: "" },
-    { label: "Missões", ora: "missao_completa", valor:"", msg: "" },
+    { label: "Aventuras", ora: "aventura_ideias", valor:"", msg: "Cria uma idea para a aventura." },
+    { label: "Missões", ora: "missao_completa", valor:"", msg: "Cria uma idea para a missão." },
+    { label: "Desafio", ora: "vilao_npc", valor:"", msg: "Desafio final da aventura ou missão." },
 ];
 
 let missaoResult = [
@@ -4216,5 +4237,4 @@ let npcResult = [
     { label: "Conversa NPC", ora: "coversa_npc", valor:"", msg: "" },
     { label: "Conv.interesse", ora: "conversa2_npc", valor:"", msg: "" },
     { label: "Conv.hostil", ora: "conversa3_npc", valor:"", msg: "" },
-    { label: "Vilão", ora: "vilao_npc", valor:"", msg: "" },
 ];

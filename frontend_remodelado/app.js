@@ -139,7 +139,7 @@ params = {
             }
         },
         execAventura: function(ora, ind){
-            if(ora == 'aventura_ideias'){
+            if(ora == 'vilao_npc' || ora == 'aventura_ideias'){
                 this.combinacao_opcao(ora, this.aventuraList, 5,ind)
             }else if(ora == 'missao_completa'){
                 this.combinacao_opcao(ora, this.aventuraList, 6,ind)
@@ -220,7 +220,7 @@ params = {
                 this.combinacao_opcao(ora, this.vPersonsList, 2,ind, '')
             }else if( ora == 'npc_raca'){
                 this.combinacao_opcao(ora, this.vPersonsList, 3,ind)
-            }else if(ora == 'vilao_npc' || ora == 'persona_npc'){
+            }else if(ora == 'persona_npc'){
                 this.combinacao_opcao(ora, this.vPersonsList, 5,ind)
             }else if(ora == 'historia_npc' || ora == 'npc_caracter'){
                 this.combinacao_opcao(ora, this.vPersonsList, 6,ind)
