@@ -29,7 +29,6 @@
                         <a @click="aba_clear('enredoValid')" class="waves-effect waves-light btn-small green darken-4">Enredo</a>
                         <a @click="aba_clear('aventuraValid')" class="waves-effect waves-light btn-small green darken-4">Aventura</a>
                         <a @click="aba_clear('missaoValid')" class="waves-effect waves-light btn-small green darken-4">Missão</a>
-                        <a @click="aba_clear('missaoMaisValid')" class="waves-effect waves-light btn-small green darken-4">Missão ++</a>
                         <a @click="aba_clear('localValid')" class="waves-effect waves-light btn-small green darken-4">Localidade</a>
                         <a @click="aba_clear('cenaValid')" class="waves-effect waves-light btn-small light-green darken-3">Cena</a>                        
                         <a @click="aba_clear('eventoValid')" class="waves-effect waves-light btn-small green light-green darken-3">Eventos</a>
@@ -37,7 +36,7 @@
                     <div class="col s12">
                         <hr>
                         <a @click="aba_clear('oracleValid')" class="waves-effect waves-light btn-small blue-grey darken-4">ORACULO</a>
-                        <a @click="aba_clear('vampPersValid')" class="waves-effect waves-light btn-small blue darken-2">NPCs</a>
+                        <a @click="aba_clear('npcValid')" class="waves-effect waves-light btn-small blue darken-2">NPCs</a>
                         <a @click="aba_clear('relacaoValid')" class="waves-effect waves-light btn-small deep-purple accent-3">Relações</a>                 
                         <a @click="aba_clear('jogadasValid')" class="waves-effect waves-light btn-small deep-purple accent-3">Ações de Jogadas</a>                 
                         <a @click="aba_clear('yokaiValid')" class="waves-effect waves-light btn-small red darken-3">Mostros</a>                 
@@ -191,24 +190,6 @@
                                 </tr>
                             </tbody>
                         </table>
-
-                        <table class="highlight" v-show="missaoMaisValid" >
-                            <thead>
-                                <tr>
-                                    <th colspan="2" style="text-align: center;" >MISSÃO ++</th>
-                                </tr>
-                                <tr>
-                                    <th>AÇÕES</th>
-                                    <th class="center" > <a @click="missaoMaisClick" class="waves-effect waves-light btn-small  yellow darken-3" >Limpar</a></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr v-for="(olista, ind) in missaoMaisList">
-                                    <td style="width:168px;" ><a :title="olista.label" @click="execMaisMissao(olista.ora, ind)" class="waves-effect waves-light btn-small  brown darken-3" >{{olista.label}}</a></td>
-                                    <td v-html="olista.valor || olista.msg" ></td>
-                                </tr>
-                            </tbody>
-                        </table>
                         
                         <table class="highlight" v-show="eventoValid" >
                             <thead>
@@ -246,14 +227,14 @@
                             </tbody>
                         </table>
 
-                        <table class="highlight" v-show="vampPersValid" >
+                        <table class="highlight" v-show="npcValid" >
                             <thead>
                                 <tr>
                                     <th colspan="2" style="text-align: center;" >NPCs</th>
                                 </tr>
                                 <tr>
                                     <th class="center">AÇÕES</th>
-                                    <th class="center" ><a @click="vampPersonClick" class="waves-effect waves-light btn-small  yellow darken-3" >Limpar</a></th>
+                                    <th class="center" ><a @click="npcClick" class="waves-effect waves-light btn-small  yellow darken-3" >Limpar</a></th>
                                 </tr>
                             </thead>
                             <tbody>

@@ -5,13 +5,12 @@ params = {
         enredoValid: false,
         aventuraValid: false,
         missaoValid: false,
-        missaoMaisValid: false,
         localValid: false,
         cenaValid: false,
         eventoValid:false,
         vampOrecleValid: false,
         oracleValid: false,
-        vampPersValid: true,
+        npcValid: true,
         relacaoValid: false,
         yokaiValid: false,
         jogadasValid: false,
@@ -20,12 +19,11 @@ params = {
         enredoList: enredoResult,
         oracleList: oracleResult,
         missaoList: missaoResult,
-        missaoMaisList: missaoMaisResult,
         aventuraList: aventuraResult,
         eventoList: eventoResult,
         yokaiList: yokaiResult,
         cenaList: cenaResult,
-        vPersonsList: vampPersonResult,
+        vPersonsList: npcResult,
         relacaoList: relacaoResult,
         localList: localResult,
         jogadasList: jogadasResult,
@@ -34,8 +32,8 @@ params = {
         aba_clear: function(troca){
             let arrClear = [
                 'enredoValid','aventuraValid','missaoValid',
-                'missaoMaisValid','localValid','cenaValid',
-                'eventoValid','oracleValid','vampPersValid',
+                'localValid','cenaValid',
+                'eventoValid','oracleValid','npcValid',
                 'relacaoValid','jogadasValid','yokaiValid'
             ]
             
@@ -88,11 +86,6 @@ params = {
                 this.missaoList[vE].valor = "";
             }
         },
-        missaoMaisClick: function(){
-            for(vE in this.missaoMaisList){
-                this.missaoMaisList[vE].valor = "";
-            }
-        },
         aventuraClick: function(){
             for(vE in this.aventuraList){
                 this.aventuraList[vE].valor = "";
@@ -103,7 +96,7 @@ params = {
                 this.eventoList[vE].valor = "";
             }
         },
-        vampPersonClick: function(){
+        npcClick: function(){
             for(vE in this.vPersonsList){
                 this.vPersonsList[vE].valor = "";
             }
@@ -148,7 +141,7 @@ params = {
         execAventura: function(ora, ind){
             if(ora == 'aventura_ideias'){
                 this.combinacao_opcao(ora, this.aventuraList, 5,ind)
-            }else if(ora == 'aventura_ideias_dois'){
+            }else if(ora == 'missao_completa'){
                 this.combinacao_opcao(ora, this.aventuraList, 6,ind)
             }else{
                 this.aventuraList[ind].valor = oracle[ora].random() 
@@ -165,9 +158,6 @@ params = {
             }else{
                 this.missaoList[ind].valor = oracle[ora].random() 
             }
-        },
-        execMaisMissao: function(ora, ind){
-            this.missaoMaisList[ind].valor = oracle[ora].random()
         },
         execLocal: function(ora, ind){
             if(ora == 'local_gerar' || ora == 'masmorra_encontro'){
@@ -228,11 +218,11 @@ params = {
                 this.vPersonsList[ind].valor = nome + " " + sobrenome
             }else if(ora == 'personalidade_npc'){
                 this.combinacao_opcao(ora, this.vPersonsList, 2,ind, '')
-            }else if(ora == 'historia_npc' || ora == 'npc_raca'){
+            }else if( ora == 'npc_raca'){
                 this.combinacao_opcao(ora, this.vPersonsList, 3,ind)
-            }else if(ora == 'historia_atual' || ora == 'vilao_npc' || ora == 'persona_npc'){
+            }else if(ora == 'vilao_npc' || ora == 'persona_npc'){
                 this.combinacao_opcao(ora, this.vPersonsList, 5,ind)
-            }else if(ora == 'npc_caracter'){
+            }else if(ora == 'historia_npc' || ora == 'npc_caracter'){
                 this.combinacao_opcao(ora, this.vPersonsList, 6,ind)
             }else{
                 this.vPersonsList[ind].valor = oracle[ora].random();
