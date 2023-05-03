@@ -102,7 +102,7 @@ let oracle = {
         ["Afirmação: <b>Sim</b>", "Afirmação: <b>Não</b>"],
         ["Propabilidade: <b>Incerto</b>", "Propabilidade: <b>Provavelmente</b>", "Propabilidade: <b>Definitivamente</b>"],
         [
-            "Fator: <b>Mas algo Agravante/Desfavorável(Aumenta)</b>", "Fator: <b>E algo Atenuante/Favorável(Diminuí)</b>", 
+            "Fator: <b>Mas algo Agravante(Aumenta)/Desfavorável</b>", "Fator: <b>E algo Atenuante(Diminuí)/Favorável</b>", 
             "Fator: <b>------</b>", "Fator: <b>------</b>", "Fator: <b>------</b>", "Fator: <b>------</b>",
         ],
     ],
