@@ -9,8 +9,8 @@ params = {
         cenaValid: false,
         eventoValid:false,
         vampOrecleValid: false,
-        oracleValid: false,
-        npcValid: true,
+        oracleValid: true,
+        npcValid: false,
         relacaoValid: false,
         yokaiValid: false,
         jogadasValid: false,
@@ -279,3 +279,4 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 App = new Vue(params);
+

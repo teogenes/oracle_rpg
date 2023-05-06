@@ -1719,12 +1719,12 @@ let oracle = {
         ],
         [
             "<b>Npc Influent.:</b> Calmo",
-            "<b>Npc Influent.:</b> Cheio",
+            "<b>Npc Influent.:</b> Muitos",
             "<b>Npc Influent.:</b> Badalado",
-            "<b>Npc Influent.:</b> Antro De Putaria",
+            "<b>Npc Influent.:</b> Sagastico",
             "<b>Npc Influent.:</b> Chique",
             "<b>Npc Influent.:</b> Barulhento",
-            "<b>Npc Influent.:</b> Perigosa",
+            "<b>Npc Influent.:</b> Perigoso",
             "<b>Npc Influent.:</b> Mercenarios Ladroes",
             "<b>Npc Influent.:</b> Vazio",
             "<b>Npc Influent.:</b> Comum",
@@ -1897,6 +1897,9 @@ let oracle = {
             "Sala: <b>Sala de estudos ou escritório</b>",
             "Sala: <b>Galeria de arte ou exposição</b>",
             "Sala: <b>Vazia</b>",
+            "Sala: <b>Vazia</b>",
+            "Sala: <b>Vazia</b>",
+            "Sala: <b>Vazia</b>",
             "Sala: <b>com escadaria ascendente</b>",
             "Sala: <b>com escadaria descendente</b>",
         ],
@@ -1919,6 +1922,9 @@ let oracle = {
         [
             "Tipo Encontro: <b>Enigma</b>",
             "Tipo Encontro: <b>Encontro</b>",
+            "Tipo Encontro: <b>Não</b>",
+            "Tipo Encontro: <b>Não</b>",
+            "Tipo Encontro: <b>Não</b>",
         ],
     ],
     masmorra_encontro:[
@@ -4133,19 +4139,19 @@ let oracleResult = [
 let enredoResult = [
     { label: "Origem", ora: "enredo_origem", valor:'', msg: "O que desencadeou o <b>EVENTO INICIAL</b>." }, // (O que desencadeou o evento inicial)
     { label: "Conexão", ora: "enredo_conexao", valor:'', msg: "Como o <b>EVENTO INICIAL</b> se conecta ao personagem." }, // (Como o evento inicial se conecta ao personagem)
-    { label: "Consequência", ora: "enredo_consequencia", valor:'', msg: "O que acontece como resultado do <b>EVENTO INICIAL</b>." }, // (O que acontece como resultado do evento inicial)
     { label: "Desafio", ora: "enredo_desafio", valor:'', msg: "Obstáculos ou dificuldades enfrentadas pelo personagem no <b>EVENTO INICIAL</b>." }, // (Obstáculos ou dificuldades enfrentadas pelo personagem)
+    { label: "Consequência", ora: "enredo_consequencia", valor:'', msg: "O que acontece como resultado do <b>EVENTO INICIAL</b>." }, // (O que acontece como resultado do evento inicial)
     { label: "Local", ora: "enredo_local", valor:'', msg: "<b>LOCAL</b> onde a aventura acontece." }, // (onde a aventura acontece)
     { label: "Objetivo", ora: "enredo_objetivo", valor:'', msg: "<b>OBJETIVO</b> que o personagem precisa alcançar." }, // (o que o personagem precisa alcançar)
     { label: "Conflito", ora: "enredo_conflito", valor:'', msg: "<b>CONFLITOS</b> desafios, enigmas ou batalhas enfrentadas."}, // (desafios, enigmas ou batalhas enfrentadas)
-    { label: "Recompensa", ora: "enredo_recompensa", valor:'', msg: "<b>RECOMPENSA</b> do personagem ao completar a aventura"}, // (o que o personagem ganha ao completar a aventura)
     { label: "Resolução", ora: "enredo_resolucao", valor:'', msg: "<b>RESOLUÇÃO</b> da aventura"}, // (como a aventura termina)
+    { label: "Recompensa", ora: "enredo_recompensa", valor:'', msg: "<b>RECOMPENSA</b> do personagem ao completar a aventura"}, // (o que o personagem ganha ao completar a aventura)
 ]
 
 let aventuraResult = [
     { label: "Aventuras", ora: "aventura_ideias", valor:"", msg: "Cria uma idea para a aventura." },
     { label: "Missões", ora: "missao_completa", valor:"", msg: "Cria uma idea para a missão." },
-    { label: "Desafio", ora: "vilao_npc", valor:"", msg: "Desafio final da aventura ou missão." },
+    { label: "Desafio", ora: "vilao_npc", valor:"", msg: "Desafio final da <b>aventura</b> ou <b>missão</b>." },
 ];
 
 let missaoResult = [
