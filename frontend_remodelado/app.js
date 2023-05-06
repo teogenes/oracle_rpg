@@ -218,13 +218,11 @@ params = {
                 let sobrenomeu = nomesPerson[2];
                 let sobrenome = sobrenomeu[this.randomInt(0,sobrenomeu.length)];
                 this.vPersonsList[ind].valor = nome + " " + sobrenome
-            }else if(ora == 'coversa_npc'){
-                this.combinacao_opcao(ora, this.vPersonsList, 2,ind)
             }else if(ora == 'personalidade_npc'){
                 this.combinacao_opcao(ora, this.vPersonsList, 2,ind, '')
-            }else if( ora == 'npc_raca'){
+            }else if(ora == 'npc_raca'){
                 this.combinacao_opcao(ora, this.vPersonsList, 3,ind)
-            }else if(ora == 'persona_npc'){
+            }else if(ora == 'persona_npc' || ora == 'coversa_npc'){
                 this.combinacao_opcao(ora, this.vPersonsList, 5,ind)
             }else if(ora == 'historia_npc' || ora == 'npc_caracter'){
                 this.combinacao_opcao(ora, this.vPersonsList, 6,ind)
