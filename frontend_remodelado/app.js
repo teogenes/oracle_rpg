@@ -7,9 +7,9 @@ params = {
         missaoValid: false,
         localValid: false,
         cenaValid: false,
-        eventoValid:false,
+        eventoValid:true,
         vampOrecleValid: false,
-        oracleValid: true,
+        oracleValid: false,
         npcValid: false,
         relacaoValid: false,
         yokaiValid: false,
@@ -195,6 +195,8 @@ params = {
                 this.combinacao_opcao(ora, this.eventoList, 4,ind)
             }else if(ora == 'evento_eGenerico'){
                 this.combinacao_opcao(ora, this.eventoList, 2,ind)
+            }else if(ora =='eventos_floresta' || ora == 'eventos_motanha' || ora == 'eventos_cidadde' || ora == 'eventos_dungeon'){
+                this.combinacao_opcao(ora, this.eventoList, 3,ind)
             }else{
                 this.eventoList[ind].valor = oracle[ora].random() 
             }
