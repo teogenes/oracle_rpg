@@ -119,10 +119,13 @@ params = {
             }
         },
         execOracle: function(ora, ind){
-            if(ora == 'oraculo_sol' || ora == 'oracle_inspiracao'){
+            let arr = ['oraculo_sol', 'oracle_inspiracao', 'abstracao_oracle']; 
+            if(arr.includes(ora) ){
                 this.combinacao_opcao(ora, this.oracleList, 2,ind)
             }else if(ora == 'pergunta_oracle'){
-                this.combinacao_opcao(ora, this.oracleList, 3,ind)
+                this.combinacao_opcao(ora, this.oracleList, 4,ind)
+            }else if(ora == 'objeto_tesouro'){
+                this.combinacao_opcao(ora, this.oracleList, 6, ind)
             }else{
                 this.oracleList[ind].valor = oracle[ora].random()
             }
@@ -153,7 +156,7 @@ params = {
                 'missao_protecao','missao_investigacao','missao_exploracao', 'missao_transporte',
                 'missao_habilidades',
             ]
-            if( arr.includes(ora)){
+            if(arr.includes(ora)){
                 this.combinacao_opcao(ora, this.missaoList, 3,ind)
             }else{
                 this.missaoList[ind].valor = oracle[ora].random() 
@@ -202,7 +205,7 @@ params = {
             }
         },
         execYokai: function(ora, ind){
-            if(ora == 'aparencia_mostro'){
+            if(ora == 'aparencia_mostro' || ora == 'mostros'){
                 this.combinacao_opcao(ora, this.yokaiList, 10,ind)
             }else{
                 this.yokaiList[ind].valor = oracle[ora].random()
@@ -221,11 +224,15 @@ params = {
             }else if(ora == 'personalidade_npc'){
                 this.combinacao_opcao(ora, this.vPersonsList, 2,ind, '')
             }else if(ora == 'npc_raca'){
-                this.combinacao_opcao(ora, this.vPersonsList, 3,ind)
-            }else if(ora == 'persona_npc' || ora == 'coversa_npc'){
+                this.combinacao_opcao(ora, this.vPersonsList, 4,ind)
+            }else if(ora == 'coversa_npc'){
                 this.combinacao_opcao(ora, this.vPersonsList, 5,ind)
-            }else if(ora == 'historia_npc' || ora == 'npc_caracter'){
+            }else if(ora == 'npc_caracter'){
                 this.combinacao_opcao(ora, this.vPersonsList, 6,ind)
+            }else if(ora == 'historia_npc'){
+                this.combinacao_opcao(ora, this.vPersonsList, 9,ind)
+            }else if(ora == 'persona_npc'){
+                this.combinacao_opcao(ora, this.vPersonsList, 11,ind)
             }else{
                 this.vPersonsList[ind].valor = oracle[ora].random();
             }
@@ -241,6 +248,8 @@ params = {
         execJogadas: function(ora, ind){
             if(ora == 'acao_dano_um' || ora == 'acao_dano_dois'){
                 this.combinacao_opcao(ora, this.jogadasList, 5,ind)
+            }else if(ora == 'magias'){
+                this.combinacao_opcao(ora, this.jogadasList, 7,ind)
             }else{
                 this.jogadasList[ind].valor = oracle[ora].random();
             }
