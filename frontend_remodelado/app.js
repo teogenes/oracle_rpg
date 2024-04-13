@@ -163,14 +163,17 @@ params = {
             }
         },
         execLocal: function(ora, ind){
-            if(ora == 'local_gerar' || ora == 'masmorra_encontro'){
-                this.combinacao_opcao(ora, this.localList, 4, ind)
-            }else if(ora == 'local_historia_cidade' || ora == 'masmorra_caminho'){
+            
+            if(ora == 'local_historia_cidade' || ora == 'masmorra_caminho'){
                 this.combinacao_opcao(ora, this.localList, 5, ind)
-            }else if(ora == 'local_masmorra' || ora == 'masmorra_enigma'){
+            }else if(ora == 'masmorra_enigma'){
                 this.combinacao_opcao(ora, this.localList, 2, ind)
+            }else if(ora == 'masmorra_encontro' || ora == 'local_masmorra' || ora == 'masmorra_compartimento' || ora == 'masmorra_armadilha'){
+                this.combinacao_opcao(ora, this.localList, 3, ind)
             }else if(ora ==  'local_cena_interna'){
                 this.combinacao_opcao(ora, this.localList, 8, ind)
+            }else if(ora ==  'local_simple'){
+                this.combinacao_opcao(ora, this.localList, 10, ind)
             }else if(ora =='local_cidade'){
                 this.combinacao_opcao(ora, this.localList, 15, ind)
             }else if(ora =='local_estrutura'){
