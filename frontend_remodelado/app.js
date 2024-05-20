@@ -160,7 +160,7 @@ params = {
             if (ora == "vilao_npc" || ora == "aventura_ideias") {
                 this.combinacao_opcao(ora, this.aventuraList, 5, ind);
             } else if (ora == "missao_completa") {
-                this.combinacao_opcao(ora, this.aventuraList, 6, ind);
+                this.combinacao_opcao(ora, this.aventuraList, 7, ind);
             } else {
                 this.aventuraList[ind].valor = oracle[ora].random();
             }
@@ -230,7 +230,7 @@ params = {
             }
         },
         execEvento: function (ora, ind) {
-            if (ora == "option_aventura") {
+            if (ora == "option_aventura" || ora == "eventos_generico") {
                 this.combinacao_opcao(ora, this.eventoList, 4, ind);
             } else if (ora == "evento_eGenerico") {
                 this.combinacao_opcao(ora, this.eventoList, 2, ind);
@@ -312,14 +312,18 @@ params = {
             lista[ind].valor = arr.join(" ");
         },
         randomInt: function (min, max) {
-            return min + Math.floor((max - min) * Math.random());
+            let rando = Math.random();
+            let rest = min + Math.floor((max - min) * rando);
+            return rest;
         },
-        gera_nome: (lista) => {
+        gera_nome: function (lista) {
             let list_tamanho_nome = [1, 2, 1, 2, 3, 2, 3, 3];
-            let tam_nome = randomInt(0, list_tamanho_nome.length);
+            let tam_nome = this.randomInt(0, list_tamanho_nome.length);
+
             let nome = "";
+
             for (var i = 0; i < list_tamanho_nome[tam_nome]; i++) {
-                let c = randomInt(0, 100);
+                let c = this.randomInt(0, 100);
                 nome += lista[i][c];
             }
             return nome;
