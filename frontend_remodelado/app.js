@@ -6,15 +6,16 @@ params = {
         missaoValid: false,
         localValid: false,
         cenaValid: false,
-        eventoValid: true,
+        eventoValid: false,
         vampOrecleValid: false,
-        oracleValid: false,
+        oracleValid: true,
         npcValid: false,
         relacaoValid: false,
         yokaiValid: false,
         jogadasValid: false,
         historicos: [],
-        dados: 21,
+        dados: 5,
+        quant_dado: 1,
         enredoList: enredoResult,
         oracleList: oracleResult,
         missaoList: missaoResult,
@@ -110,13 +111,14 @@ params = {
             this.historicos = [];
         },
         rolarDados: function () {
-            let D1_desafio = randomInt(1, this.dados);
-            let st = `Result: ${D1_desafio}`;
 
-            if (this.dados != 21) {
-                let D2_desafio = randomInt(1, this.dados);
-                st = `Result: ${D1_desafio} e ${D2_desafio}`;
+            result_dado = [];
+            for (let i = 0; i < this.quant_dado; i++) {
+                result_dado.push(this.randomInt(1, this.dados));
             }
+            let D_desafio = result_dado.join(", "); 
+            let st = `Result: ${D_desafio}`;
+
             let cc = this.historicos.unshift(st);
             if (cc == 6) {
                 this.historicos.pop();

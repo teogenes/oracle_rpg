@@ -1158,7 +1158,7 @@ let oracle = {
             "Verbo: <b>Falhar</b>",
             "Verbo: <b>Perseguir</b>",
             "Verbo: <b>Atormentar</b>",
-            "Verbo: <b>Paixao</b>",
+            "Verbo: <b>Paixão</b>",
             "Verbo: <b>Criar</b>",
             "Verbo: <b>Destruir</b>",
             "Verbo: <b>Limpar</b>",
