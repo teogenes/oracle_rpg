@@ -258,26 +258,27 @@
                                 <span class="card-title" style="color: white;">Testes</span>
                                 
                                 <div class="input-field col s6">
-                                    <select v-model="dados" >
+                                    <select v-model="dado_ativo" >
                                         <option value="5">D4</option>
                                         <option value="7">D6</option>
                                         <option value="9">D8</option>
                                         <option value="11">D10</option>
                                         <option value="13">D12</option>
                                     </select>
-                                    <label style="color: white;">Dado</label>
-                                </div>
-                                <div class="input-field col s6">
-                                    <select v-model="quant_dado">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                    </select>
-                                    <label style="color: white;">Quant.</label>
+                                    <label style="color: white;">Ativo</label>
                                 </div>
 
+                                <div class="input-field col s6">
+                                    <select v-model="dado_passivo" >
+                                        <option value="5">D4</option>
+                                        <option value="7">D6</option>
+                                        <option value="9">D8</option>
+                                        <option value="11">D10</option>
+                                        <option value="13">D12</option>
+                                    </select>
+                                    <label style="color: white;">Passivo</label>
+                                </div>
+                                
                                 <div style="height:300px;">
                                     <div ref="difHis" v-for="hist in historicos" class="col s10" style="color: white;">
                                         {{hist}}

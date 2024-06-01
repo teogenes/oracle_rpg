@@ -14,8 +14,8 @@ params = {
         yokaiValid: false,
         jogadasValid: false,
         historicos: [],
-        dados: 5,
-        quant_dado: 1,
+        dado_ativo: 5,
+        dado_passivo: 5,
         enredoList: enredoResult,
         oracleList: oracleResult,
         missaoList: missaoResult,
@@ -112,12 +112,13 @@ params = {
         },
         rolarDados: function () {
 
-            result_dado = [];
-            for (let i = 0; i < this.quant_dado; i++) {
-                result_dado.push(this.randomInt(1, this.dados));
-            }
-            let D_desafio = result_dado.join(", "); 
-            let st = `Result: ${D_desafio}`;
+            // quant_dado eliminar
+            let res_ativo = this.randomInt(1, this.dado_ativo);
+            let res_passivo = this.randomInt(1, this.dado_passivo);
+            let dresutado = res_ativo - res_passivo;
+
+            let D_desafio = `${res_ativo} - ${res_passivo} = ${dresutado}`; 
+            let st = `Result: ${D_desafio}`;f
 
             let cc = this.historicos.unshift(st);
             if (cc == 6) {
@@ -130,7 +131,7 @@ params = {
                 this.combinacao_opcao(ora, this.oracleList, 2, ind);
             } else if (ora == "abstracao_oracle") {
                 this.combinacao_opcao(ora, this.oracleList, 3, ind);
-            } else if (ora == "pergunta_oracle") {
+            } else if (ora == "pergunta_oracle" || ora == "criar_aterfato") {
                 this.combinacao_opcao(ora, this.oracleList, 5, ind);
             } else if (ora == "objeto_tesouro") {
                 this.combinacao_opcao(ora, this.oracleList, 6, ind);
