@@ -118,7 +118,7 @@ params = {
             let dresutado = res_ativo - res_passivo;
 
             let D_desafio = `${res_ativo} - ${res_passivo} = ${dresutado}`; 
-            let st = `Result: ${D_desafio}`;f
+            let st = `Result: ${D_desafio}`;
 
             let cc = this.historicos.unshift(st);
             if (cc == 6) {
