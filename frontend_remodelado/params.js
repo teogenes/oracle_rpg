@@ -967,16 +967,21 @@ let oracle = {
         [
             "Probabilidade: <b>Incerto</b>",
             "Probabilidade: <b>Provavelmente</b>",
+            "Probabilidade: <b>Provavelmente</b>",
             "Probabilidade: <b>Definitivamente</b>",
         ],
-
+        [
+            "Detalhe da Pergunta: <b>Pouca</b>",
+            "Detalhe da Pergunta: <b>Media</b>",
+            "Detalhe da Pergunta: <b>Muita</b>",
+        ],
         [
             "Fator: <b>Agravante/Desfavorável: Algo que complica ou piora a situação</b>",
             "Fator: <b>Atenuante/Favorável: Algo que facilita ou melhora a situação</b>",
-            "Fator: <b>* * * </b>",
-            "Fator: <b>* * * </b>",
-            "Fator: <b>* * * </b>",
-            "Fator: <b>* * * </b>",
+            "Fator: <b>-----</b>",
+            "Fator: <b>-----</b>",
+            "Fator: <b>-----</b>",
+            "Fator: <b>-----</b>",
         ],
         [
             "Interação: <b>Esquerda, Baixo, Más Conições, Chuva, Frio, Fechado</b>",
@@ -1298,293 +1303,6 @@ let oracle = {
             "Ponto de Envolvimento: <b>Tomando uma decisão difícil ou enfrentando um dilema moral.</b>",
             "Ponto de Envolvimento: <b>Aprendendo habilidades ou conhecimentos relevantes para o evento.</b>",
             "Ponto de Envolvimento: <b>Enfrentando seu próprio passado ou demônios pessoais.</b>",
-        ],
-    ],
-    enredo_consequencia: [
-        [
-            // (O que acontece logo após o evento inicial)
-            "Impacto Imediato: <b>Uma vida é salva ou perdida.</b>",
-            "Impacto Imediato: <b>Um segredo é revelado ou encoberto.</b>",
-            "Impacto Imediato: <b>Um relacionamento é formado ou desfeito.</b>",
-            "Impacto Imediato: <b>Um recurso valioso é ganho ou perdido.</b>",
-            "Impacto Imediato: <b>Um inimigo ou adversário é derrotado ou fortalecido.</b>",
-            "Impacto Imediato: <b>Um mistério ou enigma é resolvido ou aprofundado.</b>",
-            "Impacto Imediato: <b>Um poder ou habilidade é adquirido ou despertado.</b>",
-            "Impacto Imediato: <b>Uma oportunidade é aproveitada ou perdida.</b>",
-            "Impacto Imediato: <b>Um plano é posto em ação ou frustrado.</b>",
-            "Impacto Imediato: <b>Uma transformação ou mudança ocorre.</b>",
-        ],
-        [
-            // (As consequências de longo prazo do evento)
-            "Repercussões: <b>Uma nova ameaça ou desafio surge.</b>",
-            "Repercussões: <b>Um conflito ou disputa se intensifica ou se resolve.</b>",
-            "Repercussões: <b>Uma aliança ou parceria é formada ou desfeita.</b>",
-            "Repercussões: <b>Uma profecia ou previsão se cumpre ou é desmentida.</b>",
-            "Repercussões: <b>Um personagem ou grupo ganha ou perde poder ou influência.</b>",
-            "Repercussões: <b>Um local ou objeto adquire importância ou significado.</b>",
-            "Repercussões: <b>Uma descoberta ou inovação altera o mundo de alguma forma.</b>",
-            "Repercussões: <b>Uma tradição ou crença é questionada ou reforçada.</b>",
-            "Repercussões: <b>Uma jornada ou busca começa ou termina.</b>",
-            "Repercussões: <b>Um equilíbrio de poder ou ordem é estabelecido ou perturbado.</b>",
-        ],
-        [
-            // (Como o evento pode se desenvolver ou mudar ao longo do tempo)
-            "Evolução do Evento: <b>Revelações adicionais ou surpresas mudam a compreensão do evento.</b>",
-            "Evolução do Evento: <b>Novos personagens ou grupos entram em cena.</b>",
-            "Evolução do Evento: <b>O evento se conecta a outros eventos ou histórias de maneiras inesperadas.</b>",
-            "Evolução do Evento: <b>O escopo ou escala do evento aumenta ou diminui.</b>",
-            "Evolução do Evento: <b>As motivações ou objetivos de personagens envolvidos mudam ou evoluem.</b>",
-            "Evolução do Evento: <b>O evento adquire implicações políticas, sociais ou místicas.</b>",
-            "Evolução do Evento: <b>O evento leva a um dilema moral, ético ou filosófico.</b>",
-            "Evolução do Evento: <b>O evento provoca uma mudança na dinâmica entre personagens ou grupos.</b>",
-            "Evolução do Evento: <b>A natureza ou causa do evento é questionada ou reinterpretada.</b>",
-            "Evolução do Evento: <b>O evento culmina em uma confrontação ou escolha dramática.</b>",
-        ],
-    ],
-    enredo_desafio: [
-        [
-            // (O principal obstáculo que o personagem enfrenta)
-            "Tipo de Desafio: <b>Combate físico ou confronto direto.</b>",
-            "Tipo de Desafio: <b>Intriga política ou manipulação social.</b>",
-            "Tipo de Desafio: <b>Resolução de um mistério ou enigma.</b>",
-            "Tipo de Desafio: <b>Superar um ambiente perigoso ou hostil.</b>",
-            "Tipo de Desafio: <b>Estabelecer alianças ou resolver conflitos interpessoais.</b>",
-            "Tipo de Desafio: <b>Enfrentar um medo pessoal ou superar uma fraqueza.</b>",
-            "Tipo de Desafio: <b>Proteger alguém ou algo vulnerável.</b>",
-            "Tipo de Desafio: <b>Encontrar um objeto ou local escondido ou inacessível.</b>",
-            "Tipo de Desafio: <b>Tomar uma decisão difícil ou enfrentar um dilema moral.</b>",
-            "Tipo de Desafio: <b>Desafiar ou confrontar um poder superior ou autoridade.</b>",
-        ],
-        [
-            // (O nível de dificuldade ou complicação do desafio)
-            "Complexidade: <b>O desafio é simples e direto.</b>",
-            "Complexidade: <b>O desafio requer habilidade ou conhecimento especializado.</b>",
-            "Complexidade: <b>O desafio envolve múltiplas etapas ou objetivos.</b>",
-            "Complexidade: <b>O desafio é afetado por fatores externos ou circunstâncias imprevistas.</b>",
-            "Complexidade: <b>O desafio exige cooperação ou coordenação com outros.</b>",
-            "Complexidade: <b>O desafio testa os limites físicos, mentais ou emocionais do personagem.</b>",
-            "Complexidade: <b>O desafio é complicado por engano, traição ou manipulação.</b>",
-            "Complexidade: <b>O desafio tem implicações morais, éticas ou filosóficas.</b>",
-            "Complexidade: <b>O desafio exige sacrifício pessoal ou compromisso.</b>",
-            "Complexidade: <b>O desafio é quase impossível de superar.</b>",
-        ],
-        [
-            // (O aspecto pessoal ou emocional do desafio)
-            "Conflito Interno: <b>Dúvida ou incerteza sobre as próprias habilidades.</b>",
-            "Conflito Interno: <b>Conflito entre lealdades ou alianças.</b>",
-            "Conflito Interno: <b>Medo de fracassar ou decepcionar alguém.</b>",
-            "Conflito Interno: <b>Luta contra tentações ou impulsos negativos.</b>",
-            "Conflito Interno: <b>Enfrentar memórias ou traumas passados.</b>",
-            "Conflito Interno: <b>Equilibrar necessidades pessoais com responsabilidades maiores.</b>",
-            "Conflito Interno: <b>Escolher entre dois caminhos ou opções igualmente atraentes ou perigosas.</b>",
-            "Conflito Interno: <b>Lidar com a perda, luto ou arrependimento.</b>",
-            "Conflito Interno: <b>Enfrentar preconceitos, suposições ou expectativas culturais ou sociais.</b>",
-            "Conflito Interno: <b>Crescimento pessoal, autoaceitação ou autoconhecimento.</b>",
-        ],
-    ],
-    enredo_local: [
-        [
-            // (A categoria geral do local onde a história se desenrola)
-            "Tipo de Local: <b>Cidade ou vila.</b>",
-            "Tipo de Local: <b>Floresta ou selva.</b>",
-            "Tipo de Local: <b>Montanha ou colina.</b>",
-            "Tipo de Local: <b>Deserto ou planície.</b>",
-            "Tipo de Local: <b>Oceano, lago ou rio.</b>",
-            "Tipo de Local: <b>Ruínas ou local histórico.</b>",
-            "Tipo de Local: <b>Castelo, fortaleza ou fortificação.</b>",
-            "Tipo de Local: <b>Templo, santuário ou local sagrado.</b>",
-            "Tipo de Local: <b>Covil ou esconderijo de um vilão.</b>",
-            "Tipo de Local: <b>Mundo ou plano alternativo.</b>",
-        ],
-        [
-            // (Detalhes únicos que diferenciam o local)
-            "Características Específicas: <b>Arquitetura ou construções notáveis.</b>",
-            "Características Específicas: <b>População ou culturas distintas.</b>",
-            "Características Específicas: <b>Flora ou fauna específicas.</b>",
-            "Características Específicas: <b>Recursos naturais ou recursos valiosos.</b>",
-            "Características Específicas: <b>Fenômenos naturais ou climáticos incomuns.</b>",
-            "Características Específicas: <b>Condições ou desafios perigosos.</b>",
-            "Características Específicas: <b>Eventos históricos ou lendas associadas ao local.</b>",
-            "Características Específicas: <b>Segredos ou mistérios ocultos.</b>",
-            "Características Específicas: <b>Estruturas sociais ou políticas particulares.</b>",
-            "Características Específicas: <b>Magia, tecnologia ou poderes únicos presentes no local.</b>",
-        ],
-        [
-            // (Aspectos inesperados ou reviravoltas relacionadas ao local)
-            "Elemento Surpresa: <b>Uma área ou estrutura secreta recém-descoberta.</b>",
-            "Elemento Surpresa: <b>Um evento ou festival local inesperado.</b>",
-            "Elemento Surpresa: <b>Um conflito ou tensão não revelada entre os habitantes locais.</b>",
-            "Elemento Surpresa: <b>Um desastre natural ou catástrofe iminente.</b>",
-            "Elemento Surpresa: <b>Uma criatura ou personagem misterioso que aparece no local.</b>",
-            "Elemento Surpresa: <b>Uma profecia ou lenda local que se torna relevante para a história.</b>",
-            "Elemento Surpresa: <b>Uma aliança ou rivalidade inesperada entre grupos locais.</b>",
-            "Elemento Surpresa: <b>A revelação de uma conspiração ou trama oculta.</b>",
-            "Elemento Surpresa: <b>Um objeto ou artefato poderoso escondido no local.</b>",
-            "Elemento Surpresa: <b>Uma mudança súbita nas condições, atmosfera ou ambiente do local.</b>",
-        ],
-    ],
-    enredo_objetivo: [
-        [
-            // (A meta geral que o personagem precisa alcançar)
-            "Tipo de Objetivo: <b>Recuperar um objeto ou artefato importante.</b>",
-            "Tipo de Objetivo: <b>Resgatar ou proteger uma pessoa ou grupo.</b>",
-            "Tipo de Objetivo: <b>Derrotar ou neutralizar um inimigo ou ameaça.</b>",
-            "Tipo de Objetivo: <b>Desvendar um mistério ou resolver um enigma.</b>",
-            "Tipo de Objetivo: <b>Estabelecer uma aliança ou parceria.</b>",
-            "Tipo de Objetivo: <b>Cumprir uma profecia ou missão sagrada.</b>",
-            "Tipo de Objetivo: <b>Conquistar ou defender um território ou recurso.</b>",
-            "Tipo de Objetivo: <b>Desenvolver habilidades ou conhecimentos específicos.</b>",
-            "Tipo de Objetivo: <b>Tomar uma decisão moral ou ética difícil.</b>",
-            "Tipo de Objetivo: <b>Superar um desafio pessoal ou enfrentar um medo.</b>",
-        ],
-        [
-            // (Os obstáculos ou adversidades que o personagem deve superar para alcançar o objetivo)
-            "Desafios Relacionados: <b>Inimigos poderosos ou numerosos.</b>",
-            "Desafios Relacionados: <b>Condições ambientais ou climáticas adversas.</b>",
-            "Desafios Relacionados: <b>Falta de recursos ou apoio.</b>",
-            "Desafios Relacionados: <b>Enganos, traições ou conspirações.</b>",
-            "Desafios Relacionados: <b>Dilemas morais ou éticos.</b>",
-            "Desafios Relacionados: <b>Conflitos interpessoais ou emocionais.</b>",
-            "Desafios Relacionados: <b>Tempo limitado ou prazo iminente.</b>",
-            "Desafios Relacionados: <b>Informações incompletas ou enganosas.</b>",
-            "Desafios Relacionados: <b>Dificuldades culturais, linguísticas ou sociais.</b>",
-            "Desafios Relacionados: <b>Distâncias ou barreiras geográficas.</b>",
-        ],
-        [
-            // (O resultado esperado de alcançar o objetivo ou as implicações de falhar)
-            "Recompensa ou Consequência: <b>Ganhar prestígio, riqueza ou poder.</b>",
-            "Recompensa ou Consequência: <b>Estabelecer uma amizade ou aliança valiosa.</b>",
-            "Recompensa ou Consequência: <b>Adquirir conhecimento ou habilidades únicas.</b>",
-            "Recompensa ou Consequência: <b>Cumprir um dever, promessa ou destino.</b>",
-            "Recompensa ou Consequência: <b>Evitar uma catástrofe ou desastre.</b>",
-            "Recompensa ou Consequência: <b>Proteger ou salvar vidas.</b>",
-            "Recompensa ou Consequência: <b>Restaurar a paz, a justiça ou a ordem.</b>",
-            "Recompensa ou Consequência: <b>Resolver um conflito pessoal ou emocional.</b>",
-            "Recompensa ou Consequência: <b>Descobrir a verdade ou expor um segredo.</b>",
-            "Recompensa ou Consequência: <b>Atingir a redenção, a cura ou a transformação pessoal.</b>",
-        ],
-    ],
-    enredo_resolucao: [
-        [
-            // (Como a aventura termina)
-            "Tipo de Resolução: <b>Vitória ou sucesso claro.</b>",
-            "Tipo de Resolução: <b>Derrota ou fracasso.</b>",
-            "Tipo de Resolução: <b>Compromisso ou acordo.</b>",
-            "Tipo de Resolução: <b>Conclusão ambígua ou incerta.</b>",
-            "Tipo de Resolução: <b>Transformação ou mudança.</b>",
-            "Tipo de Resolução: <b>Revelação ou descoberta.</b>",
-            "Tipo de Resolução: <b>Fuga ou retirada.</b>",
-            "Tipo de Resolução: <b>Sacrifício ou perda.</b>",
-            "Tipo de Resolução: <b>Renovação ou renascimento.</b>",
-            "Tipo de Resolução: <b>Reconciliação ou perdão.</b>",
-        ],
-        [
-            // (As implicações a curto e longo prazo da resolução)
-            "Impacto ou Consequências: <b>Mudanças pessoais ou no relacionamento dos personagens.</b>",
-            "Impacto ou Consequências: <b>Alterações na comunidade, nação ou mundo.</b>",
-            "Impacto ou Consequências: <b>Despertar de novos desafios ou ameaças.</b>",
-            "Impacto ou Consequências: <b>Criação de novas oportunidades ou possibilidades.</b>",
-            "Impacto ou Consequências: <b>Mudanças na percepção, crenças ou atitudes.</b>",
-            "Impacto ou Consequências: <b>Impacto no equilíbrio de poder ou na estrutura política.</b>",
-            "Impacto ou Consequências: <b>Consequências ecológicas, tecnológicas ou culturais.</b>",
-            "Impacto ou Consequências: <b>Consequências morais, éticas ou filosóficas.</b>",
-            "Impacto ou Consequências: <b>Influência na jornada ou desenvolvimento pessoal.</b>",
-            "Impacto ou Consequências: <b>Abertura de portas para novas aventuras ou histórias.</b>",
-        ],
-        [
-            // (O que os personagens aprendem ou o que a história pode ensinar)
-            "Lição ou Moral: <b>A importância da coragem, determinação ou resiliência.</b>",
-            "Lição ou Moral: <b>O valor da amizade, lealdade ou cooperação.</b>",
-            "Lição ou Moral: <b>A necessidade de compaixão, empatia ou bondade.</b>",
-            "Lição ou Moral: <b>O poder do conhecimento, sabedoria ou autoconhecimento.</b>",
-            "Lição ou Moral: <b>Os perigos da ambição, egoísmo ou ganância.</b>",
-            "Lição ou Moral: <b>A complexidade das escolhas morais, éticas ou pessoais.</b>",
-            "Lição ou Moral: <b>O equilíbrio entre tradição e progresso, ordem e caos.</b>",
-            "Lição ou Moral: <b>A força do amor, da fé ou do sacrifício.</b>",
-            "Lição ou Moral: <b>A inevitabilidade da mudança, do crescimento ou da morte.</b>",
-            "Lição ou Moral: <b>A responsabilidade por nossas ações, decisões e impactos.</b>",
-        ],
-    ],
-    enredo_recompensa: [
-        [
-            // (O que o personagem ganha ao completar a aventura)
-            "Tipo de Recompensa: <b>Tesouros, riquezas ou recursos valiosos.</b>",
-            "Tipo de Recompensa: <b>Armas, equipamentos ou itens mágicos.</b>",
-            "Tipo de Recompensa: <b>Conhecimento, informações ou segredos.</b>",
-            "Tipo de Recompensa: <b>Habilidades, poderes ou talentos.</b>",
-            "Tipo de Recompensa: <b>Prestígio, honra ou reconhecimento.</b>",
-            "Tipo de Recompensa: <b>Aliados, amigos ou seguidores.</b>",
-            "Tipo de Recompensa: <b>Território, propriedade ou influência.</b>",
-            "Tipo de Recompensa: <b>Cura, restauração ou renovação.</b>",
-            "Tipo de Recompensa: <b>Redenção, perdão ou aceitação.</b>",
-            "Tipo de Recompensa: <b>Proteção, segurança ou paz.</b>",
-        ],
-        [
-            // (A importância ou impacto da recompensa)
-            "Valor ou Significado: <b>Benefício pessoal ou material.</b>",
-            "Valor ou Significado: <b>Benefício para os amigos, a família ou o grupo.</b>",
-            "Valor ou Significado: <b>Benefício para a comunidade ou nação.</b>",
-            "Valor ou Significado: <b>Benefício para o mundo ou uma causa maior.</b>",
-            "Valor ou Significado: <b>Crescimento pessoal ou autoconhecimento.</b>",
-            "Valor ou Significado: <b>Restauração da justiça, ordem ou equilíbrio.</b>",
-            "Valor ou Significado: <b>Realização de um sonho, desejo ou destino.</b>",
-            "Valor ou Significado: <b>Avanço em uma jornada ou busca pessoal.</b>",
-            "Valor ou Significado: <b>Superação de um medo, insegurança ou obstáculo.</b>",
-            "Valor ou Significado: <b>Estabelecimento de um legado ou memória duradoura.</b>",
-        ],
-        [
-            // (Efeitos colaterais ou impactos indiretos da recompensa)
-            "Consequências ou Implicações: <b>Novas responsabilidades ou expectativas.</b>",
-            "Consequências ou Implicações: <b>Atração de atenção indesejada ou inimizade.</b>",
-            "Consequências ou Implicações: <b>Mudanças nas relações pessoais ou dinâmicas de grupo.</b>",
-            "Consequências ou Implicações: <b>Necessidade de fazer escolhas difíceis ou sacrifícios.</b>",
-            "Consequências ou Implicações: <b>Descoberta de novos desafios ou mistérios.</b>",
-            "Consequências ou Implicações: <b>Mudanças no status quo ou na estrutura de poder.</b>",
-            "Consequências ou Implicações: <b>Alterações no ambiente, na sociedade ou na cultura.</b>",
-            "Consequências ou Implicações: <b>Consequências morais, éticas ou filosóficas.</b>",
-            "Consequências ou Implicações: <b>Oportunidades para crescimento, aprendizado ou mudança.</b>",
-            "Consequências ou Implicações: <b>Revelação de verdades ocultas ou consequências imprevistas.</b>",
-        ],
-    ],
-    enredo_conflito: [
-        [
-            // (A natureza geral do desafio, enigma ou batalha enfrentada)
-            "Tipo de Conflito: <b>Conflito com inimigos ou adversários.</b>",
-            "Tipo de Conflito: <b>Conflito interpessoal entre aliados ou personagens.</b>",
-            "Tipo de Conflito: <b>Desafio físico, como atravessar um terreno perigoso.</b>",
-            "Tipo de Conflito: <b>Enigma ou mistério que requer solução.</b>",
-            "Tipo de Conflito: <b>Conflito moral ou ético.</b>",
-            "Tipo de Conflito: <b>Batalha tática ou estratégica.</b>",
-            "Tipo de Conflito: <b>Confronto com um medo ou insegurança pessoal.</b>",
-            "Tipo de Conflito: <b>Competição ou rivalidade.</b>",
-            "Tipo de Conflito: <b>Conflito político ou social.</b>",
-            "Tipo de Conflito: <b>Conflito sobrenatural ou místico.</b>",
-        ],
-        [
-            // (As circunstâncias ou condições específicas que cercam o conflito)
-            "Contexto do Conflito: <b>Condições ambientais adversas ou perigosas.</b>",
-            "Contexto do Conflito: <b>Falta de recursos ou apoio.</b>",
-            "Contexto do Conflito: <b>Dilemas morais ou éticos.</b>",
-            "Contexto do Conflito: <b>Informações incompletas ou enganosas.</b>",
-            "Contexto do Conflito: <b>Antecedentes pessoais ou históricos.</b>",
-            "Contexto do Conflito: <b>Culturas, crenças ou tradições conflitantes.</b>",
-            "Contexto do Conflito: <b>Pressão do tempo ou prazo iminente.</b>",
-            "Contexto do Conflito: <b>Segredos, traições ou conspirações.</b>",
-            "Contexto do Conflito: <b>Inimigos inesperados ou aliados relutantes.</b>",
-            "Contexto do Conflito: <b>Restrições legais, políticas ou sociais.</b>",
-        ],
-        [
-            // (Como o conflito pode ser resolvido ou superado)
-            "Resolução Potencial: <b>Negociação ou diplomacia.</b>",
-            "Resolução Potencial: <b>Combate direto ou confronto.</b>",
-            "Resolução Potencial: <b>Solução de problemas ou habilidades criativas.</b>",
-            "Resolução Potencial: <b>Busca de informações ou conhecimento.</b>",
-            "Resolução Potencial: <b>Formação de alianças ou cooperação.</b>",
-            "Resolução Potencial: <b>Sacrifício ou ato heroico.</b>",
-            "Resolução Potencial: <b>Confronto e superação de medos ou inseguranças pessoais.</b>",
-            "Resolução Potencial: <b>Adaptação ou aceitação de mudanças.</b>",
-            "Resolução Potencial: <b>Exposição da verdade ou revelação de segredos.</b>",
-            "Resolução Potencial: <b>Magia, tecnologia ou habilidades especiais.</b>",
         ],
     ],
     aventura_ideias: [
@@ -4368,7 +4086,7 @@ let oracle = {
             "Hobbies: <b>Falcoaria</b>",
             "Hobbies: <b>Ficcao ruim</b>",
             "Hobbies: <b>Fumar</b>",
-            "Hobbies: <b>Posia</b>",
+            "Hobbies: <b>Poesia</b>",
             "Hobbies: <b>Quebra-cabecas</b>",
             "Hobbies: <b>Relojoaria</b>",
             "Hobbies: <b>Teatro</b>",
@@ -6497,24 +6215,13 @@ let oracle = {
         "Isso força você a agir contra as suas melhores intenções",
         "Um amigo ou aliado é colocado em perigo (ou você, caso esteja sozinho)",
         "Role mais duas vezes nesta tabela",
-    ],
-    pag_custo_emp: [
-        "Um perigo iminente",
-        "Um empecilho",
-        "Uma escolha difícil",
-        "Um novo aspecto ao PJ ou à cena",
-        "Dê a um NPC um impulso",
-        "Marque uma caixa de estresse",
-    ],
-    pag_custo_falha: [
         "Reforçe a oposição",
         "Surge uma nova oposição ou obstáculo",
-        "O sucesso é adiado / você é atrasado",
+        "O sucesso é adiado/você é atrasado",
         "O prazo se torna iminente",
         "Dê a um NPC um aspecto com invocação grátis",
         "Marque uma consequência",
     ],
-
     cena_npc: [
         "Um inimigo conhecido",
         "Um inimigo em potencial",
@@ -6785,18 +6492,6 @@ let oracle = {
         "<b>Falha: </b>O Protagonista ou Coadjuvante não consegue fazer o que queria! Role duas vezes na tabela das Consequências Negativas!",
         "<b>Falha: </b>O Protagonista ou Coadjuvante não consegue fazer o que queria! Role duas vezes na tabela das Consequências Negativas!",
         "<b>Falha Crítica: </b>O Protagonista ou Coadjuvante não consegue fazer o que queria e algo catastrófico acontece! Role três vezes na tabela das Consequências Negativas!",
-    ],
-    acao_teste_falha: [
-        "A ação do Coadjuvante ou Protagonista causa um efeito negativo, destrutivo ou danoso, física ou emocionalmente, em um de seus amigos, companheiros ou aliados.",
-        "Algo de valor é perdido, ou destruído, ou é tomado pelo inimigo do Coadjuvante ou Protagonista.",
-        "Uma nova ameaça, um novo obstáculo, um novo perigo ou inimigo do Coadjuvante ou Protagonista é revelado.",
-        "O Coadjuvante ou Protagonista coloca um amigo, companheiro ou aliado, ou a si mesmo em perigo ou em uma situação muito pior.",
-        "O Coadjuvante ou Protagonista se confronta com um problema sério que precisa ser resolvido antes de retornar para a sua missão ou objetivo principal.",
-        "O Coadjuvante ou Protagonista sofre dano ou uma consequência grave que o deixa incapacitado.",
-        "Algo traumatizante acontece e o Coadjuvante ou Protagonista sofre Dano Psíquico, ficando mentalmente perturbado e emocionalmente instável.",
-        "O Coadjuvante ou Protagonista tem que realizar uma ação que gasta toda a sua energia, o que o deixa fatigado fisicamente e/ou emocionalmente. Suas ações seguintes sofrem efeito dessa fadiga extrema.",
-        "O Coadjuvante ou Protagonista sofre um Acidente Inesperado, algo que não estava na Cena aparece para atrapalhar, ou um desastre imprevisto o deixa incapacitado ou sem ação, até que ele resolva o seu problema.",
-        "O Coadjuvante ou Protagonista sofre a Pior Catástrofe possível para a sua situação. O Coadjuvante ou Protagonista fica incapacitado, ferido gravemente, traumatizado, preso, imobilizado, ou completamente à mercê de seu Antagonista na cena, com seus pertences destruídos, infectado, doente, acusado injustamente, ou algo semelhante.",
     ],
     acao_dano_um: [
         [
@@ -8027,7 +7722,7 @@ let oracle = {
     criar_aterfato: [
         [
             "<b>Forma:</b> Animal",
-            "<b>Forma:</b> Dragão",
+            "<b>Forma:</b> Animal Mistico",
             "<b>Forma:</b> Foguinho",
             "<b>Forma:</b> Máscara",
             "<b>Forma:</b> Objeto",
@@ -8212,48 +7907,6 @@ let enredoResult = [
         valor: "",
         msg: "Como o <b>EVENTO INICIAL</b> se conecta ao personagem.",
     }, // (Como o evento inicial se conecta ao personagem)
-    {
-        label: "Desafio",
-        ora: "enredo_desafio",
-        valor: "",
-        msg: "Obstáculos ou dificuldades enfrentadas pelo personagem no <b>EVENTO INICIAL</b>.",
-    }, // (Obstáculos ou dificuldades enfrentadas pelo personagem)
-    {
-        label: "Consequência",
-        ora: "enredo_consequencia",
-        valor: "",
-        msg: "O que acontece como resultado do <b>EVENTO INICIAL</b>.",
-    }, // (O que acontece como resultado do evento inicial)
-    {
-        label: "Local",
-        ora: "enredo_local",
-        valor: "",
-        msg: "<b>LOCAL</b> onde a aventura acontece.",
-    }, // (onde a aventura acontece)
-    {
-        label: "Objetivo",
-        ora: "enredo_objetivo",
-        valor: "",
-        msg: "<b>OBJETIVO</b> que o personagem precisa alcançar.",
-    }, // (o que o personagem precisa alcançar)
-    {
-        label: "Conflito",
-        ora: "enredo_conflito",
-        valor: "",
-        msg: "<b>CONFLITOS</b> desafios, enigmas ou batalhas enfrentadas.",
-    }, // (desafios, enigmas ou batalhas enfrentadas)
-    {
-        label: "Resolução",
-        ora: "enredo_resolucao",
-        valor: "",
-        msg: "<b>RESOLUÇÃO</b> da aventura",
-    }, // (como a aventura termina)
-    {
-        label: "Recompensa",
-        ora: "enredo_recompensa",
-        valor: "",
-        msg: "<b>RECOMPENSA</b> do personagem ao completar a aventura",
-    }, // (o que o personagem ganha ao completar a aventura)
 ];
 
 let aventuraResult = [
@@ -8570,9 +8223,6 @@ let jogadasResult = [
     },
     { label: "Ação Combate", ora: "acao_combate", valor: "", msg: "" },
     { label: "Pagando preço", ora: "pag_preco", valor: "", msg: "" },
-    { label: "Pag. cust empate", ora: "pag_custo_emp", valor: "", msg: "" },
-    { label: "Pag. cust falha", ora: "pag_custo_falha", valor: "", msg: "" },
-    { label: "Efeito/Falha", ora: "acao_teste_falha", valor: "", msg: "" },
     {
         label: "Dano Elem.",
         ora: "acao_dano_um",
@@ -8598,8 +8248,6 @@ let npcResult = [
     { label: "Nome M", ora: "vamp_nome_m", valor: "", msg: "" },
     { label: "Nome F", ora: "vamp_nome_f", valor: "", msg: "" },
     { label: "Gerar nome", ora: "npc_nome_gerado", valor: "", msg: "" },
-    { label: "Historico", ora: "historia_npc", valor: "", msg: "" },
-    { label: "Personalidade", ora: "personalidade_npc", valor: "", msg: "" },
     {
         label: "Caracteristicas",
         ora: "persona_npc",
@@ -8607,6 +8255,8 @@ let npcResult = [
         msg: "Humor (5 niveis) de Hostil(1) a Prestativo(5)",
     },
     { label: "Carac. Fisicas", ora: "npc_caracter", valor: "", msg: "" },
+    { label: "Historico", ora: "historia_npc", valor: "", msg: "" },
+    { label: "Personalidade", ora: "personalidade_npc", valor: "", msg: "" },
     { label: "Conversa NPC", ora: "coversa_npc", valor: "", msg: "" },
     { label: "Conv.interesse", ora: "conversa2_npc", valor: "", msg: "" },
     { label: "Conv.hostil", ora: "conversa3_npc", valor: "", msg: "" },

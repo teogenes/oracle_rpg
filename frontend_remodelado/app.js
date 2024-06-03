@@ -126,193 +126,63 @@ params = {
             }
         },
         execOracle: function (ora, ind) {
-            let arr = ["oraculo_sol", "oracle_inspiracao"];
-            if (arr.includes(ora)) {
-                this.combinacao_opcao(ora, this.oracleList, 2, ind);
-            } else if (ora == "abstracao_oracle") {
-                this.combinacao_opcao(ora, this.oracleList, 3, ind);
-            } else if (ora == "pergunta_oracle" || ora == "criar_aterfato") {
-                this.combinacao_opcao(ora, this.oracleList, 5, ind);
-            } else if (ora == "objeto_tesouro") {
-                this.combinacao_opcao(ora, this.oracleList, 6, ind);
-            } else {
-                this.oracleList[ind].valor = oracle[ora].random();
-            }
+            this.combinacao_opcao(ora, this.oracleList, ind);
         },
         execEnredo: function (ora, ind) {
-            let arr = [
-                [
-                    "enredo_origem",
-                    "enredo_conexao",
-                    "enredo_consequencia",
-                    "enredo_desafio",
-                    "enredo_local",
-                    "enredo_objetivo",
-                    "enredo_conflito",
-                    "enredo_recompensa",
-                    "enredo_resolucao",
-                ],
-            ];
-            if (arr[0].includes(ora)) {
-                this.combinacao_opcao(ora, this.enredoList, 3, ind);
-            } else {
-                this.enredoList[ind].valor = oracle[ora].random();
-            }
+            this.combinacao_opcao(ora, this.enredoList, ind);
         },
         execAventura: function (ora, ind) {
-            if (ora == "vilao_npc" || ora == "aventura_ideias") {
-                this.combinacao_opcao(ora, this.aventuraList, 5, ind);
-            } else if (ora == "missao_completa") {
-                this.combinacao_opcao(ora, this.aventuraList, 7, ind);
-            } else {
-                this.aventuraList[ind].valor = oracle[ora].random();
-            }
+            this.combinacao_opcao(ora, this.aventuraList, ind);
         },
         execMissao: function (ora, ind) {
-            let arr = [
-                "missao_combate",
-                "missao_busca",
-                "missao_infiltracao",
-                "missao_diplomacia",
-                "missao_protecao",
-                "missao_investigacao",
-                "missao_exploracao",
-                "missao_transporte",
-                "missao_habilidades",
-            ];
-            if (arr.includes(ora)) {
-                this.combinacao_opcao(ora, this.missaoList, 3, ind);
-            } else {
-                this.missaoList[ind].valor = oracle[ora].random();
-            }
+            this.combinacao_opcao(ora, this.missaoList, ind);
         },
         execLocal: function (ora, ind) {
-            if (ora == "local_historia_cidade" || ora == "masmorra_caminho") {
-                this.combinacao_opcao(ora, this.localList, 5, ind);
-            } else if (ora == "masmorra_enigma") {
-                this.combinacao_opcao(ora, this.localList, 2, ind);
-            } else if (
-                ora == "masmorra_encontro" ||
-                ora == "local_masmorra" ||
-                ora == "masmorra_compartimento" ||
-                ora == "masmorra_armadilha"
-            ) {
-                this.combinacao_opcao(ora, this.localList, 3, ind);
-            } else if (ora == "local_cena_interna") {
-                this.combinacao_opcao(ora, this.localList, 8, ind);
-            } else if (ora == "local_simple") {
-                this.combinacao_opcao(ora, this.localList, 10, ind);
-            } else if (ora == "local_cidade") {
-                this.combinacao_opcao(ora, this.localList, 15, ind);
-            } else if (ora == "local_estrutura") {
-                this.combinacao_opcao(ora, this.localList, 11, ind);
-            } else {
-                this.localList[ind].valor = oracle[ora].random();
-            }
+            this.combinacao_opcao(ora, this.localList, ind);
         },
         execCena: function (ora, ind) {
-            if (
-                ora == "cena_evento" ||
-                ora == "cena_tipo_complicacao" ||
-                ora == "cena_local" ||
-                ora == "cena_eve_amb" ||
-                ora == "cena_rumores"
-            ) {
-                this.combinacao_opcao(ora, this.cenaList, 3, ind);
-            } else if (
-                ora == "cena_compl_amigavel" ||
-                ora == "cena_compl_neutro" ||
-                ora == "cena_compl_hostil" ||
-                ora == "cena_ambiente"
-            ) {
-                this.combinacao_opcao(ora, this.cenaList, 6, ind);
-            } else if (ora == "cena_rumor_detalhe") {
-                this.combinacao_opcao(ora, this.cenaList, 5, ind);
-            } else {
-                this.cenaList[ind].valor = oracle[ora].random();
-            }
+            this.combinacao_opcao(ora, this.cenaList, ind);
         },
         execEvento: function (ora, ind) {
-            if (ora == "option_aventura" || ora == "eventos_generico") {
-                this.combinacao_opcao(ora, this.eventoList, 4, ind);
-            } else if (ora == "evento_eGenerico") {
-                this.combinacao_opcao(ora, this.eventoList, 2, ind);
-            } else if (
-                ora == "eventos_floresta" ||
-                ora == "eventos_motanha" ||
-                ora == "eventos_cidadde" ||
-                ora == "eventos_dungeon"
-            ) {
-                this.combinacao_opcao(ora, this.eventoList, 3, ind);
-            } else {
-                this.eventoList[ind].valor = oracle[ora].random();
-            }
+            this.combinacao_opcao(ora, this.eventoList, ind);
         },
         execYokai: function (ora, ind) {
-            if (ora == "aparencia_mostro" || ora == "mostros") {
-                this.combinacao_opcao(ora, this.yokaiList, 10, ind);
-            } else {
-                this.yokaiList[ind].valor = oracle[ora].random();
-            }
+            this.combinacao_opcao(ora, this.yokaiList, ind);
         },
         execVPersons: function (ora, ind) {
             if (ora == "npc_nome_gerado") {
-                this.vPersonsList[ind].valor =
-                    this.gera_nome(part_nome) + " " + this.gera_nome(part_nome);
+                this.vPersonsList[ind].valor = this.gera_nome(part_nome) + " " + this.gera_nome(part_nome);
             } else if (ora == "vamp_nome_m" || ora == "vamp_nome_f") {
                 let cond = ora == "vamp_nome_m" ? 0 : 1;
                 let nomeu = nomesPerson[cond];
                 let nome = nomeu[this.randomInt(0, nomeu.length)];
                 let sobrenomeu = nomesPerson[2];
-                let sobrenome =
-                    sobrenomeu[this.randomInt(0, sobrenomeu.length)];
+                let sobrenome = sobrenomeu[this.randomInt(0, sobrenomeu.length)];
                 this.vPersonsList[ind].valor = nome + " " + sobrenome;
             } else if (ora == "personalidade_npc") {
-                this.combinacao_opcao(ora, this.vPersonsList, 2, ind, "");
-            } else if (ora == "npc_raca") {
-                this.combinacao_opcao(ora, this.vPersonsList, 4, ind);
-            } else if (ora == "coversa_npc") {
-                this.combinacao_opcao(ora, this.vPersonsList, 5, ind);
-            } else if (ora == "npc_caracter") {
-                this.combinacao_opcao(ora, this.vPersonsList, 6, ind);
-            } else if (ora == "historia_npc") {
-                this.combinacao_opcao(ora, this.vPersonsList, 9, ind);
-            } else if (ora == "persona_npc") {
-                this.combinacao_opcao(ora, this.vPersonsList, 11, ind);
-            } else {
-                this.vPersonsList[ind].valor = oracle[ora].random();
+                this.combinacao_opcao(ora, this.vPersonsList, ind, "");
+            } else{
+                this.combinacao_opcao(ora, this.vPersonsList, ind);
             }
         },
         execRelacao: function (ora, ind) {
-            if (
-                ora == "probl_pessoal" ||
-                ora == "probl_relacional" ||
-                ora == "probl_local" ||
-                ora == "probl_regional" ||
-                ora == "probl_federal" ||
-                ora == "probl_planetario"
-            ) {
-                this.combinacao_opcao(ora, this.relacaoList, 3, ind);
-            } else {
-                this.relacaoList[ind].valor = oracle[ora].random();
-            }
+            this.combinacao_opcao(ora, this.relacaoList, ind);
         },
         execJogadas: function (ora, ind) {
-            if (ora == "acao_dano_um" || ora == "acao_dano_dois") {
-                this.combinacao_opcao(ora, this.jogadasList, 5, ind);
-            } else if (ora == "magias") {
-                this.combinacao_opcao(ora, this.jogadasList, 7, ind);
-            } else {
-                this.jogadasList[ind].valor = oracle[ora].random();
-            }
+            this.combinacao_opcao(ora, this.jogadasList, ind);
         },
-        combinacao_opcao: function (ora, lista, quant, ind, quebra = "<br />") {
-            let arr = [];
-            for (let i = 0; i < quant; i++) {
-                let vv = oracle[ora][i];
-                arr.push(vv[this.randomInt(0, vv.length)] + quebra);
+        combinacao_opcao: function (ora, lista, ind, quebra = "<br />") {
+            if(Array.isArray(oracle[ora][0])){
+                let arr = [];
+                let quant = oracle[ora].length;
+                for (let i = 0; i < quant; i++) {
+                    let vv = oracle[ora][i];
+                    arr.push(vv[this.randomInt(0, vv.length)]);
+                }
+                lista[ind].valor = arr.join(quebra);
+            }else{
+                lista[ind].valor = oracle[ora].random();
             }
-            lista[ind].valor = arr.join(" ");
         },
         randomInt: function (min, max) {
             let rando = Math.random();
