@@ -971,9 +971,9 @@ let oracle = {
             "Probabilidade: <b>Definitivamente</b>",
         ],
         [
-            "Detalhe da Pergunta: <b>Pouca</b>",
-            "Detalhe da Pergunta: <b>Media</b>",
-            "Detalhe da Pergunta: <b>Muita</b>",
+            "Detalhe da Resposta: <b>Pouca</b>",
+            "Detalhe da Resposta: <b>Media</b>",
+            "Detalhe da Resposta: <b>Muita</b>",
         ],
         [
             "Fator: <b>Agravante/Desfavorável: Algo que complica ou piora a situação</b>",
@@ -986,18 +986,6 @@ let oracle = {
         [
             "Interação: <b>Esquerda, Baixo, Más Conições, Chuva, Frio, Fechado</b>",
             "Interação: <b>Direita, Alto, Boas Condições, Sol, Calor, Aberto</b>",
-        ],
-        [
-            "Dificuldades: <b>Fácil</b>",
-            "Dificuldades: <b>Fácil</b>",
-            "Dificuldades: <b>Moderado</b>",
-            "Dificuldades: <b>Moderado</b>",
-            "Dificuldades: <b>Moderado</b>",
-            "Dificuldades: <b>Moderado</b>",
-            "Dificuldades: <b>Difícil</b>",
-            "Dificuldades: <b>Difícil</b>",
-            "Dificuldades: <b>Muito Difícil</b>",
-            "Dificuldades: <b>Impossível</b>",
         ],
     ],
 
@@ -1044,7 +1032,7 @@ let oracle = {
             "Adjetivo: <b>Sangue</b>",
             "Adjetivo: <b>Névoa</b>",
             "Adjetivo: <b>Alegria</b>",
-            "Adjetivo: <b>Inseguranca</b>",
+            "Adjetivo: <b>Insegurança</b>",
             "Adjetivo: <b>Oculto</b>",
             "Adjetivo: <b>Esperança</b>",
             "Adjetivo: <b>Noticia</b>",
@@ -1212,7 +1200,7 @@ let oracle = {
             "Verbo: <b>Terminar</b>",
             "Verbo: <b>Suprimir</b>",
             "Verbo: <b>Compartilhar</b>",
-            "Verbo: <b>Cacar</b>",
+            "Verbo: <b>Caçar</b>",
             "Verbo: <b>Hesitar</b>",
             "Verbo: <b>Adquirir</b>",
             "Verbo: <b>Escalar</b>",
@@ -2003,7 +1991,7 @@ let oracle = {
             "Adj.Encontro: <b>Indefeso</b>",
         ],
     ],
-    local_cidade: [
+    cidade_si: [
         // continuar
         [
             "Tamanho: <b>Vilarejo</b>",
@@ -4774,7 +4762,7 @@ let oracle = {
             "O/Um/Para(a): <b>Testemunha</b>",
             "O/Um/Para(a): <b>Alquimista</b>",
             "O/Um/Para(a): <b>Guarda da Cidade</b>",
-            "O/Um/Para(a): Cidade</b>",
+            "O/Um/Para(a): <b>Cidade</b>",
             "O/Um/Para(a): <b>Vilão</b>",
             "O/Um/Para(a): <b>Princesa</b>",
             "O/Um/Para(a): <b>Pessoa</b>",
@@ -7704,9 +7692,48 @@ let oracle = {
         ],
     ],
     maldicao_aterfato:[
-        [],
-        [],
-        [],
+        [
+            "<b>Ele dá:</b> Recupera 3 strock de alguém. Acontece um evento.",
+            "<b>Ele dá:</b> Usuário ganha +1 nos testes do seu atributo primario.",
+            "<b>Ele dá:</b> Usuário fica invisível por 5 Turnos.",
+            "<b>Ele dá:</b> Anima um cadáver por 10 Turnos, obediente ao criador.",
+            "<b>Ele dá:</b> Usuário pode flutuar por 3 Turnos. Altura máxima de 20 metros, velocidade de corrida.",
+            "<b>Ele dá:</b> Cria um escudo ao redor do usuário com Proteção + 4 por 4 Turnos.",
+            "<b>Ele dá:</b> Velocidade! Personagem ganha uma ação extra por Turno. Dura 3 Turnos.",
+            "<b>Ele dá:</b> Usuário é transportado para um lugar no raio de 1 km. Ele deve conhecer o local e mentalizá-lo.",
+            "<b>Ele dá:</b> Comanda a mente de alguém a fazer algo, desde que não o coloque em risco.",
+            "<b>Ele dá:</b> Cria uma aura de fogo de 2 metros de raio, com strock 2, por 2 Turnos.",
+            "<b>Ele dá:</b> Pode ler a mente de alguém por 30 segundos.",
+            "<b>Ele dá:</b> Traz alguém de volta à vida, com vitalidade 2. Artefato se desmancha em seguida.",
+        ],
+        [
+            "<b>Ele pede:</b> Atrai uma Criatura Estranha como Inimigo. Sorteie novamente para o próximo uso.",
+            "<b>Ele pede:</b> É ilógico que o usuário perca a consciência por 3 turnos.",
+            "<b>Ele pede:</b> Artefato explode com Força+ no final do Turno seguinte. É destruído.",
+            "<b>Ele pede:</b> Objetos eletrônicos no ambiente deixam de funcionar.",
+            "<b>Ele pede:</b> Funciona apenas uma vez ao dia.",
+            "<b>Ele pede:</b> Tem um efeito diferente a cada uso. Sorteie um cada vez que usá-lo.",
+            "<b>Ele pede:</b> Queima! O usuário leva 1 strock.",
+            "<b>Ele pede:</b> Funciona apenas duas vezes ao dia.",
+            "<b>Ele pede:</b> Afeta a memória do personagem, perde 1 ponto de Experiência.",
+            "<b>Ele pede:</b> Causa uma onda de choque de 5 metros e Força+ quando ativado. Atinge também o usuário.",
+            "<b>Ele pede:</b> Usuário gasta 1 ponto de Folego. Se não tiver, leva 1 strock.",
+        ],
+        [
+            "<b>Consequências:</b> O dono original, uma Criatura quer ele de volta, e vira um Inimigo.",
+            "<b>Consequências:</b> Um Antagonista novo ou já existente quer o Artefato.",
+            "<b>Consequências:</b> Um Culto busca o Artefato e pode fazer uma emboscada.",
+            "<b>Consequências:</b> Um grupo ou seita verá o portador do Artefato como um profeta.",
+            "<b>Consequências:</b> Até três Inimigos se unem para roubá-lo. Quando um aparecer, é lógico que apareçam outros.",
+            "<b>Consequências:</b> O portador contrai uma doença. Em três Temporadas ele morrerá. Qual a cura?",
+            "<b>Consequências:</b> Um novo Antagonista surge na próxima Temporada para recuperar o Artefato.",
+            "<b>Consequências:</b> Um membro do grupo quer o Artefato, mas não sabe que ele está com a persona.",
+            "<b>Consequências:</b> Uma Criatura precisa do Artefato para sobreviver e fará de tudo para obtê-lo.",
+            "<b>Consequências:</b> Um Aliado torna-se obcecado pelo Artefato e pretende obtê-lo, custe o que custar.",
+            "<b>Consequências:</b> Outro personagem (sorteado e mantido em segredo, só ele saberá) fica obcecado pelo Artefato.",
+            "<b>Consequências:</b> Um Antagonista quer o Artefato. Ele se revelará no próximo episódio.",
+            "<b>Consequências:</b> O Artefato é a isca de uma armadilha criada por um Inimigo. É uma emboscada! Ele está aqui!",
+        ],
     ],
     conflitos_evento: [
         [
@@ -7741,39 +7768,15 @@ let oracle = {
 /*********************************** ABAS ************************************************ */
 
 let oracleResult = [
-    {
-        label: "Oraculo Geral",
-        ora: "pergunta_oracle",
-        valor: "",
-        msg: "O oraculo das perguntas",
-    },
-    {
-        label: "Abstração",
-        ora: "abstracao_oracle",
-        valor: "",
-        msg: "Para ideias abstratas: Situação, Sujeito e Verbo",
-    },
-    {
-        label: "Criar Artefato",
-        ora: "criar_aterfato",
-        valor: "",
-        msg: "Criar Artefato",
-    },
+    {label: "Oraculo Geral", ora: "pergunta_oracle", valor: "", msg: "O oraculo das perguntas"},
+    {label: "Abstração", ora: "abstracao_oracle", valor: "", msg: "Para ideias abstratas: Situação, Sujeito e Verbo"},
+    {label: "Criar Artefato",ora: "criar_aterfato", valor: "", msg: "Criar Artefato"},
+    {label: "Maldição",ora: "maldicao_aterfato", valor: "", msg: "Revela a maldição"},
 ];
 
 let enredoResult = [
-    {
-        label: "Origem",
-        ora: "enredo_origem",
-        valor: "",
-        msg: "O que desencadeou o <b>EVENTO INICIAL</b>.",
-    }, // (O que desencadeou o evento inicial)
-    {
-        label: "Conexão",
-        ora: "enredo_conexao",
-        valor: "",
-        msg: "Como o <b>EVENTO INICIAL</b> se conecta ao personagem.",
-    }, // (Como o evento inicial se conecta ao personagem)
+    {label: "Origem", ora: "enredo_origem", valor: "", msg: "O que desencadeou o <b>EVENTO INICIAL</b>."},
+    {label: "Conexão", ora: "enredo_conexao", valor: "", msg: "Como o <b>EVENTO INICIAL</b> se conecta ao personagem."},
 ];
 
 let aventuraResult = [
@@ -7869,7 +7872,7 @@ let localResult = [
     },
     {
         label: "Cidade",
-        ora: "local_cidade",
+        ora: "cidade_si",
         valor: "",
         msg: "<i>1.</i> Cria um esquema de cidade.",
     },
