@@ -2572,7 +2572,7 @@ let oracle = {
         "Inimigos estão presentes em pequenos números, causando problemas.",
         "Inimigos estão presentes em grandes números, causando problemas.",
     ],
-    local_cidade:[
+    local_cidade: [
         [
             "Um(a) habitado...",
             "Um(a) luxuoso...",
@@ -2595,7 +2595,7 @@ let oracle = {
             "Uma casa.",
         ],
     ],
-    local_estranho:[
+    local_estranho: [
         [
             "Um matadouro em ruínas.",
             "Um depósito de contêineres.",
@@ -3652,7 +3652,6 @@ let oracle = {
         "Isso força você a agir contra as suas melhores intenções.",
         "Um amigo, companheiro ou aliado é colocado em perigo (ou você é, se estiver sozinho).",
         "Role mais duas vezes nesta tabela. Ambos os resultados ocorrem. Se eles forem os mesmos resultados, faça com que isso piore.",
-    
     ],
 
     historia_npc: [
@@ -4427,9 +4426,9 @@ let oracle = {
     conversa3_npc: [
         "Não se importa.",
         "Responde cautelosamente a partir de agora, <b>fica Neutro.</b>",
-        "Diminua 1 ponto de interesse e e revida com ataque fisicos..",
-        "Diminua 1 ponto de interesse e revida com ataque social..",
-        "Diminua 1 ponto de interesse e revida com ataque social..",
+        "Diminua 1 ponto de interesse e e revida com ataque fisicos.",
+        "Diminua 1 ponto de interesse e revida com ataque social.",
+        "Diminua 1 ponto de interesse e revida com ataque social.",
         "Encerra a conversa e vai embora.",
         "Encerra a conversa e vai embora.",
         "Não se importa.",
@@ -5031,14 +5030,13 @@ let oracle = {
         "Um NPC nativo.",
         "Um inimigo.",
     ],
-    evento_encontro:[
+    evento_encontro: [
         "Formas De Vida",
         "Estrutura",
         "Obstáculo",
         "Evento De Viagem",
-
     ],
-    encontro_vida:[
+    encontro_vida: [
         [
             "Animais pequenos...",
             "Animais médios...",
@@ -5070,7 +5068,7 @@ let oracle = {
             "...seguem seu caminho, outra coisa os interessa.",
         ],
     ],
-    encontro_estrutura:[
+    encontro_estrutura: [
         [
             "Uma Estrutura construída...",
             "Uma série de habitações...",
@@ -5102,7 +5100,7 @@ let oracle = {
             "...invadida por Formas de Vida.",
         ],
     ],
-    encontro_obstaculo:[
+    encontro_obstaculo: [
         [
             "Formas de Vida hostis...",
             "Um penhasco...",
@@ -5500,7 +5498,7 @@ let oracle = {
             "<b>Condição:</b> durante uma chuva torrencial",
         ],
     ],
-    vulnerabilidade:[
+    vulnerabilidade: [
         [
             "A criatura tem medo de...",
             "A criatura é vulnerável a...",
@@ -6751,7 +6749,7 @@ let oracle = {
             "<b>Poderes: </b>Poderes de Energia.",
         ],
     ],
-    criaturas_estranha:[
+    criaturas_estranha: [
         [
             "Um humano com cabeça de...",
             "Uma criatura que lembra um(a)...",
@@ -7432,7 +7430,7 @@ let oracle = {
             "<b>Cor:</b> Branca",
             "<b>Cor:</b> Rosa",
             "<b>Cor:</b> Verde",
-            "<b>Cor:</b> Vermelha"
+            "<b>Cor:</b> Vermelha",
         ],
         [
             "<b>Itens:</b> Agulha",
@@ -7628,7 +7626,7 @@ let oracle = {
             "<b>Forma:</b> Foguinho",
             "<b>Forma:</b> Máscara",
             "<b>Forma:</b> Objeto",
-            "<b>Forma:</b> Inseto"
+            "<b>Forma:</b> Inseto",
         ],
         [
             "<b>Personalidade:</b> Animada",
@@ -7666,7 +7664,7 @@ let oracle = {
             "<b>Personalidade:</b> Nojento",
             "<b>Personalidade:</b> Medroso",
             "<b>Personalidade:</b> Invejoso",
-            "<b>Personalidade:</b> Infantil"
+            "<b>Personalidade:</b> Infantil",
         ],
         [
             "<b>Atributo:</b> Afiada, Adiciona +1 ao Dano causado em combates.",
@@ -7691,7 +7689,7 @@ let oracle = {
             "<b>Maldição:</b> Sim",
         ],
     ],
-    maldicao_aterfato:[
+    maldicao_aterfato: [
         [
             "<b>Ele dá:</b> Recupera 3 strock de alguém. Acontece um evento.",
             "<b>Ele dá:</b> Usuário ganha +1 nos testes do seu atributo primario.",
@@ -7762,21 +7760,51 @@ let oracle = {
             "Persegue seu objetivo com culpa.",
             "Persegue seu objetivo com medo.",
         ],
-    ]
+    ],
 };
 
 /*********************************** ABAS ************************************************ */
 
 let oracleResult = [
-    {label: "Oraculo Geral", ora: "pergunta_oracle", valor: "", msg: "O oraculo das perguntas"},
-    {label: "Abstração", ora: "abstracao_oracle", valor: "", msg: "Para ideias abstratas: Situação, Sujeito e Verbo"},
-    {label: "Criar Artefato",ora: "criar_aterfato", valor: "", msg: "Criar Artefato"},
-    {label: "Maldição",ora: "maldicao_aterfato", valor: "", msg: "Revela a maldição"},
+    {
+        label: "Oraculo Geral",
+        ora: "pergunta_oracle",
+        valor: "",
+        msg: "O oraculo das perguntas",
+    },
+    {
+        label: "Abstração",
+        ora: "abstracao_oracle",
+        valor: "",
+        msg: "Para ideias abstratas: Situação, Sujeito e Verbo",
+    },
+    {
+        label: "Criar Artefato",
+        ora: "criar_aterfato",
+        valor: "",
+        msg: "Criar Artefato",
+    },
+    {
+        label: "Maldição",
+        ora: "maldicao_aterfato",
+        valor: "",
+        msg: "Revela a maldição",
+    },
 ];
 
 let enredoResult = [
-    {label: "Origem", ora: "enredo_origem", valor: "", msg: "O que desencadeou o <b>EVENTO INICIAL</b>."},
-    {label: "Conexão", ora: "enredo_conexao", valor: "", msg: "Como o <b>EVENTO INICIAL</b> se conecta ao personagem."},
+    {
+        label: "Origem",
+        ora: "enredo_origem",
+        valor: "",
+        msg: "O que desencadeou o <b>EVENTO INICIAL</b>.",
+    },
+    {
+        label: "Conexão",
+        ora: "enredo_conexao",
+        valor: "",
+        msg: "Como o <b>EVENTO INICIAL</b> se conecta ao personagem.",
+    },
 ];
 
 let aventuraResult = [
@@ -7894,8 +7922,18 @@ let localResult = [
         valor: "",
         msg: "<i>4.</i> Adiciona mais um detalhe a cidade.",
     },
-    { label: "Loc cidade", ora: "local_cidade", valor: "", msg: "Cria local da cidadde"},
-    { label: "Loc estranho", ora: "local_estranho", valor: "", msg: "Cria local estranho"},
+    {
+        label: "Loc cidade",
+        ora: "local_cidade",
+        valor: "",
+        msg: "Cria local da cidadde",
+    },
+    {
+        label: "Loc estranho",
+        ora: "local_estranho",
+        valor: "",
+        msg: "Cria local estranho",
+    },
     {
         label: "Cena Local",
         ora: "local_cena_interna",
@@ -8019,11 +8057,31 @@ let eventoResult = [
         msg: "Eventos generico",
     },
     { label: "Reviravolta", ora: "reviravolta", valor: "", msg: "" },
-    { label: "Tipo encontro", ora: "evento_encontro", valor: "", msg: "Tipo de encontro" },
-    { label: "Enc. vida", ora: "encontro_vida", valor: "", msg: "Encontro de forma ded vida" },
-    { label: "Enc. estrutura", ora: "encontro_estrutura", valor: "", msg: "Encontro de Estrutura" },
-    { label: "Enc. obstaculo", ora: "encontro_obstaculo", valor: "", msg: "Encontro de Obstaculo" },
-]
+    {
+        label: "Tipo encontro",
+        ora: "evento_encontro",
+        valor: "",
+        msg: "Tipo de encontro",
+    },
+    {
+        label: "Enc. vida",
+        ora: "encontro_vida",
+        valor: "",
+        msg: "Encontro de forma ded vida",
+    },
+    {
+        label: "Enc. estrutura",
+        ora: "encontro_estrutura",
+        valor: "",
+        msg: "Encontro de Estrutura",
+    },
+    {
+        label: "Enc. obstaculo",
+        ora: "encontro_obstaculo",
+        valor: "",
+        msg: "Encontro de Obstaculo",
+    },
+];
 
 let relacaoResult = [
     {
@@ -8090,9 +8148,24 @@ let jogadasResult = [
 
 let yokaiResult = [
     { label: "Animal", ora: "mostros", valor: "", msg: "Geração de animais" },
-    { label: "Criaturas", ora: "criaturas_estranha", valor: "", msg: "Criaturas estranha" },
-    { label: "Mostruoso", ora: "aparencia_mostro", valor: "", msg: "Geração de mostro" },
-    { label: "Vulnerabilidade", ora: "vulnerabilidade", valor: "", msg: "A criatura tem medo de?" },
+    {
+        label: "Criaturas",
+        ora: "criaturas_estranha",
+        valor: "",
+        msg: "Criaturas estranha",
+    },
+    {
+        label: "Mostruoso",
+        ora: "aparencia_mostro",
+        valor: "",
+        msg: "Geração de mostro",
+    },
+    {
+        label: "Vulnerabilidade",
+        ora: "vulnerabilidade",
+        valor: "",
+        msg: "A criatura tem medo de?",
+    },
     { label: "Situac. combate", ora: "situacao_combate", valor: "", msg: "" },
 ];
 
@@ -8110,7 +8183,12 @@ let npcResult = [
     { label: "Carac. Fisicas", ora: "npc_caracter", valor: "", msg: "" },
     { label: "Historico", ora: "historia_npc", valor: "", msg: "" },
     { label: "Personalidade", ora: "personalidade_npc", valor: "", msg: "" },
-    { label: "Conflitos", ora: "conflitos_evento", valor: "", msg: "Conflito do npc" },
+    {
+        label: "Conflitos",
+        ora: "conflitos_evento",
+        valor: "",
+        msg: "Conflito do npc",
+    },
     { label: "Conversa NPC", ora: "coversa_npc", valor: "", msg: "" },
     { label: "Conv.interesse", ora: "conversa2_npc", valor: "", msg: "" },
     { label: "Conv.hostil", ora: "conversa3_npc", valor: "", msg: "" },
