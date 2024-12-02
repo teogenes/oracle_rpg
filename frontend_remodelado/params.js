@@ -3154,7 +3154,10 @@ let oracle = {
             "Destruir: <b>(Quebrar, Desmontar, Sumir)</b>",
             "Mover: <b>(Impelir, Trazer)</b>",
             "Aumentar: <b>(Aprimorar, Auxiliar)</b>",
-            "Reduzir: <b>(Dispersar, Ocultar)</b>"
+            "Reduzir: <b>(Dispersar, Ocultar)</b>",
+            "Explorar <b>(descobrir, investigar)</b>",
+            "Restaurar <b>(consertar, devolver)</b>",
+            "Negociar <b>(barganhar, trocar)</b>"
         ],
         [
             "Entidade: <b>(Pessoa, Facção, Criatura)</b>",
@@ -3162,7 +3165,30 @@ let oracle = {
             "Valor: <b>(Reputação, Poder, Prosperidade)</b>",
             "Local: <b>(Trajeto, Comunidade, Posição)</b>",
             "Recurso: <b>(Objeto, Ingrediente, Elemento)</b>",
-            "Evento: <b>(Fenômeno, Circunstância, Lenda)</b>"
+            "Evento: <b>(Fenômeno, Circunstância, Lenda)</b>",
+            "Memória <b>(lembrança, registro, história)</b>",
+            "Tempo <b>(época, futuro, passado)</b>",
+            "Causa <b>(missão, ideal, crença)</b>",
+            "Relação <b>(aliança, rivalidade, laço)</b>"
+        ],
+        [
+            "Modificador: <b>Sob tensão constante</b>",
+            "Modificador: <b>Com limitações inesperadas</b>",
+            "Modificador: <b>Envolvendo perigos ocultos</b>",
+            "Modificador: <b>Em meio a forças conflitantes</b>",
+            "Modificador: <b>Durante uma transição crítica</b>",
+            "Modificador: <b>Sob influência desconhecida</b>",
+            "Modificador: <b>Em um cenário instável</b>",
+            "Modificador: <b>Em circunstâncias voláteis</b>",
+            "Modificador: <b>No coração da incerteza</b>",
+            "Modificador: <b>Entre camadas de complexidade</b>",
+            "Modificador: <b>Em uma estrutura em decadência</b>",
+            "Modificador: <b>Sob um véu de mistério</b>",
+            "Modificador: <b>Com tempo se esgotando</b>",
+            "Modificador: <b>Sob pressão inevitável</b>",
+            "Modificador: <b>Em um ritmo acelerado</b>",
+            "Modificador: <b>Contra a corrente dos eventos</b>",
+            "Modificador: <b>Diante de um prazo crítico</b>"
         ],
         [
             "--------------------------------------"
