@@ -3148,16 +3148,16 @@ let oracle = {
             "Tema: <b>Suprimento</b>",
         ],
         [
-            "Revelar: <b>(Expor, Esclarecer)</b>",
-            "Mudar: <b>(Trocar, Moldar)</b>",
-            "Proteger: <b>(Desviar, Prevenir)</b>",
+            "Revelar: <b>(Expor, Esclarecer, Manifestar)</b>",
+            "Mudar: <b>(Trocar, Moldar, Transformar)</b>",
+            "Proteger: <b>(Desviar, Prevenir, Resguardar)</b>",
             "Destruir: <b>(Quebrar, Desmontar, Sumir)</b>",
-            "Mover: <b>(Impelir, Trazer)</b>",
-            "Aumentar: <b>(Aprimorar, Auxiliar)</b>",
-            "Reduzir: <b>(Dispersar, Ocultar)</b>",
-            "Explorar <b>(descobrir, investigar)</b>",
-            "Restaurar <b>(consertar, devolver)</b>",
-            "Negociar <b>(barganhar, trocar)</b>"
+            "Mover: <b>(Impelir, Trazer, Deslocar)</b>",
+            "Aumentar: <b>(Aprimorar, Auxiliar, Expandir)</b>",
+            "Reduzir: <b>(Dispersar, Ocultar, Minimizar)</b>",
+            "Explorar <b>(Descobrir, Investigar, Vasculhar)</b>",
+            "Restaurar <b>(Consertar, Devolver, Reerguer)</b>",
+            "Negociar <b>(Barganhar, Trocar, Medir)</b>"
         ],
         [
             "Entidade: <b>(Pessoa, Facção, Criatura)</b>",
