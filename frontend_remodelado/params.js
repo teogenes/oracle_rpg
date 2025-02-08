@@ -510,62 +510,6 @@ let oracle = {
             "Ponto de Envolvimento: <b>Enfrentando seu próprio passado ou demônios pessoais.</b>",
         ],
     ],
-    aventura_ideias: [
-        [
-            //
-            "Ganchos de Aventura: <b>Pedido de ajuda ou uma mensagem urgente.</b>",
-            "Ganchos de Aventura: <b>Rumor ou boato intrigante.</b>",
-            "Ganchos de Aventura: <b>Encontro casual com um personagem misterioso.</b>",
-            "Ganchos de Aventura: <b>Descoberta inesperada ou evento sobrenatural.</b>",
-            "Ganchos de Aventura: <b>Recompensa lucrativa ou contrato.</b>",
-            "Ganchos de Aventura: <b>Desastre natural, ataque ou ameaça iminente.</b>",
-        ],
-        [
-            //
-            "Objetivos: <b>Resgatar, proteger ou escoltar alguém.</b>",
-            "Objetivos: <b>Recuperar ou encontrar um objeto, artefato ou tesouro.</b>",
-            "Objetivos: <b>Derrotar ou neutralizar um inimigo, monstro ou ameaça.</b>",
-            "Objetivos: <b>Investigar, solucionar ou expor um mistério ou conspiração.</b>",
-            "Objetivos: <b>Explorar, mapear ou colonizar um território desconhecido.</b>",
-            "Objetivos: <b>Estabelecer alianças, resolver disputas ou negociar acordos.</b>",
-        ],
-        [
-            //
-            "Desafios: <b>Combate contra inimigos, monstros ou oponentes.</b>",
-            "Desafios: <b>Enigmas, quebra-cabeças ou desafios intelectuais.</b>",
-            "Desafios: <b>Armadilhas, emboscadas ou perigos ambientais.</b>",
-            "Desafios: <b>Negociação, persuasão ou diplomacia.</b>",
-            "Desafios: <b>Furtividade, espionagem ou infiltração.</b>",
-            "Desafios: <b>Magia, feitiços ou fenômenos sobrenaturais.</b>",
-        ],
-        [
-            //
-            "Aliados e Antagonistas: <b>Um velho amigo, mentor ou aliado.</b>",
-            "Aliados e Antagonistas: <b>Um rival, inimigo ou traidor.</b>",
-            "Aliados e Antagonistas: <b>Um personagem enigmático, ambíguo ou imprevisível.</b>",
-            "Aliados e Antagonistas: <b>Um monstro, criatura ou besta selvagem.</b>",
-            "Aliados e Antagonistas: <b>Um grupo, facção ou organização.</b>",
-            "Aliados e Antagonistas: <b>Um líder, governante ou autoridade.</b>",
-        ],
-        [
-            //
-            "Resoluções: <b>Vitória ou sucesso claro, com consequências positivas.</b>",
-            "Resoluções: <b>Derrota ou fracasso, levando a consequências negativas.</b>",
-            "Resoluções: <b>Compromisso, acordo ou solução intermediária.</b>",
-            "Resoluções: <b>Conclusão ambígua, incerta ou aberta a interpretação.</b>",
-            "Resoluções: <b>Transformação, mudança ou evolução dos personagens.</b>",
-            "Resoluções: <b>Revelação, descoberta ou aprendizado de informações importantes.</b>",
-        ],
-        [
-            //
-            "Continuidade: <b>Fuga, retirada ou abandono da missão.</b>",
-            "Continuidade: <b>Sacrifício, perda ou preço alto pago pelo sucesso.</b>",
-            "Continuidade: <b>Renovação, renascimento ou redenção dos personagens.</b>",
-            "Continuidade: <b>Um gancho para uma nova aventura ou continuação da história.</b>",
-            "Continuidade: <b>Consequências a longo prazo ou repercussões no mundo.</b>",
-            "Continuidade: <b>Novos aliados, inimigos ou desafios emergentes.</b>",
-        ],
-    ],
     missao_busca: [
         [
             "O Alvo da Busca: <b>Um artefato mágico ou item poderoso.</b>",

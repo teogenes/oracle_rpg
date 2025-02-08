@@ -13,9 +13,8 @@ let enredoResult = [
 ];
 
 let aventuraResult = [
-    { label: "Aventuras", ora: "aventura_ideias", valor: "", msg: "Cria uma idea para a aventura."},
-    { label: "Desafio", ora: "vilao_npc", valor: "", msg: "Desafio final da <b>aventura</b></b>."},
     { label: "Missões", ora: "missao_completa", valor: "", msg: "Cria uma idea para a missão."},
+    { label: "Desafio", ora: "vilao_npc", valor: "", msg: "Desafio final da <b>missão</b></b>."},
 ];
 
 let missaoResult = [
