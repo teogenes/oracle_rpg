@@ -180,11 +180,14 @@ let oracle = {
     pergunta_oracle: [
         ["Afirmação: <b>Sim</b>", "Afirmação: <b>Não</b>"],
         [
-            "Probabilidade: <b>Incerto</b>",
-            "Probabilidade: <b>Provavelmente</b>",
-            "Probabilidade: <b>Provavelmente</b>",
-            "Probabilidade: <b>Provavelmente</b>",
-            "Probabilidade: <b>Definitivamente</b>",
+            "Probabilidade: <b>Incerto (30%)</b>",
+            "Probabilidade: <b>Duvidoso (45%)</b>",
+            "Probabilidade: <b>Duvidoso (45%)</b>",
+            "Probabilidade: <b>Duvidoso (45%)</b>",
+            "Probabilidade: <b>Provavelmente (70%)</b>",
+            "Probabilidade: <b>Provavelmente (70%)</b>",
+            "Probabilidade: <b>Provavelmente (70%)</b>",
+            "Probabilidade: <b>Definitivamente (85%)</b>",
         ],
         [
             "Detalhe da Resposta: <b>Pouca</b>",
