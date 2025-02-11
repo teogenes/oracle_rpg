@@ -115,7 +115,13 @@ let npcResult = [
 ];
 
 let personResult = [
-    { label: "Celeste", ora: "magia_celeste", valor: "", msg: "Magia celeste!" },
-    { label: "Espiritual", ora: "magia_espiritual", valor: "", msg: "Magia espiritual!" },
-    { label: "Elemental", ora: "magia_elemental", valor: "", msg: "Magia Elemental!" },
+    { label: "Família", ora: "person_familia", valor: "", msg: "Sua família! *Irmão: jogue na coluna 4 uma vez para cada irmão para definir tudo sobre ele." },
+    { label: "Sit Família", ora: "sit_familia", valor: "", msg: "Situação da família!" },
+    { label: "Você", ora: "este_você", valor: "", msg: "Sua vida!" },
+    { label: "Motivação", ora: "motivacao_person", valor: "", msg: "Motivação da persona!" },
+    { label: "Aconteceu", ora: "aconteceu_person", valor: "", msg: "O que aconteceu de marcante na sua vida pregresa!" },
+    { label: "Gran eventos", ora: "grande_evento", valor: "", msg: "Grandes Eventos!" },
+    { label: "Gran inimigo", ora: "grande_inimigo", valor: "", msg: "Grandes Inimigo!" },
+    { label: "Gran amigo", ora: "grande_amigo", valor: "", msg: "Grandes Amigo!" },
+    { label: "Ah, o Amor", ora: "person_amor", valor: "", msg: "Ah, o Amor!" },
 ]
