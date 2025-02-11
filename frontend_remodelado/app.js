@@ -8,12 +8,12 @@ params = {
         cenaValid: false,
         eventoValid: false,
         vampOrecleValid: false,
-        oracleValid: true,
+        oracleValid: false,
         npcValid: false,
         relacaoValid: false,
         yokaiValid: false,
         jogadasValid: false,
-        magiaValid: false,
+        personValid: true,
         historicos: [],
         dado_ativo: 5,
         dado_passivo: 5,
@@ -28,7 +28,7 @@ params = {
         relacaoList: relacaoResult,
         localList: localResult,
         jogadasList: jogadasResult,
-        magiaList: magiaResult,
+        personList: personResult,
     },
     methods: {
         aba_clear: function (troca) {
@@ -44,7 +44,7 @@ params = {
                 "relacaoValid",
                 "jogadasValid",
                 "yokaiValid",
-                "magiaValid",
+                "personValid",
             ];
 
             eval(`this.${troca} = !this.${troca}`);
@@ -110,9 +110,9 @@ params = {
                 this.vPersonsList[vE].valor = "";
             }
         },
-        magiaClick: function () {
-            for (vE in this.magiaList) {
-                this.magiaList[vE].valor = "";
+        personClick: function () {
+            for (vE in this.personList) {
+                this.personList[vE].valor = "";
             }
         },
         limparDados: function () {
@@ -157,8 +157,8 @@ params = {
         execYokai: function (ora, ind) {
             this.combinacao_opcao(ora, this.yokaiList, ind);
         },
-        execMagia: function (ora, ind) {
-            this.combinacao_opcao(ora, this.magiaList, ind);
+        execPerson: function (ora, ind) {
+            this.combinacao_opcao(ora, this.personList, ind);
         },
         execVPersons: function (ora, ind) {
             if (ora == "npc_nome_gerado") {

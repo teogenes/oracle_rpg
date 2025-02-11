@@ -40,7 +40,7 @@
                         <a @click="aba_clear('relacaoValid')" class="waves-effect waves-light btn-small deep-purple accent-3">Relações</a>                 
                         <a @click="aba_clear('jogadasValid')" class="waves-effect waves-light btn-small deep-purple accent-3">Ações e Jogadas</a>                 
                         <a @click="aba_clear('yokaiValid')" class="waves-effect waves-light btn-small red darken-3">Mostros</a>
-                        <a @click="aba_clear('magiaValid')" class="waves-effect waves-light btn-small purple darken-2">Magia</a>                 
+                        <a @click="aba_clear('personValid')" class="waves-effect waves-light btn-small purple darken-2">Persona</a>                 
                     </div>
                     <div class="col s12">
                         <hr>
@@ -102,23 +102,25 @@
                             </tbody>
                         </table>
 
-                        <table class="highlight" v-show="magiaValid" >
+
+                        <table class="highlight" v-show="personValid" >
                             <thead>
                                 <tr>
-                                    <th colspan="2" style="text-align: center;" >MAGIA</th>
+                                    <th colspan="2" style="text-align: center;" >Persona</th>
                                 </tr>
                                 <tr>
                                     <th>AÇÕES</th>
-                                    <th class="center" ><a @click="magiaClick" class="waves-effect waves-light btn-small  yellow darken-3" >Limpar</a></th>
+                                    <th class="center" ><a @click="personClick" class="waves-effect waves-light btn-small  yellow darken-3" >Limpar</a></th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr v-for="(olista, ind) in magiaList">
-                                    <td style="width:168px;" ><a :title="olista.label" @click="execMagia(olista.ora, ind)" class="waves-effect waves-light btn-small  brown darken-3" >{{olista.label}}</a></td>
+                                <tr v-for="(olista, ind) in personList">
+                                    <td style="width:168px;" ><a :title="olista.label" @click="execPerson(olista.ora, ind)" class="waves-effect waves-light btn-small  brown darken-3" >{{olista.label}}</a></td>
                                     <td v-html="olista.valor || olista.msg" ></td>
                                 </tr>
                             </tbody>
                         </table>
+
 
                         <table class="highlight" v-show="jogadasValid" >
                             <thead>

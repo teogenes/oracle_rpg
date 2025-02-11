@@ -114,7 +114,7 @@ let npcResult = [
     { label: "Conv.hostil", ora: "conversa3_npc", valor: "", msg: "" },
 ];
 
-let magiaResult = [
+let personResult = [
     { label: "Celeste", ora: "magia_celeste", valor: "", msg: "Magia celeste!" },
     { label: "Espiritual", ora: "magia_espiritual", valor: "", msg: "Magia espiritual!" },
     { label: "Elemental", ora: "magia_elemental", valor: "", msg: "Magia Elemental!" },
