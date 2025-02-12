@@ -72,15 +72,6 @@ let eventoResult = [
     { label: "Enc. obstaculo", ora: "encontro_obstaculo", valor: "", msg: "Encontro de Obstaculo"},
 ];
 
-let relacaoResult = [
-    { label: "pessoal ", ora: "probl_pessoal", valor: "", msg: "Relação da persona com o ambiente"},
-    { label: "relacional", ora: "probl_relacional", valor: "", msg: "Relação das pessoas para a sua persona"},
-    { label: "local", ora: "probl_local", valor: "", msg: "Relação do ambiente para a sua persona"},
-    { label: "regional", ora: "probl_regional", valor: "", msg: "Relação das pessoas para o ambiente"},
-    { label: "federal", ora: "probl_federal", valor: "", msg: "Relação historica a nivel continental"},
-    { label: "planetário", ora: "probl_planetario", valor: "", msg: "Relação historica a nivel mundial"},
-];
-
 let jogadasResult = [
     { label: "Magias", ora: "magias", valor: "", msg: "Tipos e magias" },
     { label: "Suces./Falha", ora: "acao_teste", valor: "", msg: "Sucesso ou Falha?"},
@@ -125,3 +116,10 @@ let personResult = [
     { label: "Gran amigo", ora: "grande_amigo", valor: "", msg: "Grandes Amigo!" },
     { label: "Ah, o Amor", ora: "person_amor", valor: "", msg: "Ah, o Amor!" },
 ]
+
+let ermosResult = [
+    { label: "Tipo Ermo", ora: "tipo_ermo", valor: "", msg: "Tipo de Ermo!"},
+    { label: "Solo/Vege", ora: "ermo_solo", valor: "", msg: "Tipo de Solo e Vegeração do ermo"},
+    { label: "Descorberta ", ora: "ermo_descorberta", valor: "", msg: "Tipo de descorberta do ermo"},
+    { label: "Ancestral ", ora: "ermo_ancestral", valor: "", msg: "Coisa Ancestral da Descorberta do ermo, Resultados com ... são complementados na coluna seguinte."},
+];

@@ -37,7 +37,7 @@
                         <hr>
                         <a @click="aba_clear('oracleValid')" class="waves-effect waves-light btn-small blue-grey darken-4">ORACULO</a>
                         <a @click="aba_clear('npcValid')" class="waves-effect waves-light btn-small blue darken-2">NPCs</a>
-                        <a @click="aba_clear('relacaoValid')" class="waves-effect waves-light btn-small deep-purple accent-3">Relações</a>                 
+                        <a @click="aba_clear('ermosValid')" class="waves-effect waves-light btn-small deep-purple accent-3">Ermos</a>                 
                         <a @click="aba_clear('jogadasValid')" class="waves-effect waves-light btn-small deep-purple accent-3">Ações e Jogadas</a>                 
                         <a @click="aba_clear('yokaiValid')" class="waves-effect waves-light btn-small red darken-3">Mostros</a>
                         <a @click="aba_clear('personValid')" class="waves-effect waves-light btn-small purple darken-2">Persona</a>                 
@@ -140,19 +140,19 @@
                             </tbody>
                         </table>
                         
-                        <table class="highlight" v-show="relacaoValid" >
+                        <table class="highlight" v-show="ermosValid" >
                             <thead>
                                 <tr>
-                                    <th colspan="2" style="text-align: center;" >RELAÇÕES AMBIENTAIS/PESSOAIS</th>
+                                    <th colspan="2" style="text-align: center;" >ERMOS</th>
                                 </tr>
                                 <tr>
                                     <th>AÇÕES</th>
-                                    <th class="center" > <a @click="relacaoClick" class="waves-effect waves-light btn-small  yellow darken-3" >Limpar</a></th>
+                                    <th class="center" > <a @click="ermosClick" class="waves-effect waves-light btn-small  yellow darken-3" >Limpar</a></th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr v-for="(olista, ind) in relacaoList">
-                                    <td style="width:168px;" ><a :title="olista.label" @click="execRelacao(olista.ora, ind)" class="waves-effect waves-light btn-small  brown darken-3" >{{olista.label}}</a></td>
+                                <tr v-for="(olista, ind) in ermosList">
+                                    <td style="width:168px;" ><a :title="olista.label" @click="execErmos(olista.ora, ind)" class="waves-effect waves-light btn-small  brown darken-3" >{{olista.label}}</a></td>
                                     <td v-html="olista.valor || olista.msg" ></td>
                                 </tr>
                             </tbody>

@@ -8,9 +8,9 @@ params = {
         cenaValid: false,
         eventoValid: false,
         vampOrecleValid: false,
-        oracleValid: true,
+        oracleValid: false,
         npcValid: false,
-        relacaoValid: false,
+        ermosValid: true,
         yokaiValid: false,
         jogadasValid: false,
         personValid: false,
@@ -25,7 +25,7 @@ params = {
         yokaiList: yokaiResult,
         cenaList: cenaResult,
         vPersonsList: npcResult,
-        relacaoList: relacaoResult,
+        ermosList: ermosResult,
         localList: localResult,
         jogadasList: jogadasResult,
         personList: personResult,
@@ -41,7 +41,7 @@ params = {
                 "eventoValid",
                 "oracleValid",
                 "npcValid",
-                "relacaoValid",
+                "ermosValid",
                 "jogadasValid",
                 "yokaiValid",
                 "personValid",
@@ -85,9 +85,9 @@ params = {
                 this.yokaiList[vE].valor = "";
             }
         },
-        relacaoClick: function () {
-            for (vE in this.relacaoList) {
-                this.relacaoList[vE].valor = "";
+        ermosClick: function () {
+            for (vE in this.ermosList) {
+                this.ermosList[vE].valor = "";
             }
         },
         missaoClick: function () {
@@ -176,8 +176,8 @@ params = {
                 this.combinacao_opcao(ora, this.vPersonsList, ind);
             }
         },
-        execRelacao: function (ora, ind) {
-            this.combinacao_opcao(ora, this.relacaoList, ind);
+        execErmos: function (ora, ind) {
+            this.combinacao_opcao(ora, this.ermosList, ind);
         },
         execJogadas: function (ora, ind) {
             this.combinacao_opcao(ora, this.jogadasList, ind);
