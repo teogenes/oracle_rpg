@@ -686,8 +686,6 @@ let oracle = {
             "Local: <b>Baías</b>",
             "Local: <b>Bosques</b>",
             "Local: <b>Campos gelados</b>",
-            "Local: <b>Charcos</b>",
-            "Local: <b>Charnecas</b>",
             "Local: <b>Colinas</b>",
             "Local: <b>Montanhas</b>",
             "Local: <b>Planaltos</b>",
