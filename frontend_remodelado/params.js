@@ -229,6 +229,12 @@ let oracle = {
             "Situação: <b>No silêncio</b>",
         ],
         [
+            "Tempo: <b>Passado</b>",
+            "Tempo: <b>Presente</b>",
+            "Tempo: <b>Presente</b>",
+            "Tempo: <b>Futuro</b>",
+        ],
+        [
             "---------------"
         ],
         [
