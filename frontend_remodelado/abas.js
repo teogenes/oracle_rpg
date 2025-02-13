@@ -49,8 +49,6 @@ let localResult = [
 
 let cenaResult = [
     { label: "Ambiente", ora: "cena_ambiente", valor: "", msg: "Estado emocional do ambiente/pessoas."},
-    { label: "Event. Ambie", ora: "cena_eve_amb", valor: "", msg: "Criação de eventos do ambiente."},
-    { label: "Evento cena", ora: "cena_evento", valor: "", msg: "Criação de eventos de cena."},
     { label: "NPCs", ora: "cena_npc", valor: "", msg: "NPC presente na cena." },
     { label: "Rumores", ora: "cena_rumores", valor: "", msg: "Rumores da cena."},
     { label: "Detal. rumor", ora: "cena_rumor_detalhe", valor: "", msg: "detalhes do Rumor"},
@@ -62,14 +60,11 @@ let cenaResult = [
 ];
 
 let eventoResult = [
-    { label: "Encontros", ora: "eventos_acontecimento", valor: "", msg: "" },
     { label: "Eventos", ora: "evento_eGenerico", valor: "", msg: "Eventos aleatórios"},
     { label: "Even. generico", ora: "eventos_generico", valor: "", msg: "Eventos generico"},
+    { label: "Event. Ambie", ora: "cena_eve_amb", valor: "", msg: "Criação de eventos do ambiente."},
+    { label: "Evento cena", ora: "cena_evento", valor: "", msg: "Criação de eventos de cena."},
     { label: "Reviravolta", ora: "reviravolta", valor: "", msg: "" },
-    { label: "Tipo encontro", ora: "evento_encontro", valor: "", msg: "Tipo de encontro"},
-    { label: "Enc. vida", ora: "encontro_vida", valor: "", msg: "Encontro de forma de vida"},
-    { label: "Enc. estrutura", ora: "encontro_estrutura", valor: "", msg: "Encontro de Estrutura"},
-    { label: "Enc. obstaculo", ora: "encontro_obstaculo", valor: "", msg: "Encontro de Obstaculo"},
 ];
 
 let jogadasResult = [
