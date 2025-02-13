@@ -73,8 +73,6 @@ let jogadasResult = [
     { label: "Ação Combate", ora: "acao_combate", valor: "", msg: "" },
     { label: "Situac. combate", ora: "situacao_combate", valor: "", msg: "" },
     { label: "Pagando preço", ora: "pag_preco", valor: "", msg: "" },
-    { label: "Dano Elem.", ora: "acao_dano_um", valor: "", msg: "Dano Elemento"},
-    { label: "Dano Fisico", ora: "acao_dano_dois", valor: "", msg: "Dano Fisico"},
 ];
 
 let yokaiResult = [
