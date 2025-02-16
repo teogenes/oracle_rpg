@@ -6843,14 +6843,66 @@ let oracle = {
             "<b>Guardião:</b> Dragões",
         ],
     ],
-    obsacolo_ermo: [
+    obsacolo_ermo:[
         [
-            ["um","dois"],
-            ["um","dois"],
-            ["um","dois"],
+            ["<b>Curiosidade:</b> Sim", "<b>Curiosidade:</b> Não", "<b>Curiosidade:</b> Não"],
+            ["<b>Obstáculo:</b> Sim", "<b>Obstáculo:</b> Não", "<b>Obstáculo:</b> Não"],
         ],
         [
-            "um","dois"   
+            "<b>Curiosidade:</b> Rastro de animal", "<b>Curiosidade:</b> Pássaros voando em círculos", 
+            "<b>Curiosidade:</b> Placa de madeira quebrada", "<b>Curiosidade:</b> Carcaça de animal", 
+            "<b>Curiosidade:</b> Acampamento abandonado", "<b>Curiosidade:</b> Buraco grande e estranho", 
+            "<b>Curiosidade:</b> Barulho do alto das árvores", "<b>Curiosidade:</b> Trilha no chão", 
+            "<b>Curiosidade:</b> Carcaça de animal", "<b>Curiosidade:</b> Árvore oca com algo dentro", 
+            "<b>Curiosidade:</b> Ninhos de pássaros", "<b>Curiosidade:</b> Inscrição nas pedras", 
+            "<b>Curiosidade:</b> Caverna ao lado", "<b>Curiosidade:</b> Casa de madeira em ruínas", 
+            "<b>Curiosidade:</b> Planta colorida e misteriosa", "<b>Curiosidade:</b> Parece ter água ali (ou não?)", 
+            "<b>Curiosidade:</b> Alguns animais pequenos", "<b>Curiosidade:</b> Aves sobrevoam o local", 
+            "<b>Curiosidade:</b> Esqueleto de um aventureiro", "<b>Curiosidade:</b> Ruínas antigas",
+        ],
+        [
+            "<b>Obstáculo:</b> Chuva constante", "<b>Obstáculo:</b> Rio largo no caminho", "<b>Obstáculo:</b> Caminho com espinhos", "<b>Obstáculo:</b> Nuvem de insetos",
+            "<b>Obstáculo:</b> Barranco alto à frente", "<b>Obstáculo:</b> Árvore imensa caída à frente", "<b>Obstáculo:</b> Caminho com espinhos",
+            "<b>Obstáculo:</b> Assaltantes estão acampados ali", "<b>Obstáculo:</b> Animais estão devorando uma caça", "<b>Obstáculo:</b> Subida íngreme, é preciso escalar",
+            "<b>Obstáculo:</b> Chão instável", "<b>Obstáculo:</b> Desfiladeiro à frente", "<b>Obstáculo:</b> Parede lateral instável",
+            "<b>Obstáculo:</b> Animais distraídos", "<b>Obstáculo:</b> Lama impede o grupo de se mover",
+            "<b>Obstáculo:</b> Neblina densa impede de enxergar", "<b>Obstáculo:</b> Nuvem de mosquitos", "<b>Obstáculo:</b> Areia cobre a visão", "<b>Obstáculo:</b> Pés ficam presos na areia",
+            "<b>Obstáculo:</b> Andando em círculos", "<b>Obstáculo:</b> Vento muito forte", "<b>Obstáculo:</b> Miragens confundem o grupo",
+        ],
+        [
+            [
+                "<b>Tempero 1:</b> Vazio / Flor", "<b>Tempero 1:</b> Barulho / Chuva", 
+                "<b>Tempero 1:</b> Terra / Trilha", "<b>Tempero 1:</b> Eco / Grama", 
+                "<b>Tempero 1:</b> Vento / Frio", "<b>Tempero 1:</b> Calor / Luz", 
+                "<b>Tempero 1:</b> Folhas / Flecha", "<b>Tempero 1:</b> Escuro / Tronco", 
+                "<b>Tempero 1:</b> Limo / Pássaros", "<b>Tempero 1:</b> Trilha / Broto", 
+                "<b>Tempero 1:</b> Confusão / Casca", "<b>Tempero 1:</b> Raiz / Marcas", 
+                "<b>Tempero 1:</b> Aves / Nuvens", "<b>Tempero 1:</b> Calor / Dente", 
+                "<b>Tempero 1:</b> Fumaça / Caverna", "<b>Tempero 1:</b> Pedras / Penas", 
+                "<b>Tempero 1:</b> Machado / Ferro", "<b>Tempero 1:</b> Árvore / Escudo", 
+                "<b>Tempero 1:</b> Chuva / Musgo", "<b>Tempero 1:</b> Gases / Placa", 
+                "<b>Tempero 1:</b> Frio / Sanguessuga", "<b>Tempero 1:</b> Neblina / Galhos", 
+                "<b>Tempero 1:</b> Árvore / Casebre", "<b>Tempero 1:</b> Areia / Templo", 
+                "<b>Tempero 1:</b> Sol / Ruínas", "<b>Tempero 1:</b> Vento / Deuses", 
+                "<b>Tempero 1:</b> Lua / Animal", "<b>Tempero 1:</b> Miragem / Ossos", 
+                "<b>Tempero 1:</b> Oásis / Povo",
+            ],
+            [
+                "<b>Tempero 2:</b> Verdejante", "<b>Tempero 2:</b> Distante", 
+                "<b>Tempero 2:</b> Comprido", "<b>Tempero 2:</b> Cansado", 
+                "<b>Tempero 2:</b> ao fundo", "<b>Tempero 2:</b> Tranquilo", "<b>Tempero 2:</b> Úmido", 
+                "<b>Tempero 2:</b> Seco", "<b>Tempero 2:</b> Vívido", "<b>Tempero 2:</b> Alto", 
+                "<b>Tempero 2:</b> Perdido", "<b>Tempero 2:</b> Antigo", "<b>Tempero 2:</b> Duro", 
+                "<b>Tempero 2:</b> Cinza", "<b>Tempero 2:</b> Quente", "<b>Tempero 2:</b> Distante", 
+                "<b>Tempero 2:</b> Afiado", "<b>Tempero 2:</b> Vertiginoso", 
+                "<b>Tempero 2:</b> Abandonado", "<b>Tempero 2:</b> Sujo", 
+                "<b>Tempero 2:</b> Flamejante", "<b>Tempero 2:</b> Apodrecido", 
+                "<b>Tempero 2:</b> Fedorento", "<b>Tempero 2:</b> Perdido", "<b>Tempero 2:</b> Antigo", 
+                "<b>Tempero 2:</b> Escaldante", "<b>Tempero 2:</b> Misterioso", 
+                "<b>Tempero 2:</b> Gigante", "<b>Tempero 2:</b> Inacreditável", 
+                "<b>Tempero 2:</b> Resistente", "<b>Tempero 2:</b> ",
+            ]
         ]
-    ]
+    ],
+    
 };
