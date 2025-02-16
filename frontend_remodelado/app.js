@@ -6,11 +6,11 @@ params = {
         missaoValid: false,
         localValid: false,
         cenaValid: false,
-        eventoValid: true,
+        eventoValid: false,
         vampOrecleValid: false,
         oracleValid: false,
         npcValid: false,
-        ermosValid: false,
+        ermosValid: true,
         yokaiValid: false,
         jogadasValid: false,
         personValid: false,
@@ -183,14 +183,31 @@ params = {
             this.combinacao_opcao(ora, this.jogadasList, ind);
         },
         combinacao_opcao: function (ora, lista, ind, quebra = "<br />") {
+            
             if(Array.isArray(oracle[ora][0])){
+            
                 let arr = [];
                 let quant = oracle[ora].length;
                 for (let i = 0; i < quant; i++) {
+                    
+                    if(Array.isArray(oracle[ora][i][0])){
+
+                        let arr2 = [];
+                        let quant2 = oracle[ora][i].length;
+                        
+                        for (let j = 0; j < quant2; j++) {
+                            let vv = oracle[ora][i][j];
+                            arr2.push(vv[this.randomInt(0, vv.length)]);
+                        }
+                        arr.push(arr2.join(" - "));
+                        continue;
+                    }    
                     let vv = oracle[ora][i];
                     arr.push(vv[this.randomInt(0, vv.length)]);
+                
                 }
                 lista[ind].valor = arr.join(quebra);
+            
             }else{
                 lista[ind].valor = oracle[ora].random();
             }

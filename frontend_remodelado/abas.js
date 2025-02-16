@@ -112,6 +112,7 @@ let personResult = [
 
 let ermosResult = [
     { label: "Tipo Ermo", ora: "tipo_ermo", valor: "", msg: "Tipo de Ermo!"},
+    { label: "Obsacolos", ora: "obsacolo_ermo", valor: "", msg: "Obsacolos do Ermo!"},
     { label: "Solo/Vege", ora: "ermo_solo", valor: "", msg: "Tipo de Solo e Vegeração do ermo"},
     { label: "Descorberta ", ora: "ermo_descorberta", valor: "", msg: "Tipo de descorberta do ermo"},
     { label: "Ancestral ", ora: "ermo_ancestral", valor: "", msg: "Coisa Ancestral da Descorberta do ermo, Resultados com ... são complementados na coluna seguinte."},

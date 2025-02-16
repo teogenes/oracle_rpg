@@ -6843,4 +6843,14 @@ let oracle = {
             "<b>Guardião:</b> Dragões",
         ],
     ],
+    obsacolo_ermo: [
+        [
+            ["um","dois"],
+            ["um","dois"],
+            ["um","dois"],
+        ],
+        [
+            "um","dois"   
+        ]
+    ]
 };
