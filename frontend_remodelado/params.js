@@ -6394,7 +6394,7 @@ let oracle = {
                 "(Covil)", "(Masmorra)", "(Pontos de referência)", "(Covil)", "(Masmorra)",
                 "(Pontos de referência)", "(Covil)", "(Masmorra)", "(Pontos de referência)",
                 "(Covil)", "(Masmorra)", "(Pontos de referência)", "(Covil)",
-                "(Masmorra)", "(Aldeia)", "(Vila)", "(Cidade)", "(Castelo)", "(Torre)", "(Abadia)",
+                "(Masmorra)", "(Aldeia)", "(Vila)", "(Cidade)", "(Castelo)", "(Torre)", "(Mosteiro/Convento)",
                 "(Pontos de referência)","(Pontos de referência)","(Pontos de referência)"
             ]
         ],
