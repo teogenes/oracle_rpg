@@ -121,5 +121,5 @@ let ermosResult = [
     { label: "Objetos", ora: "ancestral_objetos", valor: "", msg: "Objetos das <b>Coisa Ancestral</b>!"},
     { label: "Vestígios", ora: "ancestral_vestigios", valor: "", msg: "Vestígios das <b>Coisa Ancestral</b>!"},
     { label: "Covil", ora: "covil_ermo", valor: "", msg: "<b>Covil de Monstros</b>!"},
-
+    { label: "Templos", ora: "templos_ermo", valor: "", msg: "<b>Templos e Santuários</b>!"},
 ];
