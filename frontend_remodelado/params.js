@@ -6887,9 +6887,9 @@ let oracle = {
             "<b>Tipo Mistério:</b> NPC(s)/Monstro(s) em necessidade",
             "<b>Tipo Mistério:</b> NPC(s)/Monstro(s) em necessidade",
             "<b>Tipo Mistério:</b> NPC(s)/Monstro(s) em necessidade",
-            "<b>Tipo Mistério:</b> Relacionado ao marco",
-            "<b>Tipo Mistério:</b> Relacionado ao marco",
-            "<b>Tipo Mistério:</b> Relacionado ao marco",
+            "<b>Tipo Mistério:</b> Relacionado ao Pontos de referência",
+            "<b>Tipo Mistério:</b> Relacionado ao Pontos de referência",
+            "<b>Tipo Mistério:</b> Relacionado ao Pontos de referência",
         ],
     ],
 }
