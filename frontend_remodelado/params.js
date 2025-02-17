@@ -6667,6 +6667,7 @@ let oracle = {
             "<b>Oceano (Vegetação):</b> árvores esparsas",
             "<b>Oceano (Vegetação):</b> mata fechada",
             "<b>Oceano (Vegetação):</b> mangue",
+        
         ],
         [
             "<b>Oceano (Solo):</b> praia arenosa",
