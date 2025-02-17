@@ -31,8 +31,6 @@ let missaoResult = [
 ];
 
 let localResult = [
-    { label: "Tipo Local", ora: "tipo_local", valor: "", msg: "Gera o tipo do local"},
-    { label: "Natural/Ermo", ora: "local_simple", valor: "", msg: "Gera um local natural/ermo"},
     { label: "Cidade", ora: "cidade_si", valor: "", msg: "<i>1.</i> Cria um esquema de cidade."},
     { label: "Hist. Cidade", ora: "local_historia_cidade", valor: "", msg: "<i>2.</i> Cria uma historia da cidade."},
     { label: "Estruturas", ora: "local_estrutura", valor: "", msg: "<i>3.</i> Cria as estruturas da cidade."},
@@ -112,14 +110,13 @@ let personResult = [
 
 let ermosResult = [
     { label: "Tipo Ermo", ora: "tipo_ermo", valor: "", msg: "Tipo de Ermo!"},
-    { label: "Obsacolos", ora: "obsacolo_ermo", valor: "", msg: "Obsacolos do Ermo!"},
-    { label: "Solo/Vege", ora: "ermo_solo", valor: "", msg: "Tipo de Solo e Vegeração do ermo"},
-    { label: "Descorberta ", ora: "ermo_descorberta", valor: "", msg: "Tipo de descorberta do ermo"},
-    { label: "Ancestral", ora: "ermo_ancestral", valor: "", msg: "<b>Coisa Ancestral</b> da Descorberta do ermo, Resultados com ... são complementados na coluna seguinte."},
-    { label: "Ruinas", ora: "ancestral_ruina", valor: "", msg: "Ruinas das <b>Coisa Ancestral</b>!"},
-    { label: "Relíquias", ora: "ancestral_reliquias", valor: "", msg: "Relíquias das <b>Coisa Ancestral</b>!"},
-    { label: "Objetos", ora: "ancestral_objetos", valor: "", msg: "Objetos das <b>Coisa Ancestral</b>!"},
-    { label: "Vestígios", ora: "ancestral_vestigios", valor: "", msg: "Vestígios das <b>Coisa Ancestral</b>!"},
-    { label: "Covil", ora: "covil_ermo", valor: "", msg: "<b>Covil de Monstros</b>!"},
-    { label: "Templos", ora: "templos_ermo", valor: "", msg: "<b>Templos e Santuários</b>!"},
+    { label: "P. Referência", ora: "refer_ermo", valor: "", msg: "<b>Pontos de referência!</b>"},
+    { label: "Ruinas", ora: "ancestral_ruina", valor: "", msg: ""},
+    { label: "Objetos", ora: "ancestral_objetos", valor: "", msg: ""},
+    { label: "Vestígios", ora: "ancestral_vestigios", valor: "", msg: ""},
+    { label: "Templos", ora: "templos_ermo", valor: "", msg: ""},
 ];
+
+let hexResult = [
+
+]

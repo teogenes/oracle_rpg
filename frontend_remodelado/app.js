@@ -11,6 +11,7 @@ params = {
         oracleValid: false,
         npcValid: false,
         ermosValid: true,
+        hexValid: false,
         yokaiValid: false,
         jogadasValid: false,
         personValid: false,
@@ -26,6 +27,7 @@ params = {
         cenaList: cenaResult,
         vPersonsList: npcResult,
         ermosList: ermosResult,
+        hexList: hexResult,
         localList: localResult,
         jogadasList: jogadasResult,
         personList: personResult,
@@ -42,6 +44,7 @@ params = {
                 "oracleValid",
                 "npcValid",
                 "ermosValid",
+                "hexValid",
                 "jogadasValid",
                 "yokaiValid",
                 "personValid",
@@ -88,6 +91,11 @@ params = {
         ermosClick: function () {
             for (vE in this.ermosList) {
                 this.ermosList[vE].valor = "";
+            }
+        },
+        hexClick: function () {
+            for (vE in this.hexList) {
+                this.hexList[vE].valor = "";
             }
         },
         missaoClick: function () {
@@ -178,6 +186,9 @@ params = {
         },
         execErmos: function (ora, ind) {
             this.combinacao_opcao(ora, this.ermosList, ind);
+        },
+        execHex: function (ora, ind) {
+            this.combinacao_opcao(ora, this.hexList, ind);
         },
         execJogadas: function (ora, ind) {
             this.combinacao_opcao(ora, this.jogadasList, ind);
