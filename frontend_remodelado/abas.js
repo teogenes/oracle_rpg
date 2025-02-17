@@ -120,7 +120,6 @@ let ermosResult = [
     { label: "Relíquias", ora: "ancestral_reliquias", valor: "", msg: "Relíquias das <b>Coisa Ancestral</b>!"},
     { label: "Objetos", ora: "ancestral_objetos", valor: "", msg: "Objetos das <b>Coisa Ancestral</b>!"},
     { label: "Vestígios", ora: "ancestral_vestigios", valor: "", msg: "Vestígios das <b>Coisa Ancestral</b>!"},
-
-    { label: "Covil", ora: "ancestral_vestigios", valor: "", msg: "<b>Covil de Monstros</b>!"},
+    { label: "Covil", ora: "covil_ermo", valor: "", msg: "<b>Covil de Monstros</b>!"},
 
 ];

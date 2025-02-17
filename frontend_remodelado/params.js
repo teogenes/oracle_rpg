@@ -6809,7 +6809,6 @@ let oracle = {
         [
             "<b>Descoberta:</b> Descobertas Ancestrais",
             "<b>Descoberta:</b> Covis",
-            "<b>Descoberta:</b> Rios, Estradas ou Ilhas",
             "<b>Descoberta:</b> Castelos e Fortes",
             "<b>Descoberta:</b> Templos e Santuários",
             "<b>Descoberta:</b> Perigos Naturais",
@@ -7085,6 +7084,24 @@ let oracle = {
         [
             "<b>Caminhos:</b> Trilha", "<b>Caminhos:</b> Trilhos", "<b>Caminhos:</b> Caminho pavimentado",
             "<b>Caminhos:</b> Ponte de madeira", "<b>Caminhos:</b> Ponte de pedras", "<b>Caminhos:</b> Ponte de cordas",
+        ],
+    ],
+    covil_ermo:[
+        [
+            "<b>Tipo:</b> Masmorras",
+            "<b>Tipo:</b> Cavernas",
+            "<b>Tipo:</b> Tocas",
+            "<b>Tipo:</b> Ninhos",
+            "<b>Tipo:</b> Acampamentos",
+            "<b>Tipo:</b> Tribos",
+        ],
+        [
+            "Vazio e Abandonado: provavelmente sem encontros.",
+            "Vazio: chance de 1 em 1d6 do ocupante retornar a cada turno.",
+            "Ocupado por Metade dos Monstros: chance de 1 em 1d6 da outra metade retornar a cada turno.",
+            "Ocupado por Metade dos Monstros: chance de 2 em 1d6 da outra metade retornar a cada turno.",
+            "Ocupado.",
+            "Ocupado.",
         ],
     ],
     
