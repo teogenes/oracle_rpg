@@ -115,5 +115,12 @@ let ermosResult = [
     { label: "Obsacolos", ora: "obsacolo_ermo", valor: "", msg: "Obsacolos do Ermo!"},
     { label: "Solo/Vege", ora: "ermo_solo", valor: "", msg: "Tipo de Solo e Vegeração do ermo"},
     { label: "Descorberta ", ora: "ermo_descorberta", valor: "", msg: "Tipo de descorberta do ermo"},
-    { label: "Ancestral ", ora: "ermo_ancestral", valor: "", msg: "Coisa Ancestral da Descorberta do ermo, Resultados com ... são complementados na coluna seguinte."},
+    { label: "Ancestral", ora: "ermo_ancestral", valor: "", msg: "<b>Coisa Ancestral</b> da Descorberta do ermo, Resultados com ... são complementados na coluna seguinte."},
+    { label: "Ruinas", ora: "ancestral_ruina", valor: "", msg: "Ruinas das <b>Coisa Ancestral</b>!"},
+    { label: "Relíquias", ora: "ancestral_reliquias", valor: "", msg: "Relíquias das <b>Coisa Ancestral</b>!"},
+    { label: "Objetos", ora: "ancestral_objetos", valor: "", msg: "Objetos das <b>Coisa Ancestral</b>!"},
+    { label: "Vestígios", ora: "ancestral_vestigios", valor: "", msg: "Vestígios das <b>Coisa Ancestral</b>!"},
+
+    { label: "Covil", ora: "ancestral_vestigios", valor: "", msg: "<b>Covil de Monstros</b>!"},
+
 ];

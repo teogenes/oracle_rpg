@@ -6661,133 +6661,148 @@ let oracle = {
     ],
     ermo_solo: [
         [
-            "<b>Oceano (Vegetação):</b> nenhuma",
-            "<b>Oceano (Vegetação):</b> gramíneas e cactos",
-            "<b>Oceano (Vegetação):</b> árvores esparsas",
-            "<b>Oceano (Vegetação):</b> árvores esparsas",
-            "<b>Oceano (Vegetação):</b> mata fechada",
-            "<b>Oceano (Vegetação):</b> mangue",
-        
+            [
+                "<b>Oceano: Vegetação</b> Nenhuma",
+                "<b>Oceano: Vegetação</b> Gramíneas e cactos",
+                "<b>Oceano: Vegetação</b> Árvores esparsas",
+                "<b>Oceano: Vegetação</b> Árvores esparsas",
+                "<b>Oceano: Vegetação</b> Mata fechada",
+                "<b>Oceano: Vegetação</b> Mangue",
+            ],
+            [
+                "<b>Solo:</b> Praia arenosa",
+                "<b>Solo:</b> Praia de casscalho",
+                "<b>Solo:</b> Baía",
+                "<b>Solo:</b> Laguna",
+                "<b>Solo:</b> Falésias",
+                "<b>Solo:</b> Cabo/pontal",
+            ],
         ],
         [
-            "<b>Oceano (Solo):</b> praia arenosa",
-            "<b>Oceano (Solo):</b> praia de casscalho",
-            "<b>Oceano (Solo):</b> baía",
-            "<b>Oceano (Solo):</b> laguna",
-            "<b>Oceano (Solo):</b> falésias",
-            "<b>Oceano (Solo):</b> cabo/pontal",
+            [
+                "<b>Geleira: Vegetação</b> Nenhuma",
+                "<b>Geleira: Vegetação</b> Nenhuma",
+                "<b>Geleira: Vegetação</b> Gramíneas e musgo",
+                "<b>Geleira: Vegetação</b> gramíneas e arbustos",
+                "<b>Geleira: Vegetação</b> Arbustos e musgos",
+                "<b>Geleira: Vegetação</b> Pinheiros esparsos",
+            ],
+            [
+                "<b>Solo:</b> Deserto gelado",
+                "<b>Solo:</b> deserto gelado",
+                "<b>Solo:</b> Glaciar",
+                "<b>Solo:</b> Glaciar",
+                "<b>Solo:</b> Moraina",
+                "<b>Solo:</b> Fiorde",
+            ],
         ],
         [
-            "<b>Geleira (Vegetação):</b> nenhuma",
-            "<b>Geleira (Vegetação):</b> nenhuma",
-            "<b>Geleira (Vegetação):</b> gramíneas e musgo",
-            "<b>Geleira (Vegetação):</b> gramíneas e arbustos",
-            "<b>Geleira (Vegetação):</b> arbustos e musgos",
-            "<b>Geleira (Vegetação):</b> pinheiros esparsos",
+            [
+                "<b>Pântano: Vegetação</b> Poucas árvores",
+                "<b>Pântano: Vegetação</b> Vegetação rasteira",
+                "<b>Pântano: Vegetação</b> Mato alto aquático",
+                "<b>Pântano: Vegetação</b> Bosque alagado",
+                "<b>Pântano: Vegetação</b> Floresta alagada",
+                "<b>Pântano: Vegetação</b> Turfeira",
+            ],
+            [
+                "<b>Solo:</b> Lamaçal",
+                "<b>Solo:</b> Lagoas esparsas",
+                "<b>Solo:</b> Alagado e raso",
+                "<b>Solo:</b> Alagado e raso",
+                "<b>Solo:</b> Alagado e profundo",
+                "<b>Solo:</b> Alagado e profundo",
+            ],
         ],
         [
-            "<b>Geleira (Solo):</b> deserto gelado",
-            "<b>Geleira (Solo):</b> deserto gelado",
-            "<b>Geleira (Solo):</b> glaciar",
-            "<b>Geleira (Solo):</b> glaciar",
-            "<b>Geleira (Solo):</b> moraina",
-            "<b>Geleira (Solo):</b> fiorde",
+            [
+                "<b>Floresta: Vegetação</b> Bosque",
+                "<b>Floresta: Vegetação</b> Floresta heterogênea",
+                "<b>Floresta: Vegetação</b> Floresta heterogênea",
+                "<b>Floresta: Vegetação</b> Pinheiros",
+                "<b>Floresta: Vegetação</b> Pinheiros",
+                "<b>Floresta: Vegetação</b> Selva fechada",
+            ],
+            [
+                "<b>Solo:</b> Plano e regular",
+                "<b>Solo:</b> Plano e regular",
+                "<b>Solo:</b> Levemente irregular",
+                "<b>Solo:</b> Ondulações constantes",
+                "<b>Solo:</b> Rochoso e irregular",
+                "<b>Solo:</b> Acidentado c/ ravinas",
+            ],
         ],
         [
-            "<b>Pântano (Vegetação):</b> poucas árvores",
-            "<b>Pântano (Vegetação):</b> vegetação rasteira",
-            "<b>Pântano (Vegetação):</b> mato alto aquático",
-            "<b>Pântano (Vegetação):</b> bosque alagado",
-            "<b>Pântano (Vegetação):</b> floresta alagada",
-            "<b>Pântano (Vegetação):</b> turfeira",
+            [
+                "<b>Planície: Vegetação</b> Gramíneas",
+                "<b>Planície: Vegetação</b> Mato alto e fechado",
+                "<b>Planície: Vegetação</b> Arbustos esparsos",
+                "<b>Planície: Vegetação</b> Árvores pequenas isoladas",
+                "<b>Planície: Vegetação</b> Pequenos bosques",
+                "<b>Planície: Vegetação</b> Árvores grandes esparsas",
+            ],
+            [
+                "<b>Solo:</b> Plano e regular",
+                "<b>Solo:</b> Levemente irregular",
+                "<b>Solo:</b> Ondulações constantes",
+                "<b>Solo:</b> Acidentado c/ ravinas",
+                "<b>Solo:</b> Cânions",
+                "<b>Solo:</b> Leito rachado de lago seco",
+            ],
         ],
         [
-            "<b>Pântano (Solo):</b> lamaçal",
-            "<b>Pântano (Solo):</b> lagoas esparsas",
-            "<b>Pântano (Solo):</b> alagado e raso",
-            "<b>Pântano (Solo):</b> alagado e raso",
-            "<b>Pântano (Solo):</b> alagado e profundo",
-            "<b>Pântano (Solo):</b> alagado e profundo",
+            [
+                "<b>Deserto: Vegetação</b> Nenhuma",
+                "<b>Deserto: Vegetação</b> Nenhuma",
+                "<b>Deserto: Vegetação</b> Gramíneas",
+                "<b>Deserto: Vegetação</b> Arbustos esparsos",
+                "<b>Deserto: Vegetação</b> Árvores isoladas e retorcidas",
+                "<b>Deserto: Vegetação</b> Cactos",
+            ],
+            [
+                "<b>Solo:</b> Plano e arenoso",
+                "<b>Solo:</b> Dunas de areia fofa",
+                "<b>Solo:</b> Acidentado com pedras",
+                "<b>Solo:</b> Deserto de sal plano",
+                "<b>Solo:</b> Acidentado c/ ravinas",
+                "<b>Solo:</b> Cânions profundos",
+            ],
         ],
         [
-            "<b>Floresta (Vegetação):</b> bosque",
-            "<b>Floresta (Vegetação):</b> floresta heterogênea",
-            "<b>Floresta (Vegetação):</b> floresta heterogênea",
-            "<b>Floresta (Vegetação):</b> pinheiros",
-            "<b>Floresta (Vegetação):</b> pinheiros",
-            "<b>Floresta (Vegetação):</b> selva fechada",
+            [
+                "<b>Colina: Vegetação</b> Gramíneas",
+                "<b>Colina: Vegetação</b> Aato alto e fechado",
+                "<b>Colina: Vegetação</b> Arbustos esparsos",
+                "<b>Colina: Vegetação</b> Árvores isoladas",
+                "<b>Colina: Vegetação</b> Pequenos bosques",
+                "<b>Colina: Vegetação</b> Árvores grandes esparsas",
+            ],
+            [
+                "<b>Solo:</b> Irregular c/ vales rasos",
+                "<b>Solo:</b> Irregular c/ vales profundos",
+                "<b>Solo:</b> Mar de morros",
+                "<b>Solo:</b> Acidentado c/ ravinas",
+                "<b>Solo:</b> Platôs do tipo mesa",
+                "<b>Solo:</b> Irregular c/ vales rasos",
+            ],
         ],
         [
-            "<b>Floresta (Solo):</b> plano e regular",
-            "<b>Floresta (Solo):</b> plano e regular",
-            "<b>Floresta (Solo):</b> levemente irregular",
-            "<b>Floresta (Solo):</b> ondulações constantes",
-            "<b>Floresta (Solo):</b> rochoso e irregular",
-            "<b>Floresta (Solo):</b> acidentado c/ ravinas",
-        ],
-        [
-            "<b>Planície (Vegetação):</b> gramíneas",
-            "<b>Planície (Vegetação):</b> mato alto e fechado",
-            "<b>Planície (Vegetação):</b> arbustos esparsos",
-            "<b>Planície (Vegetação):</b> árvores pequenas isoladas",
-            "<b>Planície (Vegetação):</b> pequenos bosques",
-            "<b>Planície (Vegetação):</b> árvores grandes esparsas",
-        ],
-        [
-            "<b>Planície (Solo):</b> plano e regular",
-            "<b>Planície (Solo):</b> levemente irregular",
-            "<b>Planície (Solo):</b> ondulações constantes",
-            "<b>Planície (Solo):</b> acidentado c/ ravinas",
-            "<b>Planície (Solo):</b> cânions",
-            "<b>Planície (Solo):</b> leito rachado de lago seco",
-        ],
-        [
-            "<b>Deserto (Vegetação):</b> nenhuma",
-            "<b>Deserto (Vegetação):</b> nenhuma",
-            "<b>Deserto (Vegetação):</b> gramíneas",
-            "<b>Deserto (Vegetação):</b> arbustos esparsos",
-            "<b>Deserto (Vegetação):</b> árvores isoladas e retorcidas",
-            "<b>Deserto (Vegetação):</b> cactos",
-        ],
-        [
-            "<b>Deserto (Solo):</b> plano e arenoso",
-            "<b>Deserto (Solo):</b> dunas de areia fofa",
-            "<b>Deserto (Solo):</b> acidentado com pedras",
-            "<b>Deserto (Solo):</b> deserto de sal plano",
-            "<b>Deserto (Solo):</b> acidentado c/ ravinas",
-            "<b>Deserto (Solo):</b> cânions profundos",
-        ],
-        [
-            "<b>Colina (Vegetação):</b> gramíneas",
-            "<b>Colina (Vegetação):</b> mato alto e fechado",
-            "<b>Colina (Vegetação):</b> arbustos esparsos",
-            "<b>Colina (Vegetação):</b> árvores isoladas",
-            "<b>Colina (Vegetação):</b> pequenos bosques",
-            "<b>Colina (Vegetação):</b> árvores grandes esparsas",
-        ],
-        [
-            "<b>Colina (Solo):</b> irregular c/ vales rasos",
-            "<b>Colina (Solo):</b> irregular c/ vales profundos",
-            "<b>Colina (Solo):</b> mar de morros",
-            "<b>Colina (Solo):</b> acidentado c/ ravinas",
-            "<b>Colina (Solo):</b> platôs do tipo mesa",
-            "<b>Colina (Solo):</b> irregular c/ vales rasos",
-        ],
-        [
-            "<b>Montanha (Vegetação):</b> nenhuma",
-            "<b>Montanha (Vegetação):</b> nenhuma",
-            "<b>Montanha (Vegetação):</b> gramíneas",
-            "<b>Montanha (Vegetação):</b> mato alto e fechado",
-            "<b>Montanha (Vegetação):</b> arbustos esparsos",
-            "<b>Montanha (Vegetação):</b> árvores isoladas",
-        ],
-        [
-            "<b>Montanha (Solo):</b> rochoso e liso",
-            "<b>Montanha (Solo):</b> cascalho solto",
-            "<b>Montanha (Solo):</b> rochas pontudas",
-            "<b>Montanha (Solo):</b> rochas lisas c/ reentrâncias",
-            "<b>Montanha (Solo):</b> rochas escorregadias",
-            "<b>Montanha (Solo):</b> desfiladeiro",
+            [
+            "<b>Montanha: Vegetação</b> Nenhuma",
+            "<b>Montanha: Vegetação</b> Nenhuma",
+            "<b>Montanha: Vegetação</b> Gramíneas",
+            "<b>Montanha: Vegetação</b> Mato alto e fechado",
+            "<b>Montanha: Vegetação</b> Arbustos esparsos",
+            "<b>Montanha: Vegetação</b> Árvores isoladas",
+            ],
+            [
+                "<b>Solo:</b> Rochoso e liso",
+                "<b>Solo:</b> Cascalho solto",
+                "<b>Solo:</b> Rochas pontudas",
+                "<b>Solo:</b> Rochas lisas c/ reentrâncias",
+                "<b>Solo:</b> Rochas escorregadias",
+                "<b>Solo:</b> Desfiladeiro",
+            ],
         ],
     ],
     ermo_descorberta: [
@@ -6904,6 +6919,173 @@ let oracle = {
                 "<b>Tempero 2:</b> Resistente", "<b>Tempero 2:</b> ",
             ]
         ]
+    ],
+    ancestral_ruina:[
+        [
+            "<b>Tipo:</b> Casa", "<b>Tipo:</b> Casa",
+            "<b>Tipo:</b> Casa", "<b>Tipo:</b> Vila", "<b>Tipo:</b> Vila",
+            "<b>Tipo:</b> Cidade", "<b>Tipo:</b> Forte", "<b>Tipo:</b> Forte",
+            "<b>Tipo:</b> Castelo", "<b>Tipo:</b> Templo", "<b>Tipo:</b> Templo",
+        ],
+        [
+            "<b>Casa:</b> Cabana", "<b>Casa:</b> Casebre", "<b>Casa:</b> Casa grande",
+            "<b>Casa:</b> Mansão", "<b>Casa:</b> Fazenda", "<b>Casa:</b> Palácio",
+        ],
+        [
+            "<b>Vila:</b> 4 casas", "<b>Vila:</b> 6 casas", "<b>Vila:</b> 8 casas",
+            "<b>Vila:</b> 12 casas", "<b>Vila:</b> 16 casas", "<b>Vila:</b> 25 casas",
+        ],
+        [
+            "<b>Cidade:</b> 30 casas",
+            "<b>Cidade:</b> 30 casas",
+            "<b>Cidade:</b> 60 casas",
+            "<b>Cidade:</b> 60 casas",
+            "<b>Cidade:</b> 30 casas + paliçada",
+            "<b>Cidade:</b> 30 casas + paliçada",
+            "<b>Cidade:</b> 60 casas + muralha",
+            "<b>Cidade:</b> 60 casas + muralha",
+            "<b>Cidade:</b> 90 casas + muralha",
+            "<b>Cidade:</b> 90 casas + muralha + forte",
+        ],
+        [
+            "<b>Forte:</b> Torre",
+            "<b>Forte:</b> Torre + muralha",
+            "<b>Forte:</b> Forte pequeno",
+            "<b>Forte:</b> Forte + torre",
+            "<b>Forte:</b> Forte + 2 torres",
+            "<b>Forte:</b> Forte + 2 torres + muralha",
+        ],
+        [
+            "<b>Castelo:</b> Castelo + paliçada",
+            "<b>Castelo:</b> Castelo + paliçada + fosso",
+            "<b>Castelo:</b> Castelo + 2 torres + paliçada + fosso",
+            "<b>Castelo:</b> Castelo + 4 torres + paliçada + fosso",
+            "<b>Castelo:</b> Castelo + 4 torres + muralha + fosso",
+            "<b>Castelo:</b> Castelo + 6 torres + 2 muralhas + fosso",
+        ],
+        [
+            "<b>Templo:</b> Pequeno altar",
+            "<b>Templo:</b> Santuário",
+            "<b>Templo:</b> Igreja pequena",
+            "<b>Templo:</b> Igreja grande",
+            "<b>Templo:</b> Catedral",
+            "<b>Templo:</b> Mosteiro",
+        ],
+
+    ],
+    ancestral_reliquias: [
+        [
+            "<b>Tipo:</b> Ferramentas", "<b>Tipo:</b> Mecanismos", "<b>Tipo:</b> Tumbas",
+            "<b>Tipo:</b> Armaduras", "<b>Tipo:</b> Armas", "<b>Tipo:</b> Recipientes",
+        ],
+        [
+            "<b>Ferramentas:</b> Escada", "<b>Ferramentas:</b> Pá", "<b>Ferramentas:</b> Picareta",
+            "<b>Ferramentas:</b> Martelo", "<b>Ferramentas:</b> Serrote", "<b>Ferramentas:</b> Machado",
+        ],
+        [
+            "<b>Mecanismos:</b> Relógio solar", "<b>Mecanismos:</b> Balança", "<b>Mecanismos:</b> Tear",
+            "<b>Mecanismos:</b> Rebolo", "<b>Mecanismos:</b> Mós", "<b>Mecanismos:</b> Ábaco",
+        ],
+        [
+            "<b>Tumbas:</b> Monte de terra", "<b>Tumbas:</b> Pilha de pedras", "<b>Tumbas:</b> Pira crematória",
+            "<b>Tumbas:</b> Sarcófago de pedra", "<b>Tumbas:</b> Lápide com escrita", "<b>Tumbas:</b> Cripta subterrânea",
+        ],
+        [
+            [
+                "<b>Armaduras:</b> Escudo", "<b>Armaduras:</b> Armadura de couro", "<b>Armaduras:</b> Cota de malha",
+                "<b>Armaduras:</b> Cota de malha", "<b>Armaduras:</b> Armadura de placas", "<b>Armaduras:</b> Armadura completa",
+            ],
+            [
+                "danificada e inutilizada.", "danificada, mas reparável.",
+                "perfeitamente funcional.", "de prata.", "de mitral.", "mágica",
+            ]
+        ],
+        [
+            [
+                "<b>Armas:</b> Adaga", "<b>Armas:</b> Espada curta", "<b>Armas:</b> Machado", "<b>Armas:</b> Tridente",
+                "<b>Armas:</b> Espada longa", "<b>Armas:</b> Lança", "<b>Armas:</b> Arco", "<b>Armas:</b> Besta",
+            ],
+            [
+                "danificada e inutilizada.", "danificada, mas reparável.", "perfeitamente funcional.",
+                "de prata.", "de mitral.", "mágica",
+            ]
+        ],
+        [
+            [
+                "<b>Recipientes:</b> Barril", "<b>Recipientes:</b> Arca", "<b>Recipientes:</b> Caixa de madeira", "<b>Recipientes:</b> Jarros de cerâmica",
+                "<b>Recipientes:</b> Mochila", "<b>Recipientes:</b> Sacos de couro", "<b>Recipientes:</b> Pote de vidro",
+            ],
+            [
+                "totalmente vazio.", "com comida estragada.", "com comida conservada.",
+                "com bebida alcóolica.", "com tesouro", "com item mágico",
+            ]
+        ],
+    ],
+    ancestral_objetos: [
+        [
+            "<b>Tipo:</b> Utensílios", "<b>Tipo:</b> Roupas", "<b>Tipo:</b> Móveis",
+            "<b>Tipo:</b> Brinquedos", "<b>Tipo:</b> Veículos", "<b>Tipo:</b> Livros",
+        ],
+        [
+            "<b>Utensílios:</b> Talheres", "<b>Utensílios:</b> Para costura", "<b>Utensílios:</b> Para escrever",
+            "<b>Utensílios:</b> Instrumento musical", "<b>Utensílios:</b> Para navegação", "<b>Utensílios:</b> Para primeiros socorros",
+        ],
+        [
+            "<b>Roupas:</b> Túnicas e camisas", "<b>Roupas:</b> Roupas de cama", "<b>Roupas:</b> Roupas íntimas",
+            "<b>Roupas:</b> Traje de exploração", "<b>Roupas:</b> Trajes para inverno", "<b>Roupas:</b> Trajes nobres",
+        ],
+        [
+            "<b>Móveis:</b> Trono", "<b>Móveis:</b> Cama", "<b>Móveis:</b> Mesa",
+            "<b>Móveis:</b> Cofre", "<b>Móveis:</b> Vários gigantes", "<b>Móveis:</b> Vários em miniatura",
+        ],
+        [
+            "<b>Brinquedos:</b> Boneca de pano", "<b>Brinquedos:</b> Boneca de louça", "<b>Brinquedos:</b> Cavalo de madeira",
+            "<b>Brinquedos:</b> Soldado de chumbo", "<b>Brinquedos:</b> Arma de madeira", "<b>Brinquedos:</b> Jogo de tabuleiro",
+        ],
+        [
+            "<b>Veículos:</b> Carroça", "<b>Veículos:</b> Carruagem", "<b>Veículos:</b> Sela e arreio de cavalo",
+            "<b>Veículos:</b> Barcaça", "<b>Veículos:</b> Canoa", "<b>Veículos:</b> Balão",
+        ],
+        [
+            "<b>Livros:</b> Mapa de tesouro", "<b>Livros:</b> Dicionário 2 idiomas", "<b>Livros:</b> Enciclopédia",
+            "<b>Livros:</b> Romance picante", "<b>Livros:</b> Caderno com anotações", "<b>Livros:</b> Pergaminho mágico",
+        ],
+    ],
+    ancestral_vestigios:[
+        [
+            "<b>Tipo:</b> Religioso", "<b>Tipo:</b> Sinais", "<b>Tipo:</b> Antigos",
+            "<b>Tipo:</b> Fonte", "<b>Tipo:</b> Estrutura", "<b>Tipo:</b> Caminhos",
+        ],
+        [
+            "<b>Religioso:</b> Pirâmide", "<b>Religioso:</b> Observatório lunar", "<b>Religioso:</b> Círculo de pedra",
+            "<b>Religioso:</b> Monolito", "<b>Religioso:</b> Totem", "<b>Religioso:</b> Altar",
+        ],
+        [
+            "<b>Sinais:</b> Marco de fronteira", "<b>Sinais:</b> Aviso de água potável", "<b>Sinais:</b> Perigo. Monstros",
+            "<b>Sinais:</b> Refúgio seguro", "<b>Sinais:</b> Magia à frente", "<b>Sinais:</b> Perigo. Vá embora",
+        ],
+        [
+            "<b>Antigos:</b> Pontas de flecha", "<b>Antigos:</b> Ídolo monstruoso", "<b>Antigos:</b> Desenho rupestres",
+            "<b>Antigos:</b> Artesanato de ossos", "<b>Antigos:</b> Cestos de palha", "<b>Antigos:</b> Cerâmica",
+        ],
+        [
+            [
+                "<b>Fonte:</b> Chafariz", "<b>Fonte:</b> Estátua de mulher", "<b>Fonte:</b> Estátua monstruosa",
+                "<b>Fonte:</b> Nascente no chão", "<b>Fonte:</b> Poço", "<b>Fonte:</b> Gêiser",
+            ],
+            [
+                "Água potável", "Água potável", "Água potável",
+                "Água potável", "Água contaminada com febre do esgoto", "Água envenenada"
+            ]
+        ],
+        [
+            "<b>Estrutura:</b> Dique", "<b>Estrutura:</b> Muro", "<b>Estrutura:</b> Moinho",
+            "<b>Estrutura:</b> Aqueduto", "<b>Estrutura:</b> Mina abandonada", "<b>Estrutura:</b> Escadaria",
+        ],
+        [
+            "<b>Caminhos:</b> Trilha", "<b>Caminhos:</b> Trilhos", "<b>Caminhos:</b> Caminho pavimentado",
+            "<b>Caminhos:</b> Ponte de madeira", "<b>Caminhos:</b> Ponte de pedras", "<b>Caminhos:</b> Ponte de cordas",
+        ],
     ],
     
 };
