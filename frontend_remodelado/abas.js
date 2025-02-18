@@ -111,6 +111,11 @@ let personResult = [
 let ermosResult = [
     { label: "Tipo Ermo", ora: "tipo_ermo", valor: "", msg: "Tipo de Ermo!"},
     { label: "P. Referência", ora: "refer_ermo", valor: "", msg: "<b>Pontos de referência!</b>"},
+    { label: "Aldeia", ora: "aldeia_ermo", valor: "", msg: "Aldeia dos <b>Assentamentos!</b>"},
+    { label: "Vila", ora: "vila_ermo", valor: "", msg: "Vila dos <b>Assentamentos!</b>"},
+    { label: "Cidade", ora: "cidade_ermo", valor: "", msg: "Cidade dos <b>Assentamentos!</b>"},
+
+    
     { label: "Ruinas", ora: "ancestral_ruina", valor: "", msg: ""},
     { label: "Objetos", ora: "ancestral_objetos", valor: "", msg: ""},
     { label: "Vestígios", ora: "ancestral_vestigios", valor: "", msg: ""},
