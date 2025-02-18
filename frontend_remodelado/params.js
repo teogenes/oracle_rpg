@@ -5103,11 +5103,11 @@ let oracle = {
                 "<b>Tipo Ermo:</b> O mesmo que o hexágono anterior"
             ],
             [
-                "(Pontos de referência)", "(Covil)", "(Masmorra)", "(Pontos de referência)",
-                "(Covil)", "(Masmorra)", "(Pontos de referência)", "(Covil)", "(Masmorra)",
-                "(Pontos de referência)", "(Covil)", "(Masmorra)", "(Pontos de referência)",
-                "(Covil)", "(Masmorra)", "(Pontos de referência)", "(Covil)",
-                "(Masmorra)", "(Aldeia)", "(Vila)", "(Cidade)", "(Castelo)", "(Torre)", "(Mosteiro/Convento)",
+                "(Pontos de referência)", "(Covil)", "(Pontos de referência)",
+                "(Covil)", "(Masmorra)", "(Pontos de referência)",
+                "(Pontos de referência)", "(Masmorra)", "(Pontos de referência)",
+                "(Covil)", "(Masmorra)", "(Pontos de referência)","(Templo)",
+                "(Aldeia)", "(Vila)", "(Cidade)", "(Castelo)", "(Torre)", "(Mosteiro/Convento)",
                 "(Pontos de referência)","(Pontos de referência)","(Pontos de referência)"
             ]
         ],
@@ -5158,53 +5158,10 @@ let oracle = {
             ]
         ]
     ],
-    ancestral_ruina:[
-        [
-            "<b>Tipo:</b> Casa", "<b>Tipo:</b> Casa",
-            "<b>Tipo:</b> Casa", "<b>Tipo:</b> Vila", "<b>Tipo:</b> Vila",
-            "<b>Tipo:</b> Cidade", "<b>Tipo:</b> Forte", "<b>Tipo:</b> Forte",
-            "<b>Tipo:</b> Castelo", "<b>Tipo:</b> Templo", "<b>Tipo:</b> Templo",
-        ],
-        [
-            "<b>Casa:</b> Cabana", "<b>Casa:</b> Casebre", "<b>Casa:</b> Casa grande",
-            "<b>Casa:</b> Mansão", "<b>Casa:</b> Fazenda", "<b>Casa:</b> Palácio",
-        ],
-        [
-            "<b>Vila:</b> 4 casas", "<b>Vila:</b> 6 casas", "<b>Vila:</b> 8 casas",
-            "<b>Vila:</b> 12 casas", "<b>Vila:</b> 16 casas", "<b>Vila:</b> 25 casas",
-        ],
-        [
-            "<b>Cidade:</b> 30 casas", "<b>Cidade:</b> 30 casas", "<b>Cidade:</b> 60 casas", "<b>Cidade:</b> 60 casas",
-            "<b>Cidade:</b> 30 casas + paliçada", "<b>Cidade:</b> 30 casas + paliçada", "<b>Cidade:</b> 60 casas + muralha",
-            "<b>Cidade:</b> 60 casas + muralha", "<b>Cidade:</b> 90 casas + muralha", "<b>Cidade:</b> 90 casas + muralha + forte",
-        ],
-        [
-            "<b>Forte:</b> Torre", "<b>Forte:</b> Torre + muralha", "<b>Forte:</b> Forte pequeno",
-            "<b>Forte:</b> Forte + torre", "<b>Forte:</b> Forte + 2 torres", "<b>Forte:</b> Forte + 2 torres + muralha",
-        ],
-        [
-            "<b>Castelo:</b> Castelo + paliçada",
-            "<b>Castelo:</b> Castelo + paliçada + fosso",
-            "<b>Castelo:</b> Castelo + 2 torres + paliçada + fosso",
-            "<b>Castelo:</b> Castelo + 4 torres + paliçada + fosso",
-            "<b>Castelo:</b> Castelo + 4 torres + muralha + fosso",
-            "<b>Castelo:</b> Castelo + 6 torres + 2 muralhas + fosso",
-        ],
-        [
-            "<b>Templo:</b> Pequeno altar", "<b>Templo:</b> Santuário", "<b>Templo:</b> Igreja pequena",
-            "<b>Templo:</b> Igreja grande", "<b>Templo:</b> Catedral", "<b>Templo:</b> Mosteiro",
-        ],
-
-    ],
     templos_ermo:[
         [
             "<b>Tipo:</b> Zigurate", "<b>Tipo:</b> Pirâmide", "<b>Tipo:</b> Obelisco",
             "<b>Tipo:</b> Templo", "<b>Tipo:</b> Santuário", "<b>Tipo:</b> Altar",
-        ],
-        [
-            "<b>Tamanho:</b> 1 andar", "<b>Tamanho:</b> 1 andar", "<b>Tamanho:</b> 1 andar", "<b>Tamanho:</b> 2 andares",
-            "<b>Tamanho:</b> 2 andares", "<b>Tamanho:</b> 3 andares", "<b>Tamanho:</b> 1 andar + 1 subterrâneo",
-            "<b>Tamanho:</b> 1 andar + 1 subterrâneo", "<b>Tamanho:</b> 2 andares + 2 subterrâneos", "<b>Tamanho:</b> 3 andares + 3 subterrâneos",
         ],
         [
             "<b>Idade:</b> Obra terminará em 3 anos", "<b>Idade:</b> Construído há 10 anos", "<b>Idade:</b> Construído há 3 décadas",
