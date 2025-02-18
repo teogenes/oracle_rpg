@@ -112,7 +112,7 @@ let ermosResult = [
     { label: "Castelo", ora: "castelo_ermo", valor: "", msg: "Castelo dos <b>Assentamentos!</b>"},
     { label: "Torre", ora: "torre_ermo", valor: "", msg: "Torre dos <b>Assentamentos!</b>"},
     { label: "Mosteiro", ora: "mosteiro_ermo", valor: "", msg: "Mosteiro/Convento dos <b>Assentamentos!</b>"},
-    { label: "Templos", ora: "templos_ermo", valor: "", msg: ""},
+    { label: "Templos", ora: "templos_ermo", valor: "", msg: "Templo dos <b>Assentamentos!</b>"},
 ];
 
 let hexResult = [
