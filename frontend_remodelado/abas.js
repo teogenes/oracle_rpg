@@ -114,8 +114,9 @@ let ermosResult = [
     { label: "Aldeia", ora: "aldeia_ermo", valor: "", msg: "Aldeia dos <b>Assentamentos!</b>"},
     { label: "Vila", ora: "vila_ermo", valor: "", msg: "Vila dos <b>Assentamentos!</b>"},
     { label: "Cidade", ora: "cidade_ermo", valor: "", msg: "Cidade dos <b>Assentamentos!</b>"},
+    { label: "Castelo", ora: "castelo_ermo", valor: "", msg: "Castelo dos <b>Assentamentos!</b>"},
 
-    
+
     { label: "Ruinas", ora: "ancestral_ruina", valor: "", msg: ""},
     { label: "Objetos", ora: "ancestral_objetos", valor: "", msg: ""},
     { label: "Vestígios", ora: "ancestral_vestigios", valor: "", msg: ""},
