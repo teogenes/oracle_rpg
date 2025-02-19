@@ -31,12 +31,6 @@ let missaoResult = [
 ];
 
 let localResult = [
-    { label: "Cidade", ora: "cidade_si", valor: "", msg: "<i>1.</i> Cria um esquema de cidade."},
-    { label: "Hist. Cidade", ora: "local_historia_cidade", valor: "", msg: "<i>2.</i> Cria uma historia da cidade."},
-    { label: "Estruturas", ora: "local_estrutura", valor: "", msg: "<i>3.</i> Cria as estruturas da cidade."},
-    { label: "Mais detalhe", ora: "local_detalhe", valor: "", msg: "<i>4.</i> Adiciona mais um detalhe a cidade."},
-    { label: "Loc cidade", ora: "local_cidade", valor: "", msg: "Cria local da cidadde"},
-    { label: "Loc estranho", ora: "local_estranho", valor: "", msg: "Cria local estranho"},
     { label: "Masmorra", ora: "local_masmorra", valor: "", msg: "<i>1.</i> Cria o tamanho e tipo da masmorra."},
     { label: "Estrutura", ora: "masmorra_compartimento", valor: "", msg: "<i>2.</i> O tipo de Estrutura a encontrar na masmorra."},
     { label: "Compartimento", ora: "masmorra_caminho", valor: "", msg: "<i>3.</i> Cria as caracteristicas de cada parte da masmorra."},
@@ -111,17 +105,14 @@ let personResult = [
 let ermosResult = [
     { label: "Tipo Ermo", ora: "tipo_ermo", valor: "", msg: "Tipo de Ermo!"},
     { label: "P. Referência", ora: "refer_ermo", valor: "", msg: "<b>Pontos de referência!</b>"},
+    { label: "Assentamentos", ora: "local_historia_cidade", valor: "", msg: "História do <b>Assentamentos!</b>!"},
     { label: "Aldeia", ora: "aldeia_ermo", valor: "", msg: "Aldeia dos <b>Assentamentos!</b>"},
     { label: "Vila", ora: "vila_ermo", valor: "", msg: "Vila dos <b>Assentamentos!</b>"},
     { label: "Cidade", ora: "cidade_ermo", valor: "", msg: "Cidade dos <b>Assentamentos!</b>"},
     { label: "Castelo", ora: "castelo_ermo", valor: "", msg: "Castelo dos <b>Assentamentos!</b>"},
     { label: "Torre", ora: "torre_ermo", valor: "", msg: "Torre dos <b>Assentamentos!</b>"},
     { label: "Mosteiro", ora: "mosteiro_ermo", valor: "", msg: "Mosteiro/Convento dos <b>Assentamentos!</b>"},
-
-    { label: "Ruinas", ora: "ancestral_ruina", valor: "", msg: ""},
-    { label: "Objetos", ora: "ancestral_objetos", valor: "", msg: ""},
-    { label: "Vestígios", ora: "ancestral_vestigios", valor: "", msg: ""},
-    { label: "Templos", ora: "templos_ermo", valor: "", msg: ""},
+    { label: "Templos", ora: "templos_ermo", valor: "", msg: "Templo dos <b>Assentamentos!</b>"},
 ];
 
 let hexResult = [
