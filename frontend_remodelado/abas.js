@@ -35,7 +35,7 @@ let localResult = [
     { label: "Estrutura", ora: "masmorra_compartimento", valor: "", msg: "<i>2.</i> O tipo de Estrutura a encontrar na masmorra."},
     { label: "Corredor", ora: "masmorra_corredor", valor: "", msg: "Corredores da <b>Estrutura</b>!"},
     { label: "Sala", ora: "masmorra_sala", valor: "", msg: "Salas da <b>Estrutura</b>!"},
-    { label: "Encontro", ora: "masmorra_encontro", valor: "", msg: "<i>3.1.</i> Cria o tipo e o desafio de tipo do encontro do item Comp.(3.)"},
+    { label: "Encontro", ora: "masmorra_encontro", valor: "", msg: ""},
 ];
 
 let cenaResult = [
