@@ -6902,6 +6902,6 @@ let oracle = {
             "<b>Historia:</b> Costumava ser um internato",
             "<b>Historia:</b> Foi realocado",
             "<b>Historia:</b> Estava sob um feitiço",
-        ]
+        ],
     ],
 }
