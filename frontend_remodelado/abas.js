@@ -33,10 +33,9 @@ let missaoResult = [
 let localResult = [
     { label: "Masmorra", ora: "local_masmorra", valor: "", msg: "<i>1.</i> Cria o tamanho e tipo da masmorra."},
     { label: "Estrutura", ora: "masmorra_compartimento", valor: "", msg: "<i>2.</i> O tipo de Estrutura a encontrar na masmorra."},
-    { label: "Compartimento", ora: "masmorra_caminho", valor: "", msg: "<i>3.</i> Cria as caracteristicas de cada parte da masmorra."},
+    { label: "Corredor", ora: "masmorra_corredor", valor: "", msg: "Corredores da <b>Estrutura</b>!"},
+    { label: "Sala", ora: "masmorra_sala", valor: "", msg: "Salas da <b>Estrutura</b>!"},
     { label: "Encontro", ora: "masmorra_encontro", valor: "", msg: "<i>3.1.</i> Cria o tipo e o desafio de tipo do encontro do item Comp.(3.)"},
-    { label: "Armadilha", ora: "masmorra_armadilha", valor: "", msg: "<i>3.2.</i> Cria a armadilha do tipo de encontro do item Comp.(3.)<br /> Joge <b>2d10</b> e compare com o valor de cada item."},
-    { label: "Enigma", ora: "masmorra_enigma", valor: "", msg: "<i>3.3.</i> Cria o enigma do tipo de encontro do item Comp.(3.)<br /> Joge <b>2d10</b> e compare com o valor de cada item."},
 ];
 
 let cenaResult = [
