@@ -30,7 +30,7 @@ let missaoResult = [
     { label: "Desafio de hab.", ora: "missao_habilidades", valor: "", msg: "Os personagens precisam usar suas habilidades, talentos ou recursos para superar um obstáculo ou situação difícil."},
 ];
 
-let localResult = [
+let masmorraResult = [
     { label: "Masmorra", ora: "local_masmorra", valor: "", msg: "<i>1.</i> Cria o tamanho e tipo da masmorra."},
     { label: "Estrutura", ora: "masmorra_compartimento", valor: "", msg: "<i>2.</i> O tipo de Estrutura a encontrar na masmorra."},
     { label: "Corredor", ora: "masmorra_corredor", valor: "", msg: "Corredores da <b>Estrutura</b>!"},

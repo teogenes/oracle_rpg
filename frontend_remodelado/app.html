@@ -34,7 +34,7 @@
                     <div class="col s12">
                         <hr>
                         <a @click="aba_clear('ermosValid')" class="waves-effect waves-light btn-small deep-purple accent-3">Ermos</a>                 
-                        <a @click="aba_clear('localValid')" class="waves-effect waves-light btn-small green darken-4">Localidade</a>
+                        <a @click="aba_clear('masmorraValid')" class="waves-effect waves-light btn-small green darken-4">Localidade</a>
                         <a @click="aba_clear('cenaValid')" class="waves-effect waves-light btn-small light-green darken-3">Cena</a>                        
                         <a @click="aba_clear('eventoValid')" class="waves-effect waves-light btn-small green light-green darken-3">Eventos</a>
                         <a @click="aba_clear('hexValid')" class="waves-effect waves-light btn-small deep-purple accent-3">HexMap</a>
@@ -180,19 +180,19 @@
                             </tbody>
                         </table>
 
-                        <table class="highlight" v-show="localValid" >
+                        <table class="highlight" v-show="masmorraValid" >
                             <thead>
                                 <tr>
-                                    <th colspan="2" style="text-align: center;" >LOCALIZAÇÃO</th>
+                                    <th colspan="2" style="text-align: center;" >MASMORRA</th>
                                 </tr>
                                 <tr>
                                     <th>AÇÕES</th>
-                                    <th class="center" > <a @click="localClick" class="waves-effect waves-light btn-small  yellow darken-3" >Limpar</a></th>
+                                    <th class="center" > <a @click="masmorraClick" class="waves-effect waves-light btn-small  yellow darken-3" >Limpar</a></th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr v-for="(olista, ind) in localList">
-                                    <td style="width:168px;" ><a :title="olista.label" @click="execLocal(olista.ora, ind)" class="waves-effect waves-light btn-small  brown darken-3" >{{olista.label}}</a></td>
+                                <tr v-for="(olista, ind) in masmorraList">
+                                    <td style="width:168px;" ><a :title="olista.label" @click="execMasmorra(olista.ora, ind)" class="waves-effect waves-light btn-small  brown darken-3" >{{olista.label}}</a></td>
                                     <td v-html="olista.valor || olista.msg" ></td>
                                 </tr>
                             </tbody>

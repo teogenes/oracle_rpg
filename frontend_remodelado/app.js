@@ -4,7 +4,7 @@ params = {
         enredoValid: false,
         aventuraValid: false,
         missaoValid: false,
-        localValid: true,
+        masmorraValid: true,
         cenaValid: false,
         eventoValid: false,
         vampOrecleValid: false,
@@ -28,7 +28,7 @@ params = {
         vPersonsList: npcResult,
         ermosList: ermosResult,
         hexList: hexResult,
-        localList: localResult,
+        masmorraList: masmorraResult,
         jogadasList: jogadasResult,
         personList: personResult,
     },
@@ -38,7 +38,7 @@ params = {
                 "enredoValid",
                 "aventuraValid",
                 "missaoValid",
-                "localValid",
+                "masmorraValid",
                 "cenaValid",
                 "eventoValid",
                 "oracleValid",
@@ -73,9 +73,9 @@ params = {
                 this.jogadasList[vE].valor = "";
             }
         },
-        localClick: function () {
-            for (vE in this.localList) {
-                this.localList[vE].valor = "";
+        masmorraClick: function () {
+            for (vE in this.masmorraList) {
+                this.masmorraList[vE].valor = "";
             }
         },
         cenaClick: function () {
@@ -153,8 +153,8 @@ params = {
         execMissao: function (ora, ind) {
             this.combinacao_opcao(ora, this.missaoList, ind);
         },
-        execLocal: function (ora, ind) {
-            this.combinacao_opcao(ora, this.localList, ind);
+        execMasmorra: function (ora, ind) {
+            this.combinacao_opcao(ora, this.masmorraList, ind);
         },
         execCena: function (ora, ind) {
             this.combinacao_opcao(ora, this.cenaList, ind);
