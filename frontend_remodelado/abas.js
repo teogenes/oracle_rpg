@@ -13,6 +13,7 @@ let enredoResult = [
 ];
 
 let aventuraResult = [
+    { label: "Aventura", ora: "aventura_inicio", valor: "", msg: "Cria uma idea para a aventura."},
     { label: "Missões", ora: "missao_completa", valor: "", msg: "Cria uma idea para a missão."},
     { label: "Desafio", ora: "vilao_npc", valor: "", msg: "Desafio final da <b>missão</b></b>."},
 ];
@@ -39,6 +40,7 @@ let masmorraResult = [
 ];
 
 let cenaResult = [
+    { label: "Caracteristica", ora: "caracte_cena", valor: "", msg: "Caracteristica da <b>Cena</b> propriadamente dita."},
     { label: "Ambiente", ora: "cena_ambiente", valor: "", msg: "Estado emocional do ambiente/pessoas."},
     { label: "NPCs", ora: "cena_npc", valor: "", msg: "NPC presente na cena." },
     { label: "Rumores", ora: "cena_rumores", valor: "", msg: "Rumores da cena."},
@@ -47,7 +49,6 @@ let cenaResult = [
     { label: "C. Amigável", ora: "cena_compl_amigavel", valor: "", msg: "Complicação Amigável."},
     { label: "C. Neutro", ora: "cena_compl_neutro", valor: "", msg: "Complicação Neutro."},
     { label: "C. Hostil", ora: "cena_compl_hostil", valor: "", msg: "Complicação Hostil."},
-    { label: "Finalização", ora: "acontece_evento", valor: "", msg: "Finalização da complicação."},
 ];
 
 let eventoResult = [
