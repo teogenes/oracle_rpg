@@ -76,7 +76,6 @@ let yokaiResult = [
 ];
 
 let npcResult = [
-    { label: "Raça", ora: "npc_raca", valor: "", msg: "" },
     { label: "Nome M", ora: "vamp_nome_m", valor: "", msg: "" },
     { label: "Nome F", ora: "vamp_nome_f", valor: "", msg: "" },
     { label: "Gerar nome", ora: "npc_nome_gerado", valor: "", msg: "" },
