@@ -178,9 +178,7 @@ params = {
                 let sobrenomeu = nomesPerson[2];
                 let sobrenome = sobrenomeu[this.randomInt(0, sobrenomeu.length)];
                 this.vPersonsList[ind].valor = nome + " " + sobrenome;
-            } else if (ora == "personalidade_npc") {
-                this.combinacao_opcao(ora, this.vPersonsList, ind, "");
-            } else{
+            }else{
                 this.combinacao_opcao(ora, this.vPersonsList, ind);
             }
         },

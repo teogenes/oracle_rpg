@@ -10,6 +10,7 @@ let oracleResult = [
 let enredoResult = [
     { label: "Origem", ora: "enredo_origem", valor: "", msg: "O que desencadeou o <b>EVENTO INICIAL</b>."},
     { label: "Conexão", ora: "enredo_conexao", valor: "", msg: "Como o <b>EVENTO INICIAL</b> se conecta ao personagem."},
+    { label: "Vilão", ora: "vilao_enredo", valor: "", msg: "<b>VILÃO</b> em geral."},
 ];
 
 let aventuraResult = [
@@ -82,11 +83,10 @@ let npcResult = [
     { label: "Caracteristicas", ora: "persona_npc", valor: "", msg: "Humor (5 niveis) de Hostil(1) a Prestativo(5)"},
     { label: "Carac. Fisicas", ora: "npc_caracter", valor: "", msg: "" },
     { label: "Historico", ora: "historia_npc", valor: "", msg: "" },
-    { label: "Personalidade", ora: "personalidade_npc", valor: "", msg: "" },
     { label: "Conflitos", ora: "conflitos_evento", valor: "", msg: "Conflito do npc"},
+    { label: "Posicionamento", ora: "posicionamento_npc", valor: "", msg: "Posicionamento inicial da conversão e a atividade atual (NPC)"},
     { label: "Conversa NPC", ora: "coversa_npc", valor: "", msg: "" },
-    { label: "Conv.interesse", ora: "conversa2_npc", valor: "", msg: "" },
-    { label: "Conv.hostil", ora: "conversa3_npc", valor: "", msg: "" },
+    { label: "Vínculo NPC", ora: "vinculo_npc", valor: "", msg: "Vínculo entre NPCs" },
 ];
 
 let personResult = [
