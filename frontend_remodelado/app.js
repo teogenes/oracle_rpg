@@ -1,7 +1,7 @@
 params = {
     el: "#app",
     data: {
-        oracleValid: false,
+        oracleValid: true,
         enredoValid: false,
         aventuraValid: false,
         missaoValid: false,
@@ -12,7 +12,7 @@ params = {
         hexValid: false,
         npcValid: false,
         personValid: false,
-        yokaiValid: true,
+        yokaiValid: false,
         jogadasValid: false,
         historicos: [],
         dado_ativo: 5,
