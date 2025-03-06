@@ -37,6 +37,7 @@ let masmorraResult = [
     { label: "Estrutura", ora: "masmorra_compartimento", valor: "", msg: "<i>2.</i> O tipo de Estrutura a encontrar na masmorra."},
     { label: "Corredor", ora: "masmorra_corredor", valor: "", msg: "Corredores da <b>Estrutura</b>!"},
     { label: "Sala", ora: "masmorra_sala", valor: "", msg: "Salas da <b>Estrutura</b>!"},
+    { label: "Conteúdo", ora: "conteudo_estrutura", valor: "", msg: "Conteúdo da <b>Estrutura</b>!"},
     { label: "Encontro", ora: "masmorra_encontro", valor: "", msg: ""},
 ];
 
