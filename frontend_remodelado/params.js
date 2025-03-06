@@ -3056,25 +3056,15 @@ let oracle = {
     ],
     vulnerabilidade: [
         [
-            "A criatura tem medo de...",
-            "A criatura é vulnerável a...",
-            "A criatura é resistente a...",
-            "A criatura é atraída por...",
-        ],
-        [
-            "Fogo ou calor.",
-            "Luz.",
-            "Água.",
-            "Ácido.",
-            "Eletricidade.",
-            "Fumaça.",
-            "Qualquer metal.",
-            "Prata.",
-            "Ouro.",
-            "Amuletos e símbolos de poder.",
-            "Quaisquer Artefatos.",
-            "Gelo ou frio.",
-            "Ossos e cartilagens.",
+            [
+                "A criatura tem medo de", "A criatura é vulnerável a",
+                "A criatura tem medo de", "A criatura é vulnerável a",
+                "A criatura é resistente a", "A criatura é atraída por",
+            ],
+            [
+                "Fogo ou calor.", "Luz.", "Água.", "Ácido.", "Eletricidade.", "Fumaça.", "Qualquer metal.", "Prata.",
+                "Ouro.", "Amuletos e símbolos de poder.", "Quaisquer Artefatos.", "Gelo ou frio.", "Ossos e cartilagens.",
+            ],
         ],
     ],
     situacao_combate: [
