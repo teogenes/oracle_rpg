@@ -350,6 +350,21 @@ let oracle = {
             "<b>Assuntos:</b> Apostas / Jogos / Sorte e Azar", "<b>Assuntos:</b> Herança / Legado / Sucessão",
         ],
         [
+            "<b>Qualidade:</b> Profano", "<b>Qualidade:</b> Frágil", "<b>Qualidade:</b> Bestial/Ameaçador", "<b>Qualidade:</b> Real",
+            "<b>Qualidade:</b> Divino", "<b>Qualidade:</b> Popular", "<b>Qualidade:</b> Perdido/Desaparecido",
+            "<b>Qualidade:</b> Mágico", "<b>Qualidade:</b> Resistente", "<b>Qualidade:</b> Sagrado",
+            "<b>Qualidade:</b> Natural", "<b>Qualidade:</b> Pesado/Cheio", "<b>Qualidade:</b> Frio/Gelado",
+            "<b>Qualidade:</b> Invisível/Imaterial", "<b>Qualidade:</b> Nobre/Caro", "<b>Qualidade:</b> Energético",
+            "<b>Qualidade:</b> Extraplanar", "<b>Qualidade:</b> Quente/Acolhedor", "<b>Qualidade:</b> Leve/Vazio",
+            "<b>Qualidade:</b> Ancestral", "<b>Qualidade:</b> Bom/Bem", "<b>Qualidade:</b> Bárbaro",
+            "<b>Qualidade:</b> Leal", "<b>Qualidade:</b> Atrativo/Magnético", "<b>Qualidade:</b> Corajoso/Forte",
+            "<b>Qualidade:</b> Genuíno", "<b>Qualidade:</b> Novo/Recente", "<b>Qualidade:</b> Adorável/Agradável",
+            "<b>Qualidade:</b> Sábio/Confiável", "<b>Qualidade:</b> Civilizado", "<b>Qualidade:</b> Mal/Mau",
+            "<b>Qualidade:</b> Rude/Instável", "<b>Qualidade:</b> Neutro", "<b>Qualidade:</b> Repulsivo",
+            "<b>Qualidade:</b> Covarde/Fraco", "<b>Qualidade:</b> Falso", "<b>Qualidade:</b> Agressivo/Violento",
+            "<b>Qualidade:</b> Velho/Antigo", "<b>Qualidade:</b> Desleixado", "<b>Qualidade:</b> Caótico"
+        ],
+        [
             "<b>Tempo:</b> Passado",
             "<b>Tempo:</b> Presente",
             "<b>Tempo:</b> Presente",
