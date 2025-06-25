@@ -156,6 +156,12 @@ let oracle = {
     pergunta_oracle: [
         ["Afirmação: <b>Sim</b>", "Afirmação: <b>Não</b>"],
         [
+            "Fator: <b>Agravante/Desfavorável/Mas: Algo que complica ou piora a situação</b>",
+            "Fator: <b>-----</b>",  "Fator: <b>-----</b>",
+            "Fator: <b>Atenuante/Favorável/E: Algo que facilita ou melhora a situação</b>",
+            "Fator: <b>-----</b>", "Fator: <b>-----</b>",
+        ],
+        [
             "Probabilidade: <b>Incerto (30%)</b>",
             "Probabilidade: <b>Duvidoso (45%)</b>",
             "Probabilidade: <b>Duvidoso (45%)</b>",
@@ -169,15 +175,6 @@ let oracle = {
             "Detalhe da Resposta: <b>Pouca</b>",
             "Detalhe da Resposta: <b>Media</b>",
             "Detalhe da Resposta: <b>Muita</b>",
-        ],
-        [
-            "Fator: <b>Agravante/Desfavorável/Mas: Algo que complica ou piora a situação</b>",
-            "Fator: <b>Atenuante/Favorável/E: Algo que facilita ou melhora a situação</b>",
-            "Fator: <b>-----</b>",
-            "Fator: <b>-----</b>",
-            "Fator: <b>-----</b>",
-            "Fator: <b>-----</b>",
-            "Fator: <b>-----</b>",
         ],
         [
             "Interação: <b>Esquerda, Baixo, Más Conições, Chuva, Frio, Fechado</b>",
