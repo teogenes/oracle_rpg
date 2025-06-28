@@ -16,6 +16,7 @@ params = {
         jogadasValid: false,
         historicos: [],
         dado_ativo: 5,
+        soma: false,
         dado_passivo: 5,
         enredoList: enredoResult,
         oracleList: oracleResult,
@@ -131,8 +132,13 @@ params = {
             let res_ativo = this.randomInt(1, this.dado_ativo);
             let res_passivo = this.randomInt(1, this.dado_passivo);
             let dresutado = res_ativo - res_passivo;
+            let descritor = "-";
+            if (this.soma) {
+                dresutado = res_ativo + res_passivo;
+                descritor = "+";
+            }
 
-            let D_desafio = `${res_ativo} - ${res_passivo} = ${dresutado}`; 
+            let D_desafio = `${res_ativo} ${descritor} ${res_passivo} = ${dresutado}`; 
             let st = `Result: ${D_desafio}`;
 
             let cc = this.historicos.unshift(st);
