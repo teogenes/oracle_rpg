@@ -46,7 +46,7 @@ let cenaResult = [
     { label: "Ambiente", ora: "cena_ambiente", valor: "", msg: "Estado emocional do ambiente/pessoas."},
     { label: "NPCs", ora: "cena_npc", valor: "", msg: "NPC presente na cena." },
     { label: "Rumores", ora: "cena_rumores", valor: "", msg: "Rumores da cena."},
-    { label: "Detal. rumor", ora: "cena_rumor_detalhe", valor: "", msg: "detalhes do Rumor"},
+    { label: "Detal. rumor", ora: "cena_rumor_detalhe", valor: "", msg: "Detalhes do Rumor"},
     { label: "Complicações", ora: "cena_tipo_complicacao", valor: "", msg: "Tipo complicações."},
     { label: "C. Amigável", ora: "cena_compl_amigavel", valor: "", msg: "Complicação Amigável."},
     { label: "C. Neutro", ora: "cena_compl_neutro", valor: "", msg: "Complicação Neutro."},
@@ -57,7 +57,7 @@ let eventoResult = [
     { label: "Eventos", ora: "evento_eGenerico", valor: "", msg: "Eventos aleatórios"},
     { label: "Even. generico", ora: "eventos_generico", valor: "", msg: "Eventos generico"},
     { label: "Event. Ambie", ora: "cena_eve_amb", valor: "", msg: "Criação de eventos do ambiente."},
-    { label: "Evento cena", ora: "cena_evento", valor: "", msg: "Criação de eventos de cena."},
+    { label: "Event. Urbano", ora: "cena_eve_urbano", valor: "", msg: "Criação de eventos urbano."},
     { label: "Reviravolta", ora: "reviravolta", valor: "", msg: "" },
 ];
 
