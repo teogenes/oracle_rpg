@@ -42,11 +42,11 @@ let masmorraResult = [
 ];
 
 let cenaResult = [
-    { label: "Caracteristica", ora: "caracte_cena", valor: "", msg: "Caracteristica da <b>Cena</b> propriadamente dita."},
-    { label: "Ambiente", ora: "cena_ambiente", valor: "", msg: "Estado emocional do ambiente/pessoas."},
+    { label: "Cena", ora: "caracte_cena", valor: "", msg: "Descrição da <b>Cena</b> propriadamente dita."},
+    { label: "Ambientação", ora: "cena_ambiente", valor: "", msg: "Ambientação da <b>Cena</b>."},
     { label: "NPCs", ora: "cena_npc", valor: "", msg: "NPC presente na cena." },
     { label: "Rumores", ora: "cena_rumores", valor: "", msg: "Rumores da cena."},
-    { label: "Detal. rumor", ora: "cena_rumor_detalhe", valor: "", msg: "Detalhes do Rumor"},
+    { label: "Detal. rumor", ora: "cena_rumor_detalhe", valor: "", msg: "Detalhes do Rumor."},
     { label: "Complicações", ora: "cena_tipo_complicacao", valor: "", msg: "Tipo complicações."},
     { label: "C. Amigável", ora: "cena_compl_amigavel", valor: "", msg: "Complicação Amigável."},
     { label: "C. Neutro", ora: "cena_compl_neutro", valor: "", msg: "Complicação Neutro."},
