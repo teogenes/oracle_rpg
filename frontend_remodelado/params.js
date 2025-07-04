@@ -1814,8 +1814,8 @@ let oracle = {
         "Alguém tramou contra você até agora.",
         "Um Revés acontece",
         "Por algum motivo extremo, esta missão precisa ser encerrada agora.",
-        "Um Yokai poderoso faz com que você perca uma de suas almas.",
-        "Um poderoso inimigo, além de seu conhecimento, está atrás do mesmo objetivo que você.",
+        "Um oponente poderoso faz com que você perca um item valioso.",
+        "Um poderoso oponente, além de seu conhecimento, está atrás do mesmo objetivo que você.",
         "Uma outra divindade ou inimigo está procurando a mesma coisa que você.",
         "Você descobre que está no local errado.",
         "Sua missão já foi concluída, seja por um aliado ou inimigo.",
@@ -1824,12 +1824,12 @@ let oracle = {
         "O destino para onde está indo se revela como uma armadilha do inimigo.",
         "Um inimigo já derrotado retorna.",
         "Os inimigos daqui, por algum motivo, são amigáveis.",
-        "Um poder maligno começa a dominar alguém no seu grupo.",
+        "Um poder maligno começa a dominar alguém proximo.",
         "Uma força misteriosa toma o controle de um NPC.",
         "Um Revés acontece",
         "Um personagem do seu grupo adquire um poder temporário inédito, apenas durante essa missão.",
         "Um personagem do seu grupo adquire um poder inesperado.",
-        "O máximo de estados de saúde do seu grupo inteiro é reduzido pela metade arredondada para baixo devido a um poderoso efeito de um Yokai.",
+        "O máximo de estados de saúde do seu grupo inteiro é reduzido pela metade arredondada para baixo devido a um poderoso efeito de um ritual.",
         "Um Deus/agente ou figura importante aparece em sua missão.",
         "Alguém em seu grupo guarda um segredo.",
         "Os inimigos capturam alguém do seu grupo.",
@@ -2759,6 +2759,12 @@ let oracle = {
             "<b>Add:</b> Um Fingimento Tolo", "<b>Add:</b> O Tempo É O Inimigo", "<b>Add:</b> Vários Contra Um", "<b>Add:</b> Uma Reviravolta", 
             "<b>Add:</b> Silêncio Ou Morte", "<b>Add:</b> Um Objetivo Em Comum", "<b>Add:</b> Parece Um Sequestro", "<b>Add:</b> Não Se Prenda",
         ],
+        [
+            "<b>Reviravolta:</b> Sim",
+            "<b>Reviravolta:</b> Não",
+            "<b>Reviravolta:</b> Não",
+            "<b>Reviravolta:</b> Não",
+        ]
     ],
     eventos_generico: [
         [
