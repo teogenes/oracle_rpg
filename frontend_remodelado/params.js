@@ -1954,10 +1954,10 @@ let oracle = {
             "<b>Que foi:</b> Filho de um ferreiro.",
         ],
         [
-            "<b>Que é:</b>: Comum na região.",
-            "<b>Que é:</b>: Reconhecido por algo.",
-            "<b>Que é:</b>: Figura importante.",
-            "<b>Que é:</b>: Desconhecido na região.",
+            "<b>Que é:</b> Comum na região.",
+            "<b>Que é:</b> Reconhecido por algo.",
+            "<b>Que é:</b> Figura importante.",
+            "<b>Que é:</b> Desconhecido na região.",
         ],
         [
             "<b>Que:</b> Descobriu um talento mágico.", "<b>Que:</b> Salvou a vida de alguém importante.", "<b>Que:</b> Perdeu tudo em um incêndio.", 
