@@ -156,6 +156,11 @@ let oracle = {
     pergunta_oracle: [
         ["Afirmação: <b>Sim</b>", "Afirmação: <b>Não</b>"],
         [
+            "Detalhe da Resposta: <b>Pouca</b>",
+            "Detalhe da Resposta: <b>Media</b>",
+            "Detalhe da Resposta: <b>Muita</b>",
+        ],
+        [
             "Fator: <b>Agravante/Desfavorável/Mas: Algo que complica ou piora a situação</b>",
             "Fator: <b>-----</b>",  "Fator: <b>-----</b>",
             "Fator: <b>Atenuante/Favorável/E: Algo que facilita ou melhora a situação</b>",
@@ -170,15 +175,6 @@ let oracle = {
             "Probabilidade: <b>Provavelmente (70%)</b>",
             "Probabilidade: <b>Provavelmente (70%)</b>",
             "Probabilidade: <b>Definitivamente (85%)</b>",
-        ],
-        [
-            "Detalhe da Resposta: <b>Pouca</b>",
-            "Detalhe da Resposta: <b>Media</b>",
-            "Detalhe da Resposta: <b>Muita</b>",
-        ],
-        [
-            "Interação: <b>Esquerda, Baixo, Más Conições, Chuva, Frio, Fechado</b>",
-            "Interação: <b>Direita, Alto, Boas Condições, Sol, Calor, Aberto</b>",
         ],
     ],
 
@@ -360,6 +356,10 @@ let oracle = {
             "<b>Qualidade:</b> Rude/Instável", "<b>Qualidade:</b> Neutro", "<b>Qualidade:</b> Repulsivo",
             "<b>Qualidade:</b> Covarde/Fraco", "<b>Qualidade:</b> Falso", "<b>Qualidade:</b> Agressivo/Violento",
             "<b>Qualidade:</b> Velho/Antigo", "<b>Qualidade:</b> Desleixado", "<b>Qualidade:</b> Caótico"
+        ],
+        [
+            "<b>Interação:</b> Esquerda, Baixo, Más Conições, Chuva, Frio, Fechado",
+            "<b>Interação:</b> Direita, Alto, Boas Condições, Sol, Calor, Aberto",
         ],
         [
             "<b>Tempo:</b> Passado",
