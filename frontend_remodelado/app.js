@@ -15,9 +15,9 @@ params = {
         yokaiValid: false,
         jogadasValid: false,
         historicos: [],
-        dado_ativo: 5,
-        soma: false,
-        dado_passivo: 5,
+        dado_ativo: 13,
+        dado_passivo: 13,
+        soma: true,
         enredoList: enredoResult,
         oracleList: oracleResult,
         missaoList: missaoResult,
@@ -131,6 +131,7 @@ params = {
             // quant_dado eliminar
             let res_ativo = this.randomInt(1, this.dado_ativo);
             let res_passivo = this.randomInt(1, this.dado_passivo);
+            
             let dresutado = res_ativo - res_passivo;
             let descritor = "-";
             if (this.soma) {
