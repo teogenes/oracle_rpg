@@ -294,6 +294,17 @@ let oracle = {
             "<b>Adjetivo:</b> Sujo", "<b>Adjetivo:</b> Artificial", "<b>Adjetivo:</b> Colorido", "<b>Adjetivo:</b> Erótico", 
             "<b>Adjetivo:</b> Conservado", "<b>Adjetivo:</b> Corrompido", "<b>Adjetivo:</b> Falso", "<b>Adjetivo:</b> Estrangeiro", 
             "<b>Adjetivo:</b> Valioso", "<b>Adjetivo:</b> Modificado", "<b>Adjetivo:</b> Incongruente", "<b>Adjetivo:</b> Sobrenatural",
+            "<b>Adjetivo:</b> Frágil", "<b>Adjetivo:</b> Bestial/Ameaçador", "<b>Adjetivo:</b> Real",
+            "<b>Adjetivo:</b> Divino", "<b>Adjetivo:</b> Popular", "<b>Adjetivo:</b> Perdido/Desaparecido",
+            "<b>Adjetivo:</b> Mágico", "<b>Adjetivo:</b> Resistente", "<b>Adjetivo:</b> Frio/Gelado",
+            "<b>Adjetivo:</b> Pesado/Cheio", "<b>Adjetivo:</b> Nobre/Caro", "<b>Adjetivo:</b> Energético",
+            "<b>Adjetivo:</b> Invisível/Imaterial", "<b>Adjetivo:</b> Leve/Vazio", "<b>Adjetivo:</b> Extraplanar", 
+            "<b>Adjetivo:</b> Ancestral", "<b>Adjetivo:</b> Bom", "<b>Adjetivo:</b> Bárbaro",
+            "<b>Adjetivo:</b> Leal", "<b>Adjetivo:</b> Atrativo/Magnético", "<b>Adjetivo:</b> Corajoso",
+            "<b>Adjetivo:</b> Genuíno", "<b>Adjetivo:</b> Novo", "<b>Adjetivo:</b> Adorável/Agradável",
+            "<b>Adjetivo:</b> Sábio/Confiável", "<b>Adjetivo:</b> Velho", "<b>Adjetivo:</b> Repulsivo",
+            "<b>Adjetivo:</b> Rude/Instável", "<b>Adjetivo:</b> Neutro", "<b>Adjetivo:</b> Agressivo/Violento",
+            "<b>Adjetivo:</b> Covarde"
         ],
         [
             "<b>Assuntos:</b> Vitória / Conquista / Ascensão", "<b>Assuntos:</b> Traição / Intriga / Mentira / Armação", 
@@ -341,21 +352,6 @@ let oracle = {
             "<b>Assuntos:</b> Corrupção / Injustiça / Suborno", "<b>Assuntos:</b> Fanatismo / Adoração / Obsessão", 
             "<b>Assuntos:</b> Trabalho / Profissão / Carreira", "<b>Assuntos:</b> Proibição / Impedimento / Impossibilidade", 
             "<b>Assuntos:</b> Apostas / Jogos / Sorte e Azar", "<b>Assuntos:</b> Herança / Legado / Sucessão",
-        ],
-        [
-            "<b>Qualidade:</b> Profano", "<b>Qualidade:</b> Frágil", "<b>Qualidade:</b> Bestial/Ameaçador", "<b>Qualidade:</b> Real",
-            "<b>Qualidade:</b> Divino", "<b>Qualidade:</b> Popular", "<b>Qualidade:</b> Perdido/Desaparecido",
-            "<b>Qualidade:</b> Mágico", "<b>Qualidade:</b> Resistente", "<b>Qualidade:</b> Sagrado",
-            "<b>Qualidade:</b> Natural", "<b>Qualidade:</b> Pesado/Cheio", "<b>Qualidade:</b> Frio/Gelado",
-            "<b>Qualidade:</b> Invisível/Imaterial", "<b>Qualidade:</b> Nobre/Caro", "<b>Qualidade:</b> Energético",
-            "<b>Qualidade:</b> Extraplanar", "<b>Qualidade:</b> Quente/Acolhedor", "<b>Qualidade:</b> Leve/Vazio",
-            "<b>Qualidade:</b> Ancestral", "<b>Qualidade:</b> Bom/Bem", "<b>Qualidade:</b> Bárbaro",
-            "<b>Qualidade:</b> Leal", "<b>Qualidade:</b> Atrativo/Magnético", "<b>Qualidade:</b> Corajoso/Forte",
-            "<b>Qualidade:</b> Genuíno", "<b>Qualidade:</b> Novo/Recente", "<b>Qualidade:</b> Adorável/Agradável",
-            "<b>Qualidade:</b> Sábio/Confiável", "<b>Qualidade:</b> Civilizado", "<b>Qualidade:</b> Mal/Mau",
-            "<b>Qualidade:</b> Rude/Instável", "<b>Qualidade:</b> Neutro", "<b>Qualidade:</b> Repulsivo",
-            "<b>Qualidade:</b> Covarde/Fraco", "<b>Qualidade:</b> Falso", "<b>Qualidade:</b> Agressivo/Violento",
-            "<b>Qualidade:</b> Velho/Antigo", "<b>Qualidade:</b> Desleixado", "<b>Qualidade:</b> Caótico"
         ],
         [
             "<b>Interação:</b> Esquerda, Baixo, Más Conições, Chuva, Frio, Fechado",
@@ -4882,12 +4878,15 @@ let oracle = {
     tipo_ermo:[
         [
             [
-                "<b>Tipo Ermo:</b> Oceano", "<b>Tipo Ermo:</b> Geleira","<b>Tipo Ermo:</b> Pântano", "<b>Tipo Ermo:</b> Floresta", 
-                "<b>Tipo Ermo:</b> Planície", "<b>Tipo Ermo:</b> Deserto", "<b>Tipo Ermo:</b> Colina", "<b>Tipo Ermo:</b> Montanha",
                 "<b>Tipo Ermo:</b> O mesmo que o hexágono anterior",
                 "<b>Tipo Ermo:</b> O mesmo que o hexágono anterior",
+                "<b>Tipo Ermo:</b> Oceano", "<b>Tipo Ermo:</b> Geleira",
+                "<b>Tipo Ermo:</b> O mesmo que o hexágono anterior", 
+                "<b>Tipo Ermo:</b> Planície", "<b>Tipo Ermo:</b> Deserto",
                 "<b>Tipo Ermo:</b> O mesmo que o hexágono anterior",
+                "<b>Tipo Ermo:</b> Pântano", "<b>Tipo Ermo:</b> Floresta",
                 "<b>Tipo Ermo:</b> O mesmo que o hexágono anterior",
+                "<b>Tipo Ermo:</b> Colina", "<b>Tipo Ermo:</b> Montanha",
                 "<b>Tipo Ermo:</b> O mesmo que o hexágono anterior"
             ],
             [
