@@ -54,7 +54,6 @@ let cenaResult = [
 
 let eventoResult = [
     { label: "Eventos", ora: "evento_eGenerico", valor: "", msg: "Eventos aleatórios"},
-    { label: "Even. generico", ora: "eventos_generico", valor: "", msg: "Eventos generico"},
     { label: "Event. Ambie", ora: "cena_eve_amb", valor: "", msg: "Criação de eventos do ambiente."},
     { label: "Event. Urbano", ora: "cena_eve_urbano", valor: "", msg: "Criação de eventos urbano."},
     { label: "Reviravolta", ora: "reviravolta", valor: "", msg: "" },
