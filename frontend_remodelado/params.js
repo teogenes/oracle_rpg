@@ -307,6 +307,10 @@ let oracle = {
             "<b>Adjetivo:</b> Covarde"
         ],
         [
+            "<b>Sujeito:</b> Lugar", "<b>Sujeito:</b> Pessoa", "<b>Sujeito:</b> Animal/Criatura",
+            "<b>Sujeito:</b> Objeto/Aterfato", "<b>Sujeito:</b> Fenomeno Natural"
+        ],
+        [
             "<b>Assuntos:</b> Vitória / Conquista / Ascensão", "<b>Assuntos:</b> Traição / Intriga / Mentira / Armação", 
             "<b>Assuntos:</b> Igreja / Fé / Clérigos / Templo / Altar", "<b>Assuntos:</b> Monstro / Fera / Demônio / Quimera", 
             "<b>Assuntos:</b> Comércio / Lojas / Venda / Compra", "<b>Assuntos:</b> Luta / Combate / Duelo", 
