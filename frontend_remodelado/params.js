@@ -1574,10 +1574,10 @@ let oracle = {
         [
             "Evento: <b>Cena</b>",
             "Evento: <b>Nada acontece</b>",
-            "Evento: <b>Aleatórios/Genérico</b>",
+            "Evento: <b>Aleatórios</b>",
             "Evento: <b>Nada acontece</b>",
             "Evento: <b>Ambiental</b>",
-            "Evento: <b>Aleatórios/Genérico</b>",
+            "Evento: <b>Aleatórios</b>",
         ],
         [
             "Estado: <b>Hostil</b>",
