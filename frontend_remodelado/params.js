@@ -156,15 +156,15 @@ let oracle = {
     pergunta_oracle: [
         ["Afirmação: <b>Sim</b>", "Afirmação: <b>Não</b>"],
         [
-            "Detalhe da Resposta: <b>Pouca</b>",
-            "Detalhe da Resposta: <b>Media</b>",
-            "Detalhe da Resposta: <b>Muita</b>",
-        ],
-        [
             "Fator: <b>Agravante/Desfavorável/Mas: Algo que complica ou piora a situação</b>",
             "Fator: <b>-----</b>",  "Fator: <b>-----</b>",
             "Fator: <b>Atenuante/Favorável/E: Algo que facilita ou melhora a situação</b>",
             "Fator: <b>-----</b>", "Fator: <b>-----</b>",
+        ],
+        [
+            "Detalhe da Resposta: <b>Pouca</b>",
+            "Detalhe da Resposta: <b>Media</b>",
+            "Detalhe da Resposta: <b>Muita</b>",
         ],
         [
             "Probabilidade: <b>Incerto (30%)</b>",
