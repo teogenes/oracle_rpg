@@ -6106,40 +6106,55 @@ let oracle = {
     ],
     aventura_inicio:[
         [
-            "<b>Descoberta da Aventura:</b> O grupo recebe uma mensagem com uma proposta para realizar a missão.",
-            "<b>Descoberta da Aventura:</b> Alguém cobrando um favor ou coagindo os heróis a realizarem a missão.",
-            "<b>Descoberta da Aventura:</b> O grupo ouve um boato sobre a missão ou pessoas falando sobre isso em uma cidade ou taverna.",
-            "<b>Descoberta da Aventura:</b> Alguém (conhecido do grupo ou não) está pedindo ajuda com o problema.",
-            "<b>Descoberta da Aventura:</b> A missão é um desafio a vários heróis ou uma provocação direta ao grupo.",
-            "<b>Descoberta da Aventura:</b> A missão é secreta, mas o grupo fica sabendo sobre ela de alguma forma e se interessa.",
-            "<b>Descoberta da Aventura:</b> Algo de ruim está ocorrendo na cidade ou com pessoas próximas do grupo por causa desta aventura.",
-            "<b>Descoberta da Aventura:</b> O grupo acaba sendo envolvido no problema sem a intenção e são forçados a resolver o problema.",
-            "<b>Descoberta da Aventura:</b> A missão é parte de algo que os heróis desejam ou estão interessados.",
-            "<b>Descoberta da Aventura:</b> É parte de uma aventura antiga do grupo ou do passado de um dos protagonistas.",
+            [
+                "<b>1-2 Motivo:</b> Um civil pede ajuda pessoal", "<b>1-2 Motivo:</b> Um estranho comportamento chama sua atenção",
+                "<b>1-2 Motivo:</b> Um crime em andamento perto de você", "<b>1-2 Motivo:</b> Um animal ou criança desaparecida",
+                "<b>1-2 Motivo:</b> Um acidente misterioso", "<b>1-2 Motivo:</b> Você é confundido com um vilão"
+            ],
+            [
+                "<b>Ação:</b> Impedir um roubo", "<b>Ação:</b> Encontrar alguém desaparecido",
+                "<b>Ação:</b> Acalmar uma multidão", "<b>Ação:</b> Investigar algo estranho",
+                "<b>Ação:</b> Interrogar alguém perigoso", "<b>Ação:</b> Recuperar um objeto importante"
+            ],
+            [
+                "<b>Ameaça:</b> Gangue local.", "<b>Ameaça:</b> Hacker iniciante.",
+                "<b>Ameaça:</b> Vilão de bairro.", "<b>Ameaça:</b> Experimento descontrolado.",
+                "<b>Ameaça:</b> Animal mutante.", "<b>Ameaça:</b> Outro herói em treinamento."
+            ],
         ],
         [
-            "<b>Os inimigos desta aventura são:</b> Criminosos, bandidos ou selvagens.",
-            "<b>Os inimigos desta aventura são:</b> Monstros, Onis ou demônios.",
-            "<b>Os inimigos desta aventura são:</b> Entidades inteligentes e poderosas.",
-            "<b>Os inimigos desta aventura são:</b> Animais ou feras selvagens",
-            "<b>Os inimigos desta aventura são:</b> Militares, guardas ou policiais.",
-            "<b>Os inimigos desta aventura são:</b> Cultistas ou membros de uma seita.",
-            "<b>Os inimigos desta aventura são:</b> Aventureiros ou outros heróis.",
-            "<b>Os inimigos desta aventura são:</b> Magos, alienígenas ou mutantes.",
-            "<b>Os inimigos desta aventura são:</b> Máquinas, robôs ou golens.",
-            "<b>Os inimigos desta aventura são:</b> Sorteie dois e combine-os",
+            [
+                "<b>3-4 Motivo:</b> Outro herói solicita ajuda", "<b>3-4 Motivo:</b> Um civil conhecido desaparece",
+                "<b>3-4 Motivo:</b> Uma área está em quarentena", "<b>3-4 Motivo:</b> Um ataque foi anunciado publicamente",
+                "<b>3-4 Motivo:</b> Um grupo protesta contra você", "<b>3-4 Motivo:</b> Autoridades pressionam sua ação"
+            ],
+            [
+                "<b>Ação:</b> Neutralizar um vilão conhecido", "<b>Ação:</b> Evitar uma catástrofe",
+                "<b>Ação:</b> Desmascarar uma conspiração", "<b>Ação:</b> Proteger um evento público",
+                "<b>Ação:</b> Libertar alguém de um sequestro", "<b>Ação:</b> Escoltar civis em zona de risco"
+            ],
+            [
+                "<b>Ameaça:</b> Vilão em ascensão.", "<b>Ameaça:</b> Organização criminosa.",
+                "<b>Ameaça:</b> Máfia de superpoderosos.", "<b>Ameaça:</b> Criação artificial rebelada.",
+                "<b>Ameaça:</b> Herói rival com intenções duvidosas.", "<b>Ameaça:</b> Civil com poderes instáveis."
+            ]
         ],
         [
-            "<b>Os aventureiros devem:</b> Achar e recuperar um objeto/recurso.",
-            "<b>Os aventureiros devem:</b> Derrotar um inimigo ou ameaça.",
-            "<b>Os aventureiros devem:</b> Ajudar ou resgatar uma pessoa.",
-            "<b>Os aventureiros devem:</b> Explorar uma ruína ou dungeon.",
-            "<b>Os aventureiros devem:</b> Desvendar um crime ou mistério.",
-            "<b>Os aventureiros devem:</b> Vencer um desafio ou torneio.",
-            "<b>Os aventureiros devem:</b> Derrotar uma tropa ou horda.",
-            "<b>Os aventureiros devem:</b> Mapear e explorar uma área selvagem.",
-            "<b>Os aventureiros devem:</b> Procurar uma pessoa específica.",
-            "<b>Os aventureiros devem:</b> Sorteie dois e combine-os",
+            [
+                "<b>5-6 Motivo:</b> Uma cidade está sitiada", "<b>5-6 Motivo:</b> Um vilão do passado retorna",
+                "<b>5-6 Motivo:</b> O governo convoca você oficialmente", "<b>5-6 Motivo:</b> Um portal dimensional se abre",
+                "<b>5-6 Motivo:</b> Sua identidade civil é exposta", "<b>5-6 Motivo:</b> Você é acusado injustamente"
+            ],
+            [
+                "<b>Ação:</b> Salvar milhares de pessoas", "<b>Ação:</b> Conter um colapso entre realidades",
+                "<b>Ação:</b> Fazer um sacrifício estratégico", "<b>Ação:</b> Decidir o destino de um vilão",
+                "<b>Ação:</b> Liderar uma equipe de heróis", "<b>Ação:</b> Escolher entre duas perdas inevitáveis"
+            ],
+            [
+                "<b>Ameaça:</b> Vilão de nível global.", "<b>Ameaça:</b> Conspiração interplanetária.",
+                "<b>Ameaça:</b> Entidade cósmica.", "<b>Ameaça:</b> Máquina do tempo fora de controle.",
+                "<b>Ameaça:</b> Outra versão de você mesmo.", "<b>Ameaça:</b> Um ex-aliado se tornou o maior inimigo."
+            ]
         ],
         [
             "<b>Recompensa pela Aventura:</b> Dinheiro: 10 Moeda de ouro.",
