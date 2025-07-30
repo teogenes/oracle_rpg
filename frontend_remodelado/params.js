@@ -439,15 +439,15 @@ let oracle = {
             "<b>Situação 2 - </b>Local: <b>(Trajeto, Comunidade, Posição)</b>",
             "<b>Situação 2 - </b>Recurso: <b>(Objeto, Ingrediente, Elemento)</b>",
             "<b>Situação 2 - </b>Evento: <b>(Fenômeno, Circunstância, Lenda)</b>",
-            "<b>Situação 2 - </b>Memória <b>(lembrança, registro, história)</b>",
-            "<b>Situação 2 - </b>Tempo <b>(época, futuro, passado)</b>",
-            "<b>Situação 2 - </b>Causa <b>(missão, ideal, crença)</b>",
-            "<b>Situação 2 - </b>Relação <b>(aliança, rivalidade, laço)</b>"
+            "<b>Situação 2 - </b>Memória <b>(Lembrança, Registro, História)</b>",
+            "<b>Situação 2 - </b>Tempo <b>(Época, Futuro, Passado)</b>",
+            "<b>Situação 2 - </b>Causa <b>(Missão, Ideal, Crença)</b>",
+            "<b>Situação 2 - </b>Relação <b>(Aliança, Rivalidade, Laço)</b>"
         ],
         [
-            "<b>Falha:</b> Perda (fracasso, Custo)",
+            "<b>Falha:</b> Perda (Fracasso, Custo)",
             "<b>Falha:</b> Dominação (Opressão, Interferência)",
-            "<b>Falha:</b> Destruição (decadência, Extinção)",
+            "<b>Falha:</b> Destruição (Decadência, Extinção)",
             "<b>Falha:</b> Prejuízo (Morte, Sabotagem)",
             "<b>Falha:</b> Mudança (Desvio, Corrupção)",
             "<b>Falha:</b> Disputa (Confusão, Conflito)",
