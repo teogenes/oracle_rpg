@@ -445,12 +445,12 @@ let oracle = {
             "<b>Situação 2 - </b>Relação <b>(Aliança, Rivalidade, Laço)</b>"
         ],
         [
-            "<b>Falha:</b> Perda (Fracasso, Custo)",
-            "<b>Falha:</b> Dominação (Opressão, Interferência)",
-            "<b>Falha:</b> Destruição (Decadência, Extinção)",
-            "<b>Falha:</b> Prejuízo (Morte, Sabotagem)",
-            "<b>Falha:</b> Mudança (Desvio, Corrupção)",
-            "<b>Falha:</b> Disputa (Confusão, Conflito)",
+            "<b>Falha:</b> Perda <b>(Fracasso, Custo)</b>",
+            "<b>Falha:</b> Dominação <b>(Opressão, Interferência)</b>",
+            "<b>Falha:</b> Destruição <b>(Decadência, Extinção)</b>",
+            "<b>Falha:</b> Prejuízo <b>(Morte, Sabotagem)</b>",
+            "<b>Falha:</b> Mudança <b>(Desvio, Corrupção)</b>",
+            "<b>Falha:</b> Disputa <b>(Confusão, Conflito)</b>",
         ],
         [
             "--------------------------------------------"
@@ -1193,7 +1193,7 @@ let oracle = {
         [
             [
                 "<b>Nome:</b> ... da Morte", "<b>Nome:</b> ... da Perdição", "<b>Nome:</b> ... do Mal", "<b>Nome:</b> Negro...", 
-                "<b>Nome:</b> Sangrento...", "<b>Nome:</b> Desmoronando...", "<b>Nome:</b> Mortal...", "<b>Nome:</b> Desolado...", 
+                "<b>Nome:</b> Sangrento...", "<b>Nome:</b> Desmoronado...", "<b>Nome:</b> Mortal...", "<b>Nome:</b> Desolado...", 
                 "<b>Nome:</b> Destruído...", "<b>Nome:</b> Esquecido...", "<b>Nome:</b> Assombrado...", "<b>Nome:</b> Infernal...", 
                 "<b>Nome:</b> Musgoso...", "<b>Nome:</b> Luto...", "<b>Nome:</b> Coberto de vegetação...", "<b>Nome:</b> Escarlate...", 
                 "<b>Nome:</b> Secreto...", "<b>Nome:</b> Crepúsculo...", "<b>Nome:</b> Profano...",
@@ -5187,7 +5187,7 @@ let oracle = {
             "<b>(Mistério) Prevenir uma ameaça:</b> Evil ceremony",
             "<b>(Mistério) Prevenir uma ameaça:</b> Flood",
             "<b>(Mistério) Prevenir uma ameaça:</b> Frenzied migratory animals",
-            "<b>(Mistério) Prevenir uma ameaça:</b> Magic corruption",
+            "<b>(Mistério) Prevenir uma ameaça:</b> Corrupção mágica",
             "<b>(Mistério) Prevenir uma ameaça:</b> Plague",
             "<b>(Mistério) Prevenir uma ameaça:</b> Wildfire",
         ],
