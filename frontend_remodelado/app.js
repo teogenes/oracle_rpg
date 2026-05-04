@@ -209,14 +209,16 @@ params = {
 
                         let arr2 = [];
                         let quant2 = oracle[ora][i].length;
-                        
+
                         for (let j = 0; j < quant2; j++) {
                             let vv = oracle[ora][i][j];
                             arr2.push(vv[this.randomInt(0, vv.length)]);
                         }
+
                         arr.push(arr2.join(" - "));
                         continue;
-                    }    
+                    } 
+
                     let vv = oracle[ora][i];
                     arr.push(vv[this.randomInt(0, vv.length)]);
                 
