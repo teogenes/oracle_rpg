@@ -1,0 +1,136 @@
+/* 
+  Styles Base para Acessibilidade e Layout 
+*/
+
+:root {
+  --primary-color: #1b5e20;
+  --accent-color: #43a047;
+  --bg-color: #f1f8e9;
+  --text-color: #1b2e1b;
+  --focus-ring: 0 0 0 3px rgba(67, 160, 71, 0.4);
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  overflow: hidden;
+}
+
+/* Força renderização de tags <b> e strong vindas do v-html ou markdown */
+b, strong {
+  font-weight: 700 !important;
+  color: #2e7d32 !important; /* Um verde um pouco mais escuro para melhor legibilidade */
+  display: inline;
+}
+
+i, em {
+  font-style: italic !important;
+  color: #4caf50 !important;
+}
+
+/* Layout Principal */
+.app-container {
+  display: grid;
+  grid-template-columns: 1fr 500px;
+  grid-template-rows: auto 1fr;
+  height: 100vh;
+}
+
+.main-nav {
+  grid-column: 1 / 3;
+  background: var(--primary-color);
+  color: white;
+  padding: 0 1rem;
+  z-index: 10;
+  text-align: center; /* Centraliza logo/abas se houver espaço */
+}
+
+.tab-list {
+  display: flex;
+  justify-content: center; /* Centraliza as abas no menu */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tab-button {
+  background: transparent;
+  border: none;
+  color: #a5d6a7;
+  padding: 1.2rem;
+  cursor: pointer;
+  white-space: nowrap;
+  font-weight: 600;
+  border-bottom: 4px solid transparent;
+}
+
+.tab-button.active {
+  color: white;
+  border-bottom-color: #81c784;
+}
+
+.content-area {
+  padding: 2rem;
+  overflow-y: auto;
+  background: #fff;
+  min-height: 0; /* Garante que o container não cresça além da row da grid e permita scroll */
+}
+
+.sidebar {
+  background: #fdfdfd;
+  border-left: 1px solid #c8e6c9;
+  display: flex;
+  flex-direction: column;
+  min-height: 0; /* Garante que o sidebar não cresça além da row da grid e permita scroll interno */
+  overflow: hidden;
+}
+
+/* Botão Flutuante */
+.fab-dice {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background: var(--accent-color);
+  color: white;
+  border: 4px solid white;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  cursor: pointer;
+  font-size: 2rem;
+  z-index: 2000;
+}
+
+/* Modal Genérico */
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 450px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+  position: relative;
+  text-align: center; /* Cabeçalhos de modal centralizados */
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem; right: 1rem;
+  background: none; border: none;
+  font-size: 1.5rem; cursor: pointer;
+}
