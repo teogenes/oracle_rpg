@@ -12,7 +12,7 @@ import { useResultPopup } from './composables/useResultPopup.js';
 
 const { 
   activeDie, challengeDie1, challengeDie2, supportDieType, 
-  rollDice, history: diceHistory, isAddition, clearHistory, 
+  rollDice, history: diceHistory, clearHistory, 
   jogadasList, execJogada, clearJogadas 
 } = useMechanics();
 
@@ -61,7 +61,7 @@ const formatValue = (val) => {
               </select>
             </label>
 
-            <div class="support-group" v-show="!isAddition">
+            <div class="support-group">
               <label>Apoio:
                 <select v-model="supportDieType" aria-label="Dado de Apoio">
                   <option value="none">Nenhum</option>
@@ -77,7 +77,7 @@ const formatValue = (val) => {
               </label>
             </div>
 
-            <div class="challenge-inputs" v-show="!isAddition">
+            <div class="challenge-inputs">
               <label>Desafio 1:
                 <select v-model="challengeDie1" aria-label="Dado de Desafio 1">
                   <option v-for="d in [4,6,8,10,12,20]" :key="d" :value="d">D{{d}}</option>
@@ -89,17 +89,8 @@ const formatValue = (val) => {
                 </select>
               </label>
             </div>
-
-            <label v-show="isAddition">Desafio:
-              <select v-model="challengeDie1" aria-label="Dado de Desafio">
-                <option v-for="d in [4,6,8,10,12,20]" :key="d" :value="d">D{{d}}</option>
-              </select>
-            </label>
           </div>
 
-          <label class="check-label">
-            <input type="checkbox" v-model="isAddition"> Modo Soma
-          </label>
           <button class="btn-roll" @click="rollDice">Rolar Dados</button>
         </div>
 

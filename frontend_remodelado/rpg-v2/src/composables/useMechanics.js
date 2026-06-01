@@ -5,7 +5,7 @@
  */
 
 import { ref } from 'vue';
-import { rollDispute, rollChallenge } from '../core/DiceEngine.js';
+import { rollDispute } from '../core/DiceEngine.js';
 import { lottery } from '../core/LotteryEngine.js';
 import { useHistory } from './useHistory.js';
 import { useResultPopup } from './useResultPopup.js';
@@ -19,24 +19,17 @@ export const useMechanics = () => {
     const challengeDie1 = ref(8);
     const challengeDie2 = ref(8);
     const supportDieType = ref('none'); // 'none', 'd2', 'fate'
-    const isAddition = ref(false);
     const history = ref([]);
     const HISTORY_LIMIT = 6;
 
     const rollDice = () => {
-        let result;
-        if (isAddition.value) {
-            // No modo soma, usamos apenas Ação + Desafio 1 para manter compatibilidade simples
-            result = rollChallenge(activeDie.value, challengeDie1.value, true);
-        } else {
-            // Nova mecânica: 1 Ação (+ Apoio) vs 2 Desafios
-            result = rollDispute(activeDie.value, challengeDie1.value, challengeDie2.value, supportDieType.value);
-        }
+        // Lógica única: 1 Ação (+ Apoio) vs 2 Desafios
+        const result = rollDispute(activeDie.value, challengeDie1.value, challengeDie2.value, supportDieType.value);
         
         const entry = {
             id: Date.now(),
             expression: result.expression,
-            total: result.status || result.result
+            total: result.status
         };
 
         history.value.unshift(entry);
@@ -78,7 +71,7 @@ export const useMechanics = () => {
     };
 
     return {
-        activeDie, challengeDie1, challengeDie2, supportDieType, isAddition, history, rollDice, clearHistory,
+        activeDie, challengeDie1, challengeDie2, supportDieType, history, rollDice, clearHistory,
         jogadasList, execJogada, clearJogadas
     };
 };
