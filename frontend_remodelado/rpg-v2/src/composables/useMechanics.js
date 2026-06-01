@@ -15,9 +15,9 @@ const { addToHistory } = useHistory();
 const { showResult } = useResultPopup();
 
 export const useMechanics = () => {
-    const activeDie = ref(6);
-    const challengeDie1 = ref(10);
-    const challengeDie2 = ref(10);
+    const activeDie = ref(4);
+    const challengeDie1 = ref(8);
+    const challengeDie2 = ref(8);
     const supportDieType = ref('none'); // 'none', 'd2', 'fate'
     const isAddition = ref(false);
     const history = ref([]);
