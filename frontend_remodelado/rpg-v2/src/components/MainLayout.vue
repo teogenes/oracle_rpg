@@ -19,6 +19,12 @@ const tabs = [
 
 const activeTab = ref('oracle');
 const tabElements = ref([]);
+const isSidebarCollapsed = ref(false);
+
+const toggleSidebar = () => {
+  isSidebarCollapsed.value = !isSidebarCollapsed.value;
+  announce(isSidebarCollapsed.value ? 'Barra lateral recolhida' : 'Barra lateral expandida');
+};
 
 const setActiveTab = (id) => {
   activeTab.value = id;
@@ -37,7 +43,7 @@ const onKeydown = (event) => {
 </script>
 
 <template>
-  <div class="app-container">
+  <div class="app-container" :class="{ 'sidebar-collapsed': isSidebarCollapsed }">
     <header class="main-nav">
       <nav role="navigation" aria-label="Menu principal de abas">
         <ul class="tab-list" role="tablist" @keydown="onKeydown">
@@ -77,10 +83,20 @@ const onKeydown = (event) => {
     </main>
 
     <aside class="sidebar" aria-label="Painel lateral de dados e histórico">
-      <slot name="sidebar">
-        <h3>Motor de Dados</h3>
-        <p>Histórico de rolagens aparecerá aqui.</p>
-      </slot>
+      <button 
+        class="toggle-sidebar-btn" 
+        @click="toggleSidebar" 
+        :title="isSidebarCollapsed ? 'Expandir Registro' : 'Recolher Registro'"
+        :aria-expanded="!isSidebarCollapsed"
+      >
+        <span class="toggle-icon">{{ isSidebarCollapsed ? '«' : '»' }}</span>
+      </button>
+      <div class="sidebar-wrapper" v-show="!isSidebarCollapsed">
+        <slot name="sidebar">
+          <h3>Motor de Dados</h3>
+          <p>Histórico de rolagens aparecerá aqui.</p>
+        </slot>
+      </div>
     </aside>
 
     <!-- Slot padrão para elementos globais (modais, botões fixos) -->

@@ -10,7 +10,12 @@ import { useWorld } from './composables/useWorld.js';
 import { useHistory } from './composables/useHistory.js';
 import { useResultPopup } from './composables/useResultPopup.js';
 
-const { activeDie, passiveDie, rollDice, history: diceHistory, isAddition, clearHistory, jogadasList, execJogada, clearJogadas } = useMechanics();
+const { 
+  activeDie, challengeDie1, challengeDie2, supportDieType, 
+  rollDice, history: diceHistory, isAddition, clearHistory, 
+  jogadasList, execJogada, clearJogadas 
+} = useMechanics();
+
 const { oracleList, execOracle, clearOracle } = useOracle();
 const { personList, npcList, yokaiList, execPerson, execNpc, execYokai, clearPersona, clearNpc, clearYokai } = usePersona();
 const { 
@@ -30,11 +35,7 @@ const toggleDiceModal = () => {
 
 const formatValue = (val) => {
   if (!val) return '';
-  // Primeiro, resolve as quebras de linha
   const withBreaks = val.replace(/\n/g, '<br />');
-  // Transforma "Label: Valor" em "<b>Label:</b> Valor"
-  // O regex procura por início de string ou após um <br />, 
-  // pega o texto até o primeiro sinal de : (evitando pegar tags HTML se já existirem)
   return withBreaks.replace(/(^|<br\s*\/?>)([^:<>]+):/g, '$1<b>$2:</b>');
 };
 </script>
@@ -53,19 +54,49 @@ const formatValue = (val) => {
         <h3 id="modal-title" class="sidebar-title">🎲 Motor de Dados</h3>
         
         <div class="dice-controls">
-          <div class="control-row">
-            <label>Ativo:
-              <select v-model="activeDie" aria-label="Dado Ativo">
+          <div class="control-row main-dice">
+            <label>Ação:
+              <select v-model="activeDie" aria-label="Dado de Ação">
                 <option v-for="d in [4,6,8,10,12,20]" :key="d" :value="d">D{{d}}</option>
               </select>
             </label>
-            <label>Passivo:
-              <select v-model="passiveDie" aria-label="Dado Passivo">
-                <option :value="0">N/A</option>
+
+            <div class="support-group" v-show="!isAddition">
+              <label>Apoio:
+                <select v-model="supportDieType" aria-label="Dado de Apoio">
+                  <option value="none">Nenhum</option>
+                  <option value="d2-1">1D2-1</option>
+                  <option value="d2">1D2</option>
+                  <option value="p1">+1</option>
+                  <option value="d2p1">1D2+1</option>
+                  <option value="p2">+2</option>
+                  <option value="d2p2">1D2+2</option>
+                  <option value="p3">+3</option>
+                  <option value="fate">Fate</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="challenge-inputs" v-show="!isAddition">
+              <label>Desafio 1:
+                <select v-model="challengeDie1" aria-label="Dado de Desafio 1">
+                  <option v-for="d in [4,6,8,10,12,20]" :key="d" :value="d">D{{d}}</option>
+                </select>
+              </label>
+              <label>Desafio 2:
+                <select v-model="challengeDie2" aria-label="Dado de Desafio 2">
+                  <option v-for="d in [4,6,8,10,12,20]" :key="d" :value="d">D{{d}}</option>
+                </select>
+              </label>
+            </div>
+
+            <label v-show="isAddition">Desafio:
+              <select v-model="challengeDie1" aria-label="Dado de Desafio">
                 <option v-for="d in [4,6,8,10,12,20]" :key="d" :value="d">D{{d}}</option>
               </select>
             </label>
           </div>
+
           <label class="check-label">
             <input type="checkbox" v-model="isAddition"> Modo Soma
           </label>
@@ -80,14 +111,14 @@ const formatValue = (val) => {
           <ul class="history-list" aria-live="polite">
             <li v-for="item in diceHistory" :key="item.id" class="history-item">
               <span class="expr">{{ item.expression }}</span>
-              <span class="total-badge">= {{ item.total }}</span>
+              <span class="total-badge"> = {{ item.total }}</span>
             </li>
           </ul>
         </div>
       </div>
     </div>
 
-    <!-- Popup de Resultado Narrativo (Botões) -->
+    <!-- Popup de Resultado Narrativo -->
     <div v-if="isResultPopupOpen" class="modal-overlay" @click.self="closeResultPopup">
       <div class="modal-content result-modal" role="dialog" aria-labelledby="result-title">
         <button class="modal-close" @click="closeResultPopup">×</button>
@@ -171,8 +202,10 @@ const formatValue = (val) => {
 
 /* Dados */
 .dice-controls { display: flex; flex-direction: column; gap: 1rem; margin-top: 1rem; text-align: center; }
-.control-row { display: flex; gap: 1rem; justify-content: center; }
-.control-row label { flex: 1; font-size: 0.8rem; font-weight: bold; }
+.control-row { display: flex; gap: 0.8rem; justify-content: center; align-items: flex-end; }
+.support-group { flex: 1; }
+.challenge-inputs { display: flex; gap: 0.5rem; flex: 2; }
+.control-row label { flex: 1; font-size: 0.8rem; font-weight: bold; display: flex; flex-direction: column; gap: 4px; }
 .control-row select { width: 100%; padding: 0.5rem; border-radius: 4px; border: 1px solid var(--border-color); }
 .btn-roll { padding: 0.8rem; background: var(--accent-color); color: white; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; }
 .dice-history { margin-top: 1.5rem; border-top: 1px solid var(--bg-color); padding-top: 1rem; }

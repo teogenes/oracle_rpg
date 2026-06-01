@@ -5,7 +5,7 @@
  */
 
 import { ref } from 'vue';
-import { rollChallenge } from '../core/DiceEngine.js';
+import { rollDispute, rollChallenge } from '../core/DiceEngine.js';
 import { lottery } from '../core/LotteryEngine.js';
 import { useHistory } from './useHistory.js';
 import { useResultPopup } from './useResultPopup.js';
@@ -15,25 +15,33 @@ const { addToHistory } = useHistory();
 const { showResult } = useResultPopup();
 
 export const useMechanics = () => {
-    const activeDie = ref(20);
-    const passiveDie = ref(0);
+    const activeDie = ref(6);
+    const challengeDie1 = ref(10);
+    const challengeDie2 = ref(10);
+    const supportDieType = ref('none'); // 'none', 'd2', 'fate'
     const isAddition = ref(false);
     const history = ref([]);
     const HISTORY_LIMIT = 6;
 
     const rollDice = () => {
-        const result = rollChallenge(activeDie.value, passiveDie.value, isAddition.value);
+        let result;
+        if (isAddition.value) {
+            // No modo soma, usamos apenas Ação + Desafio 1 para manter compatibilidade simples
+            result = rollChallenge(activeDie.value, challengeDie1.value, true);
+        } else {
+            // Nova mecânica: 1 Ação (+ Apoio) vs 2 Desafios
+            result = rollDispute(activeDie.value, challengeDie1.value, challengeDie2.value, supportDieType.value);
+        }
         
         const entry = {
             id: Date.now(),
             expression: result.expression,
-            total: result.result
+            total: result.status || result.result
         };
 
         history.value.unshift(entry);
-        addToHistory(`Rolagem ${result.expression}`, `Resultado: <b>${result.result}</b>`);
+        addToHistory(`Rolagem ${result.expression}`, `Resultado: <b>${entry.total}</b>`);
         
-        // REMOVIDO o showResult daqui conforme pedido: dados não abrem popup
         if (history.value.length > HISTORY_LIMIT) {
             history.value.pop();
         }
@@ -61,7 +69,7 @@ export const useMechanics = () => {
             const res = lottery(data);
             item.valor = res;
             addToHistory(item.label, res);
-            showResult(item.label, res); // Geradores continuam abrindo popup
+            showResult(item.label, res);
         }
     };
 
@@ -70,7 +78,7 @@ export const useMechanics = () => {
     };
 
     return {
-        activeDie, passiveDie, isAddition, history, rollDice, clearHistory,
+        activeDie, challengeDie1, challengeDie2, supportDieType, isAddition, history, rollDice, clearHistory,
         jogadasList, execJogada, clearJogadas
     };
 };
