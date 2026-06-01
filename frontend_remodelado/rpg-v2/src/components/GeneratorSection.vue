@@ -55,14 +55,14 @@ const emit = defineEmits(['exec', 'clear']);
 .header-actions {
   display: flex;
   justify-content: center; /* Centraliza o cabeçalho */
-  border-bottom: 2px solid #66bb6a;
+  border-bottom: 2px solid var(--accent-color);
   margin-bottom: 1.5rem;
   padding-bottom: 0.5rem;
 }
 
 .header-actions h3 {
   margin: 0;
-  color: #1b5e20;
+  color: var(--primary-color);
   font-size: 1.5rem;
   font-weight: 800;
   text-transform: uppercase;
@@ -83,7 +83,7 @@ const emit = defineEmits(['exec', 'clear']);
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  border: 1px solid #e8f5e9;
+  border: 1px solid var(--bg-color);
   transition: transform 0.2s, box-shadow 0.2s;
   padding: 1.2rem;
   align-items: center; /* Garante centralização flex */
@@ -91,8 +91,8 @@ const emit = defineEmits(['exec', 'clear']);
 
 .generator-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 15px rgba(27, 94, 32, 0.08);
-  border-color: #c8e6c9;
+  box-shadow: 0 10px 15px rgba(45, 58, 48, 0.08);
+  border-color: var(--border-color);
 }
 
 .card-info {
@@ -104,18 +104,18 @@ const emit = defineEmits(['exec', 'clear']);
   display: inline-block;
   font-size: 0.65rem;
   font-weight: 800;
-  color: #4caf50;
+  color: var(--accent-color);
   text-transform: uppercase;
   letter-spacing: 0.5px;
   margin-bottom: 0.5rem;
-  background: #f1f8e9;
+  background: var(--bg-color);
   padding: 0.2rem 0.6rem;
   border-radius: 12px;
 }
 
 .card-title {
   margin: 0;
-  color: #1b5e20;
+  color: var(--primary-color);
   font-size: 1.15rem;
   font-weight: 800;
 }
@@ -129,7 +129,7 @@ const emit = defineEmits(['exec', 'clear']);
   width: 80%; /* Botão um pouco menor e centralizado */
   margin: 0 auto;
   padding: 0.8rem;
-  background: #43a047;
+  background: var(--accent-color);
   color: white;
   border: none;
   border-radius: 8px;
@@ -141,11 +141,11 @@ const emit = defineEmits(['exec', 'clear']);
   align-items: center;
   gap: 0.5rem;
   transition: background 0.2s, transform 0.1s;
-  box-shadow: 0 2px 4px rgba(67, 160, 71, 0.3);
+  box-shadow: 0 2px 4px rgba(74, 93, 74, 0.3);
 }
 
 .btn-generate:hover {
-  background: #2e7d32;
+  background: var(--primary-color);
 }
 
 .btn-generate:active {
@@ -157,7 +157,7 @@ const emit = defineEmits(['exec', 'clear']);
 }
 
 .card-footer {
-  border-top: 1px solid #f1f8e9;
+  border-top: 1px solid var(--bg-color);
   padding-top: 0.8rem;
   margin-top: auto;
   width: 100%;
@@ -165,7 +165,8 @@ const emit = defineEmits(['exec', 'clear']);
 
 .card-desc {
   margin: 0;
-  color: #666;
+  color: var(--text-color);
+  opacity: 0.8;
   font-size: 0.8rem;
   line-height: 1.4;
   font-style: italic;
